@@ -1,5 +1,6 @@
 #!/bin/bash
 uname -s
+msg_mine="[MSG]"
 echo "$OSTYPE"
 jdk_version(){
   local result
@@ -37,4 +38,28 @@ jdk_version(){
 v="$(jdk_version)"
 echo $v
 mvn clean install
-java -XX:-Inline -jar target/benchmarks.jar
+echo "$msg_mine Testing is in progress, check results folder..."
+echo "$msg_mine Cfg interpretator"
+mkdir -p results
+mkdir -p logs
+echo "$msg_mine Testing with -Inline option..."
+java -XX:-Inline  -jar target/benchmarks.jar -rf text -rff results/int_inline_off.txt -o logs/int_inline_off.txt JMHBenchmark_01_DummyInvoke
+echo "$msg_mine done"
+echo "$msg_mine Testing with +Inline option..."
+java -XX:+Inline  -jar target/benchmarks.jar -rf text -rff results/int_inline_on.txt -o logs/int_inline_on.txt
+echo "$msg_mine done"
+echo "$msg_mine Cfg client"
+echo "$msg_mine Testing with -Inline option..."
+java -XX:-Inline -client -jar target/benchmarks.jar -rf text -rff results/client_inline_off.txt -o logs/client_inline_off.txt JMHBenchmark_01_DummyInvoke
+echo "$msg_mine done"
+echo "$msg_mine Testing with +Inline option..."
+java -XX:+Inline -client -jar target/benchmarks.jar -rf text -rff results/client_inline_on.txt -o logs/client_inline_on.txt
+echo "$msg_mine done"
+echo "$msg_mine Cfg server"
+echo "$msg_mine Testing with -Inline option..."
+java -XX:-Inline -server -jar target/benchmarks.jar -rf text -rff results/server_inline_off.txt -o logs/server_inline_off.txt JMHBenchmark_01_DummyInvoke
+echo "$msg_mine done"
+echo "$msg_mine Testing with +Inline option..."
+java -XX:+Inline -server -jar target/benchmarks.jar -rf text -rff results/server_inline_on.txt -o logs/server_inline_on.txt
+echo "$msg_mine done"
+echo "$msg_mine Testing completed"

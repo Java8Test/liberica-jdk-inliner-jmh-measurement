@@ -33,12 +33,14 @@ package org.sample;
 
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.BenchmarkMode;
+import org.openjdk.jmh.annotations.CompilerControl;
 import org.openjdk.jmh.annotations.Fork;
 import org.openjdk.jmh.annotations.Mode;
 import org.openjdk.jmh.annotations.Measurement;
 import org.openjdk.jmh.annotations.OutputTimeUnit;
 import org.openjdk.jmh.annotations.Timeout;
 import org.openjdk.jmh.annotations.Warmup;
+import org.openjdk.jmh.infra.Blackhole;
 
 import java.util.concurrent.TimeUnit;
 
@@ -46,19 +48,45 @@ import java.util.concurrent.TimeUnit;
 @Warmup(iterations = 2, time = 1, timeUnit = TimeUnit.SECONDS)
 @Measurement(iterations = 2, time = 1, timeUnit = TimeUnit.SECONDS)
 @Fork(1)
-public class JMHBenchmark_01_DummyInvoke {
+public class JMHBenchmark_05_SumCalcWithCompileHintAndBh {
+
+    static final long ITERATIONS = 100;
 
     @Benchmark
-    public void baseline() {
+    public long baseline() {
         // do nothing, this is a baseline
+        return 0;
     }
 
     @Benchmark
-    public void testInvocation() {
-        _dummyMethod();
+    public long SumCalcWithInlineBh(Blackhole bh) {
+	long sumValue = 0;
+	for (long i = 0; i < ITERATIONS; ++i)
+            sumValue += _hintInlineMethod(i);
+        return sumValue;
     }
 
-    private void _dummyMethod() {
+    @Benchmark
+    public long SumCalcWithNotInlineBh(Blackhole bh) {
+	long sumValue = 0;
+	for (long i = 0; i < ITERATIONS; ++i)
+            sumValue += _hintNotInlineMethod(i);
+        return sumValue;
     }
 
+    @CompilerControl(CompilerControl.Mode.INLINE)
+    private long _hintInlineMethod(long value) {
+	long sumValue = 0;
+	for (long j = 0; j < value; j++ )
+            sumValue += j;
+	return sumValue;
+    }
+
+    @CompilerControl(CompilerControl.Mode.DONT_INLINE)
+    private long _hintNotInlineMethod(long value) {
+	long sumValue = 0;
+	for (long j = 0; j < value; j++ )
+            sumValue += j;
+	return sumValue;
+    }
 }

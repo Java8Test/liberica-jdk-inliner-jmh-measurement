@@ -33,6 +33,7 @@ package org.sample;
 
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.BenchmarkMode;
+import org.openjdk.jmh.annotations.CompilerControl;
 import org.openjdk.jmh.annotations.Fork;
 import org.openjdk.jmh.annotations.Mode;
 import org.openjdk.jmh.annotations.Measurement;
@@ -46,7 +47,7 @@ import java.util.concurrent.TimeUnit;
 @Warmup(iterations = 2, time = 1, timeUnit = TimeUnit.SECONDS)
 @Measurement(iterations = 2, time = 1, timeUnit = TimeUnit.SECONDS)
 @Fork(1)
-public class JMHBenchmark_01_DummyInvoke {
+public class JMHBenchmark_02_DummyInvokeWithCompileHint {
 
     @Benchmark
     public void baseline() {
@@ -54,11 +55,20 @@ public class JMHBenchmark_01_DummyInvoke {
     }
 
     @Benchmark
-    public void testInvocation() {
-        _dummyMethod();
+    public void testInvocationWithInline() {
+        _hintInlineMethod();
     }
 
-    private void _dummyMethod() {
+    @Benchmark
+    public void testInvocationWithNotInline() {
+        _hintNotInlineMethod();
     }
 
+    @CompilerControl(CompilerControl.Mode.INLINE)
+    private void _hintInlineMethod() {
+    }
+
+    @CompilerControl(CompilerControl.Mode.DONT_INLINE)
+    private void _hintNotInlineMethod() {
+    }
 }
