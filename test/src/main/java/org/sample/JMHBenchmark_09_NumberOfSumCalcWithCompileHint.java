@@ -40,7 +40,6 @@ import org.openjdk.jmh.annotations.Measurement;
 import org.openjdk.jmh.annotations.OutputTimeUnit;
 import org.openjdk.jmh.annotations.Timeout;
 import org.openjdk.jmh.annotations.Warmup;
-import org.openjdk.jmh.infra.Blackhole;
 
 import java.util.concurrent.TimeUnit;
 
@@ -48,34 +47,65 @@ import java.util.concurrent.TimeUnit;
 @Warmup(iterations = 2, time = 1, timeUnit = TimeUnit.SECONDS)
 @Measurement(iterations = 2, time = 1, timeUnit = TimeUnit.SECONDS)
 @Fork(1)
-public class JMHBenchmark_05_SumCalcWithCompileHintAndBh {
+public class JMHBenchmark_09_NumberOfSumCalcWithCompileHint {
 
     static final long ITERATIONS = 100;
 
     @Benchmark
-    public long baseline() {
+    public void baseline() {
         // do nothing, this is a baseline
-        return 0;
     }
 
     @Benchmark
-    public long SumCalcWithInlineBh(Blackhole bh) {
+    public long SumCalcWithInline() {
 	long sumValue = 0;
 	for (long i = 0; i < ITERATIONS; ++i)
-            sumValue += _hintInlineMethod(i);
+        {
+            sumValue += _hintInlineMethod_1(i);
+            sumValue += _hintInlineMethod_2(i);
+            sumValue += _hintInlineMethod_3(i);
+            sumValue += _hintInlineMethod_4(i);
+            sumValue += _hintInlineMethod_5(i);
+        }
         return sumValue;
     }
 
     @Benchmark
-    public long SumCalcWithNotInlineBh(Blackhole bh) {
+    public long SumCalcWithDontInline() {
 	long sumValue = 0;
 	for (long i = 0; i < ITERATIONS; ++i)
-            sumValue += _hintNotInlineMethod(i);
+        {
+            sumValue += _hintNotInlineMethod_1(i);
+            sumValue += _hintNotInlineMethod_2(i);
+            sumValue += _hintNotInlineMethod_3(i);
+            sumValue += _hintNotInlineMethod_4(i);
+            sumValue += _hintNotInlineMethod_5(i);
+        }
         return sumValue;
     }
 
     @CompilerControl(CompilerControl.Mode.INLINE)
-    private long _hintInlineMethod(long value) {
+    private long _hintInlineMethod_1(long value) {
+	return (value/3) + (value/2);
+    }
+    @CompilerControl(CompilerControl.Mode.INLINE)
+    private long _hintInlineMethod_2(long value) {
+	return (value/4) + (value/3);
+    }
+    @CompilerControl(CompilerControl.Mode.INLINE)
+    private long _hintInlineMethod_3(long value) {
+	return (value/5) + (value/4);
+    }
+    @CompilerControl(CompilerControl.Mode.INLINE)
+    private long _hintInlineMethod_4(long value) {
+	return (value/6) + (value/5);
+    }
+    @CompilerControl(CompilerControl.Mode.INLINE)
+    private long _hintInlineMethod_5(long value) {
+	return (value/7) + (value/6);
+    }
+    @CompilerControl(CompilerControl.Mode.INLINE)
+    private long _longInlineMethod(long value) {
 	long sumValue = 0;
 	for (long j = 0; j < value; j++ )
             sumValue += j;
@@ -83,7 +113,27 @@ public class JMHBenchmark_05_SumCalcWithCompileHintAndBh {
     }
 
     @CompilerControl(CompilerControl.Mode.DONT_INLINE)
-    private long _hintNotInlineMethod(long value) {
+    private long _hintNotInlineMethod_1(long value) {
+	return (value/3) + (value/2);
+    }
+    @CompilerControl(CompilerControl.Mode.DONT_INLINE)
+    private long _hintNotInlineMethod_2(long value) {
+	return (value/4) + (value/3);
+    }
+    @CompilerControl(CompilerControl.Mode.DONT_INLINE)
+    private long _hintNotInlineMethod_3(long value) {
+	return (value/5) + (value/4);
+    }
+    @CompilerControl(CompilerControl.Mode.DONT_INLINE)
+    private long _hintNotInlineMethod_4(long value) {
+	return (value/6) + (value/5);
+    }
+    @CompilerControl(CompilerControl.Mode.DONT_INLINE)
+    private long _hintNotInlineMethod_5(long value) {
+	return (value/7) + (value/6);
+    }
+    @CompilerControl(CompilerControl.Mode.DONT_INLINE)
+    private long _longNotInlineMethod(long value) {
 	long sumValue = 0;
 	for (long j = 0; j < value; j++ )
             sumValue += j;

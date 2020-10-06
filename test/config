@@ -1,0 +1,14 @@
+jit_selected="Xint client server graal aot"
+
+#empty means all
+notinline_benchmarks="JMHBenchmark_01_DummyInvoke JMHBenchmark_02_InvokeWithReturn JMHBenchmark_04_DummyInvokeWithValue JMHBenchmark_05_DummyInvokeState JMHBenchmark_06_SumCalcInvoke JMHBenchmark_08_NumberOfSumCalc JMHBenchmark_10_longSumCalc"
+inline_benchmarks=""
+
+results_dir="results"
+logs_dir="logs"
+
+
+jit_options="-XX:+PrintCompilation -XX:+UnlockDiagnosticVMOptions  -XX:+PrintInlining"
+jit_options=""
+
+benchmark_options="-gc true"

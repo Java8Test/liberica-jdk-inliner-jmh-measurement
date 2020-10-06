@@ -47,7 +47,9 @@ import java.util.concurrent.TimeUnit;
 @Warmup(iterations = 2, time = 1, timeUnit = TimeUnit.SECONDS)
 @Measurement(iterations = 2, time = 1, timeUnit = TimeUnit.SECONDS)
 @Fork(1)
-public class JMHBenchmark_02_DummyInvokeWithCompileHint {
+public class JMHBenchmark_06_SumCalcInvoke {
+
+    static final long ITERATIONS = 100;
 
     @Benchmark
     public void baseline() {
@@ -55,20 +57,22 @@ public class JMHBenchmark_02_DummyInvokeWithCompileHint {
     }
 
     @Benchmark
-    public void testInvocationWithInline() {
-        _hintInlineMethod();
+    public long noInvocationSumCalc() {
+	long sumValue = 0;
+	for (long i = 0; i < ITERATIONS; ++i)
+            sumValue += (i/3) + (i/2);;
+        return sumValue;
     }
 
     @Benchmark
-    public void testInvocationWithNotInline() {
-        _hintNotInlineMethod();
+    public long SumCalcInvoke() {
+	long sumValue = 0;
+	for (long i = 0; i < ITERATIONS; ++i)
+            sumValue += _sumMethod(i);
+        return sumValue;
     }
 
-    @CompilerControl(CompilerControl.Mode.INLINE)
-    private void _hintInlineMethod() {
-    }
-
-    @CompilerControl(CompilerControl.Mode.DONT_INLINE)
-    private void _hintNotInlineMethod() {
+    private long _sumMethod(long value) {
+	return (value/3) + (value/2);
     }
 }

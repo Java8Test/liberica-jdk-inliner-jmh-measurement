@@ -33,18 +33,13 @@ package org.sample;
 
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.BenchmarkMode;
+import org.openjdk.jmh.annotations.CompilerControl;
 import org.openjdk.jmh.annotations.Fork;
 import org.openjdk.jmh.annotations.Mode;
 import org.openjdk.jmh.annotations.Measurement;
 import org.openjdk.jmh.annotations.OutputTimeUnit;
 import org.openjdk.jmh.annotations.Timeout;
 import org.openjdk.jmh.annotations.Warmup;
-import org.openjdk.jmh.runner.options.Options;
-import org.openjdk.jmh.runner.options.OptionsBuilder;
-import org.openjdk.jmh.runner.Runner;
-import org.openjdk.jmh.runner.RunnerException;
-
-import org.openjdk.jmh.infra.Blackhole;
 
 import java.util.concurrent.TimeUnit;
 
@@ -52,7 +47,9 @@ import java.util.concurrent.TimeUnit;
 @Warmup(iterations = 2, time = 1, timeUnit = TimeUnit.SECONDS)
 @Measurement(iterations = 2, time = 1, timeUnit = TimeUnit.SECONDS)
 @Fork(1)
-public class JMHBenchmark_01_DummyInvoke {
+public class JMHBenchmark_10_longSumCalc {
+
+    static final long ITERATIONS = 100;
 
     @Benchmark
     public void baseline() {
@@ -60,10 +57,36 @@ public class JMHBenchmark_01_DummyInvoke {
     }
 
     @Benchmark
-    public void testInvocationDummyMethod() {
-        _dummyMethod();
+    public long noInvocationlongSumCalc() {
+	long sumValue = 0;
+	for (long i = 0; i < ITERATIONS; ++i)
+        {
+            for (long j = 0; j < i; ++j)
+            {
+                sumValue += j;
+                sumValue += j * (sumValue-1);
+            }
+        }
+        return sumValue;
     }
 
-    private void _dummyMethod() {
+    @Benchmark
+    public long longSumCalc() {
+	long sumValue = 0;
+	for (long i = 0; i < ITERATIONS; ++i)
+        {
+            sumValue += _longSumCalcMethod(i);
+        }
+        return sumValue;
+    }
+
+    private long _longSumCalcMethod(long value) {
+	long sumValue = 0;
+	for (long j = 0; j < value; j++ )
+        {
+            sumValue += j;
+            sumValue += j * (sumValue-1);
+        }
+	return sumValue;
     }
 }

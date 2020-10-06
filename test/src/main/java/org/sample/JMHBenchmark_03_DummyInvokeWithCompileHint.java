@@ -33,16 +33,13 @@ package org.sample;
 
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.BenchmarkMode;
+import org.openjdk.jmh.annotations.CompilerControl;
 import org.openjdk.jmh.annotations.Fork;
 import org.openjdk.jmh.annotations.Mode;
 import org.openjdk.jmh.annotations.Measurement;
 import org.openjdk.jmh.annotations.OutputTimeUnit;
 import org.openjdk.jmh.annotations.Timeout;
 import org.openjdk.jmh.annotations.Warmup;
-import org.openjdk.jmh.runner.options.Options;
-import org.openjdk.jmh.runner.options.OptionsBuilder;
-import org.openjdk.jmh.runner.Runner;
-import org.openjdk.jmh.runner.RunnerException;
 
 import org.openjdk.jmh.infra.Blackhole;
 
@@ -52,7 +49,7 @@ import java.util.concurrent.TimeUnit;
 @Warmup(iterations = 2, time = 1, timeUnit = TimeUnit.SECONDS)
 @Measurement(iterations = 2, time = 1, timeUnit = TimeUnit.SECONDS)
 @Fork(1)
-public class JMHBenchmark_01_DummyInvoke {
+public class JMHBenchmark_03_DummyInvokeWithCompileHint {
 
     @Benchmark
     public void baseline() {
@@ -60,10 +57,55 @@ public class JMHBenchmark_01_DummyInvoke {
     }
 
     @Benchmark
-    public void testInvocationDummyMethod() {
-        _dummyMethod();
+    public void testInvocationDummyMethodWithHintInline() {
+        _dummyMethodWithHintInline();
     }
 
-    private void _dummyMethod() {
+    @Benchmark
+    public void testInvocationDummyMethodWithHintDontInline() {
+        _dummyMethodWithHintDontInline();
+    }
+
+    @Benchmark
+    public double noInvocationWithReturnValue() {
+        return 0.0;
+    }
+
+    @Benchmark
+    public void testInvocationDummyMethodWithHintInlineBh(Blackhole bh) {
+        bh.consume(_dummyMethodWithReturnValueWithHintInline());
+    }
+
+    @Benchmark
+    public void testInvocationDummyMethodWithHintDontInlineBh(Blackhole bh) {
+        bh.consume(_dummyMethodWithReturnValueWithHintDontInline());
+    }
+
+    @Benchmark
+    public double testInvocationDummyMethodWithReturnValueWithHintInline() {
+        return _dummyMethodWithReturnValueWithHintInline();
+    }
+
+    @Benchmark
+    public double testInvocationDummyMethodWithReturnValueWithHintDontInline() {
+        return _dummyMethodWithReturnValueWithHintDontInline();
+    }
+
+    @CompilerControl(CompilerControl.Mode.INLINE)
+    private void _dummyMethodWithHintInline() {
+    }
+
+    @CompilerControl(CompilerControl.Mode.DONT_INLINE)
+    private void _dummyMethodWithHintDontInline() {
+    }
+
+    @CompilerControl(CompilerControl.Mode.INLINE)
+    private double _dummyMethodWithReturnValueWithHintInline() {
+        return 0.0;
+    }
+
+    @CompilerControl(CompilerControl.Mode.DONT_INLINE)
+    private double _dummyMethodWithReturnValueWithHintDontInline() {
+        return 0.0;
     }
 }

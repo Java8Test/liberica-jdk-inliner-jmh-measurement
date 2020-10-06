@@ -47,14 +47,21 @@ import java.util.concurrent.TimeUnit;
 @Warmup(iterations = 2, time = 1, timeUnit = TimeUnit.SECONDS)
 @Measurement(iterations = 2, time = 1, timeUnit = TimeUnit.SECONDS)
 @Fork(1)
-public class JMHBenchmark_04_SumCalcWithCompileHint {
+public class JMHBenchmark_07_SumCalcWithCompileHint {
 
     static final long ITERATIONS = 100;
 
     @Benchmark
-    public long baseline() {
+    public void baseline() {
         // do nothing, this is a baseline
-        return 0;
+    }
+
+    @Benchmark
+    public long noInvocationSumCalc() {
+	long sumValue = 0;
+	for (long i = 0; i < ITERATIONS; ++i)
+            sumValue += (i/3) + (i/2);
+        return sumValue;
     }
 
     @Benchmark
@@ -66,7 +73,7 @@ public class JMHBenchmark_04_SumCalcWithCompileHint {
     }
 
     @Benchmark
-    public long SumCalcWithNotInlineBh() {
+    public long SumCalcWithDontInline() {
 	long sumValue = 0;
 	for (long i = 0; i < ITERATIONS; ++i)
             sumValue += _hintNotInlineMethod(i);

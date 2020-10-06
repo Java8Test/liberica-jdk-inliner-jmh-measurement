@@ -33,22 +33,29 @@ package org.sample;
 
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.BenchmarkMode;
-import org.openjdk.jmh.annotations.CompilerControl;
 import org.openjdk.jmh.annotations.Fork;
 import org.openjdk.jmh.annotations.Mode;
 import org.openjdk.jmh.annotations.Measurement;
 import org.openjdk.jmh.annotations.OutputTimeUnit;
+import org.openjdk.jmh.annotations.Scope;
+import org.openjdk.jmh.annotations.State;
 import org.openjdk.jmh.annotations.Timeout;
 import org.openjdk.jmh.annotations.Warmup;
-import org.openjdk.jmh.infra.Blackhole;
-
+import org.openjdk.jmh.runner.options.Options;
+import org.openjdk.jmh.runner.options.OptionsBuilder;
+import org.openjdk.jmh.runner.Runner;
+import org.openjdk.jmh.runner.RunnerException;
 import java.util.concurrent.TimeUnit;
 
 @Timeout(time = 1, timeUnit = TimeUnit.SECONDS)
 @Warmup(iterations = 2, time = 1, timeUnit = TimeUnit.SECONDS)
 @Measurement(iterations = 2, time = 1, timeUnit = TimeUnit.SECONDS)
 @Fork(1)
-public class JMHBenchmark_03_DummyInvokeWithCompileHintBh {
+@State(Scope.Thread)
+public class JMHBenchmark_04_DummyInvokeWithValue {
+
+    private double x1 = Math.PI;
+    volatile double x2 = Math.PI;
 
     @Benchmark
     public void baseline() {
@@ -56,22 +63,38 @@ public class JMHBenchmark_03_DummyInvokeWithCompileHintBh {
     }
 
     @Benchmark
-    public void testInvocationWithInline(Blackhole bh) {
-        bh.consume(_hintInlineMethod());
+    public void testInvocationDummyMethod() {
+        _dummyMethod();
     }
 
     @Benchmark
-    public void testInvocationWithNotInline(Blackhole bh) {
-        bh.consume(_hintNotInlineMethod());
+    public double noInvocationReturnValue() {
+        return x1;
     }
 
-    @CompilerControl(CompilerControl.Mode.INLINE)
-    private long _hintInlineMethod() {
-        return 0;
+    @Benchmark
+    public double noInvocationReturnVolatileValue() {
+        return x2;
     }
 
-    @CompilerControl(CompilerControl.Mode.DONT_INLINE)
-    private long _hintNotInlineMethod() {
-        return 0;
+    @Benchmark
+    public double testInvocationDummyMethodWithReturnValue() {
+        return _dummyMethodWithReturnValue();
+    }
+
+    @Benchmark
+    public double testInvocationDummyMethodWithReturnVolatileValue() {
+        return _dummyMethodWithReturnVolatileValue();
+    }
+
+    private void _dummyMethod() {
+    }
+
+    private double _dummyMethodWithReturnValue() {
+        return x1;
+    }
+
+    private double _dummyMethodWithReturnVolatileValue() {
+        return x2;
     }
 }

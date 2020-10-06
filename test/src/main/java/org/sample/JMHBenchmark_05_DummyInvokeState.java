@@ -37,22 +37,32 @@ import org.openjdk.jmh.annotations.Fork;
 import org.openjdk.jmh.annotations.Mode;
 import org.openjdk.jmh.annotations.Measurement;
 import org.openjdk.jmh.annotations.OutputTimeUnit;
+import org.openjdk.jmh.annotations.Scope;
+import org.openjdk.jmh.annotations.State;
 import org.openjdk.jmh.annotations.Timeout;
 import org.openjdk.jmh.annotations.Warmup;
 import org.openjdk.jmh.runner.options.Options;
 import org.openjdk.jmh.runner.options.OptionsBuilder;
 import org.openjdk.jmh.runner.Runner;
 import org.openjdk.jmh.runner.RunnerException;
-
-import org.openjdk.jmh.infra.Blackhole;
-
 import java.util.concurrent.TimeUnit;
 
 @Timeout(time = 1, timeUnit = TimeUnit.SECONDS)
 @Warmup(iterations = 2, time = 1, timeUnit = TimeUnit.SECONDS)
 @Measurement(iterations = 2, time = 1, timeUnit = TimeUnit.SECONDS)
 @Fork(1)
-public class JMHBenchmark_01_DummyInvoke {
+public class JMHBenchmark_05_DummyInvokeState {
+
+    @State(Scope.Benchmark)
+    public static class BenchmarkState {
+        volatile double x = Math.PI;
+    }
+
+    @State(Scope.Thread)
+    public static class ThreadState {
+        volatile double x = Math.PI;
+    }
+
 
     @Benchmark
     public void baseline() {
@@ -60,10 +70,39 @@ public class JMHBenchmark_01_DummyInvoke {
     }
 
     @Benchmark
-    public void testInvocationDummyMethod() {
+    public void testInvocation() {
         _dummyMethod();
+    }
+
+    @Benchmark
+    public double noInvocationReturnValueBS(BenchmarkState state) {
+        return state.x;
+    }
+
+    @Benchmark
+    public double testInvocationReturnValueBS(BenchmarkState state) {
+        return _dummyMethodReturnValueBS(state);
+    }
+
+    @Benchmark
+    public double noInvocationlineReturnValueTS(ThreadState state) {
+        return state.x;
+    }
+
+    @Benchmark
+    public double testInvocationReturnValueTS(ThreadState state) {
+        return _dummyMethodReturnValueTS(state);
     }
 
     private void _dummyMethod() {
     }
+
+    private double _dummyMethodReturnValueBS(BenchmarkState state) {
+        return state.x;
+    }
+
+    private double _dummyMethodReturnValueTS(ThreadState state) {
+        return state.x;
+    }
+
 }

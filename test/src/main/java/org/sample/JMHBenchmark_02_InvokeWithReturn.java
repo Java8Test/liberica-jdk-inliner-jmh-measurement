@@ -52,7 +52,7 @@ import java.util.concurrent.TimeUnit;
 @Warmup(iterations = 2, time = 1, timeUnit = TimeUnit.SECONDS)
 @Measurement(iterations = 2, time = 1, timeUnit = TimeUnit.SECONDS)
 @Fork(1)
-public class JMHBenchmark_01_DummyInvoke {
+public class JMHBenchmark_02_InvokeWithReturn {
 
     @Benchmark
     public void baseline() {
@@ -60,10 +60,22 @@ public class JMHBenchmark_01_DummyInvoke {
     }
 
     @Benchmark
-    public void testInvocationDummyMethod() {
-        _dummyMethod();
+    public double noInvocation() {
+        return 0.0;
     }
 
-    private void _dummyMethod() {
+    @Benchmark
+    public void testInvocationDummyMethodWithBh(Blackhole bh) {
+        bh.consume(_dummyMethodWithReturnValue());
     }
+
+    @Benchmark
+    public double testInvocationDummyMethodWithReturnValue() {
+        return _dummyMethodWithReturnValue();
+    }
+
+    private double _dummyMethodWithReturnValue() {
+        return 0.0;
+    }
+
 }
