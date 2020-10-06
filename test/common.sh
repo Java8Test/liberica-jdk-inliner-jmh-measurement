@@ -1,6 +1,6 @@
 #!/bin/bash
 msg_mine="[MSG]"
-graal_options="XX:+UnlockExperimentalVMOptions -XX:+UseJVMCICompiler -XX:-EnableJVMCI"
+graal_options="XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler"
 
 source config
 mvn clean install
