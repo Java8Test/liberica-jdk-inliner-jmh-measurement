@@ -1,30 +1,30 @@
-Benchmark                                                                               Mode  Cnt          Score          Error  Units
-JMHBenchmark_01_DummyInvoke.baseline                                                   thrpt    5  406920836.259 ±  4671164.531  ops/s
-JMHBenchmark_01_DummyInvoke.testInvocationDummyMethod                                  thrpt    5  218028388.629 ±  9802697.792  ops/s
-JMHBenchmark_02_InvokeWithReturn.baseline                                              thrpt    5  409404931.894 ± 21799393.663  ops/s
-JMHBenchmark_02_InvokeWithReturn.noInvocation                                          thrpt    5  112766624.398 ±  2746560.691  ops/s
-JMHBenchmark_02_InvokeWithReturn.testInvocationDummyMethodWithBh                       thrpt    5   99924824.181 ±  3524284.932  ops/s
-JMHBenchmark_02_InvokeWithReturn.testInvocationDummyMethodWithReturnValue              thrpt    5   98178053.061 ±  4251827.883  ops/s
-JMHBenchmark_04_DummyInvokeWithValue.baseline                                          thrpt    5  407333090.337 ± 13547595.277  ops/s
-JMHBenchmark_04_DummyInvokeWithValue.noInvocationReturnValue                           thrpt    5  218731540.071 ±  5566049.668  ops/s
-JMHBenchmark_04_DummyInvokeWithValue.noInvocationReturnVolatileValue                   thrpt    5  218182302.693 ±  6909937.887  ops/s
-JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethod                         thrpt    5  219417821.215 ± 12510064.345  ops/s
-JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethodWithReturnValue          thrpt    5  148875699.820 ±  5254502.056  ops/s
-JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethodWithReturnVolatileValue  thrpt    5  148162101.877 ±  7659644.614  ops/s
-JMHBenchmark_05_DummyInvokeState.baseline                                              thrpt    5  405976298.464 ± 12490659.763  ops/s
-JMHBenchmark_05_DummyInvokeState.noInvocationReturnValueBS                             thrpt    5  113065557.118 ±  3609305.395  ops/s
-JMHBenchmark_05_DummyInvokeState.noInvocationlineReturnValueTS                         thrpt    5  113574436.932 ±  4509344.574  ops/s
-JMHBenchmark_05_DummyInvokeState.testInvocation                                        thrpt    5  217827223.409 ±  9935773.579  ops/s
-JMHBenchmark_05_DummyInvokeState.testInvocationReturnValueBS                           thrpt    5   98044578.208 ±  3274196.765  ops/s
-JMHBenchmark_05_DummyInvokeState.testInvocationReturnValueTS                           thrpt    5   97385778.271 ±  5364895.777  ops/s
-JMHBenchmark_06_SumCalcInvoke.SumCalcInvoke                                            thrpt    5    3086588.904 ±    66743.753  ops/s
-JMHBenchmark_06_SumCalcInvoke.baseline                                                 thrpt    5  407337740.164 ± 11417736.729  ops/s
-JMHBenchmark_06_SumCalcInvoke.noInvocationSumCalc                                      thrpt    5    6833845.938 ±   380560.103  ops/s
-JMHBenchmark_08_NumberOfSumCalc.baseline                                               thrpt    5  406642809.515 ± 12262504.071  ops/s
-JMHBenchmark_08_NumberOfSumCalc.longSumCalcInvoke                                      thrpt    5    1675991.639 ±   107971.099  ops/s
-JMHBenchmark_08_NumberOfSumCalc.noInvocationNumberSumCalc                              thrpt    5    2312535.331 ±    84067.846  ops/s
-JMHBenchmark_08_NumberOfSumCalc.numberSumCalcInvoke                                    thrpt    5     786250.731 ±    43899.759  ops/s
-JMHBenchmark_08_NumberOfSumCalc.numberSumCalcInvokeNested                              thrpt    5     833363.753 ±    33079.573  ops/s
-JMHBenchmark_10_longSumCalc.baseline                                                   thrpt    5  407343045.232 ± 22758799.822  ops/s
-JMHBenchmark_10_longSumCalc.longSumCalc                                                thrpt    5     115040.284 ±     6356.180  ops/s
-JMHBenchmark_10_longSumCalc.noInvocationlongSumCalc                                    thrpt    5     107953.301 ±     4124.470  ops/s
+Benchmark                                                                               Mode  Cnt          Score   Error  Units
+JMHBenchmark_01_DummyInvoke.baseline                                                   thrpt       409997083,961          ops/s
+JMHBenchmark_01_DummyInvoke.testInvocationDummyMethod                                  thrpt       163998905,940          ops/s
+JMHBenchmark_02_InvokeWithReturn.baseline                                              thrpt       408078998,877          ops/s
+JMHBenchmark_02_InvokeWithReturn.noInvocation                                          thrpt       187903636,654          ops/s
+JMHBenchmark_02_InvokeWithReturn.testInvocationDummyMethodWithBh                       thrpt       142334796,517          ops/s
+JMHBenchmark_02_InvokeWithReturn.testInvocationDummyMethodWithReturnValue              thrpt       139839890,681          ops/s
+JMHBenchmark_04_DummyInvokeWithValue.baseline                                          thrpt       443199624,604          ops/s
+JMHBenchmark_04_DummyInvokeWithValue.noInvocationReturnValue                           thrpt       298540735,746          ops/s
+JMHBenchmark_04_DummyInvokeWithValue.noInvocationReturnVolatileValue                   thrpt       310269637,659          ops/s
+JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethod                         thrpt       265060722,544          ops/s
+JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethodWithReturnValue          thrpt       169545220,612          ops/s
+JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethodWithReturnVolatileValue  thrpt       196121889,689          ops/s
+JMHBenchmark_05_DummyInvokeState.baseline                                              thrpt       401457877,359          ops/s
+JMHBenchmark_05_DummyInvokeState.noInvocationReturnValueBS                             thrpt       179432345,997          ops/s
+JMHBenchmark_05_DummyInvokeState.noInvocationlineReturnValueTS                         thrpt       173534897,331          ops/s
+JMHBenchmark_05_DummyInvokeState.testInvocation                                        thrpt       279632962,449          ops/s
+JMHBenchmark_05_DummyInvokeState.testInvocationReturnValueBS                           thrpt       140237676,638          ops/s
+JMHBenchmark_05_DummyInvokeState.testInvocationReturnValueTS                           thrpt       142767169,546          ops/s
+JMHBenchmark_06_SumCalcInvoke.SumCalcInvoke                                            thrpt         2851197,169          ops/s
+JMHBenchmark_06_SumCalcInvoke.baseline                                                 thrpt       349026408,706          ops/s
+JMHBenchmark_06_SumCalcInvoke.noInvocationSumCalc                                      thrpt         5596128,351          ops/s
+JMHBenchmark_08_NumberOfSumCalc.baseline                                               thrpt       362266497,680          ops/s
+JMHBenchmark_08_NumberOfSumCalc.longSumCalcInvoke                                      thrpt          587698,773          ops/s
+JMHBenchmark_08_NumberOfSumCalc.noInvocationNumberSumCalc                              thrpt          657452,515          ops/s
+JMHBenchmark_08_NumberOfSumCalc.numberSumCalcInvoke                                    thrpt          443740,222          ops/s
+JMHBenchmark_08_NumberOfSumCalc.numberSumCalcInvokeNested                              thrpt          442806,557          ops/s
+JMHBenchmark_10_longSumCalc.baseline                                                   thrpt       400339516,456          ops/s
+JMHBenchmark_10_longSumCalc.longSumCalc                                                thrpt          102468,348          ops/s
+JMHBenchmark_10_longSumCalc.noInvocationlongSumCalc                                    thrpt           82010,324          ops/s
