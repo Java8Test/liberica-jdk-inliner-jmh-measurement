@@ -49,21 +49,27 @@ mvn clean install
 mkdir -p $results_dir
 mkdir -p $logs_dir
 
+os_name="x"
 profs_set=${general_profs}
 liberica_jdk="${JAVA_HOME}/bin/"
 case "$OSTYPE" in
   darwin*)  echo "${msg_mine} os:osx" 
+            os_name="osx"
             profs_set="${general_profs} ${osx_profs}" ;;
   linux*)   echo "${msg_mine} os:linux"
+            os_name="linux"
             profs_set="${general_profs} ${linux_profs}" ;;
   msys*)    echo "${msg_mine} os:win" 
+            os_name="win"
             profs_set="${general_profs} ${win_profs}" 
             liberica_jdk="${JAVA_HOME}\\bin\\" ;;
   cygwin*)  echo "${msg_mine} os:cygwin" 
+            os_name="win"
             profs_set="${general_profs} ${win_profs}"
 #            liberica_jdk="$(cygpath -u ${liberica_jdk})" ;;
            liberica_jdk="" ;;
-  *)        echo "${msg_mine} os:unknown: $OSTYPE" ;;
+  *)        echo "${msg_mine} os:unknown: $OSTYPE" 
+            os_name="u" ;;
 esac
 
 echo ${msg_mine} jdk:${liberica_jdk}

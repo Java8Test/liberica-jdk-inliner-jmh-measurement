@@ -24,7 +24,7 @@ do
     for mode in "${mode_strarr[@]}";
     do
         echo ${msg_mine} mode: -XX:${mode}
-        out_name="${jit}${mode}${profile_name}.txt"
+        out_name="${os_name}-${jit}${mode}${profile_name}.txt"
         benchmark=$notinline_benchmarks 
         if [ $mode == '+Inline' ]; then
             benchmark=${inline_benchmarks}
