@@ -26,15 +26,10 @@ do
             jit_selection=$graal_options
         fi      
 	if [ $jit == 'aot' ]; then
-            jit_selection="-XX:AOTLibrary=./${benchmark}"
-            IFS=' '
-            read -ra bm_strarr <<< "$benchmark"
-            for bm in "${bm_strarr[@]}";
-            do
-                jaotc --output ${bm}.so ${bm}.class
-            done
+	sudo ${liberica_jdk}/jaotc --compile-for-tiered --ignore-errors --info --output target/benchmarks.so --jar target/benchmarks.jar
+            jit_selection="XX:+UnlockExperimentalVMOptions -XX:AOTLibrary=target/benchmarks.so"
         fi            
-        java -XX:${mode} -${jit_selection} ${jit_options} -jar target/benchmarks.jar $benchmark_options -rf text -rff $results_dir/$out_name -o $logs_dir/$out_name ${benchmark}
+        ${liberica_jdk}/java -XX:${mode} -${jit_selection} ${jit_options} -jar target/benchmarks.jar $benchmark_options -rf text -rff $results_dir/$out_name -o $logs_dir/$out_name ${benchmark}
         echo ${msg_mine} results: ${results_dir}/${out_name}
     done
 done

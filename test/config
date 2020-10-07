@@ -11,4 +11,5 @@ logs_dir="logs"
 jit_options="-XX:+PrintCompilation -XX:+UnlockDiagnosticVMOptions  -XX:+PrintInlining"
 jit_options=""
 
-benchmark_options="-gc true"
+benchmark_options="-f 1 -wi 5 -i 5 -r 4 -w 2 -gc true"
+liberica_jdk="${JAVA_HOME}/bin"
