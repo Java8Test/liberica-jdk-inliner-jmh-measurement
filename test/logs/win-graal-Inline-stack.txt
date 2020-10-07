@@ -1,0 +1,1425 @@
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: C:\Program Files\BellSoft\LibericaJDK-11\bin\java.exe
+# VM options: -XX:-Inline -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_01_DummyInvoke.baseline
+
+# Run progress: 0,00% complete, ETA 00:00:58
+# Fork: 1 of 1
+# Warmup Iteration   1: 360294835,410 ops/s
+Iteration   1: 424663782,335 ops/s
+                 新tack: <delayed till summary>
+
+
+
+Result "org.sample.JMHBenchmark_01_DummyInvoke.baseline":
+  424663782,335 ops/s
+
+Secondary result "org.sample.JMHBenchmark_01_DummyInvoke.baseline:新tack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 50,0%         RUNNABLE
+ 50,0%         TIMED_WAITING
+
+....[Thread state: RUNNABLE]........................................................................
+ 25,0%  50,0% org.sample.jmh_generated.JMHBenchmark_01_DummyInvoke_baseline_jmhTest.baseline_thrpt_jmhStub
+ 23,6%  47,3% <stack is empty, everything is filtered?>
+  0,3%   0,5% org.graalvm.compiler.nodes.util.GraphUtil.markUsages
+  0,3%   0,5% java.lang.Object.getClass
+  0,3%   0,5% java.lang.StringLatin1.replace
+  0,3%   0,5% org.graalvm.compiler.core.amd64.AMD64MoveFactory.createMove
+  0,3%   0,5% org.graalvm.compiler.lir.phases.LIRSuites.<init>
+
+....[Thread state: TIMED_WAITING]...................................................................
+ 25,0%  50,0% java.lang.Object.wait
+ 25,0%  50,0% java.lang.Thread.sleep
+
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: C:\Program Files\BellSoft\LibericaJDK-11\bin\java.exe
+# VM options: -XX:-Inline -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_01_DummyInvoke.testInvocationDummyMethod
+
+# Run progress: 3,45% complete, ETA 00:02:45
+# Fork: 1 of 1
+# Warmup Iteration   1: 129395037,447 ops/s
+Iteration   1: 239066912,457 ops/s
+                 新tack: <delayed till summary>
+
+
+
+Result "org.sample.JMHBenchmark_01_DummyInvoke.testInvocationDummyMethod":
+  239066912,457 ops/s
+
+Secondary result "org.sample.JMHBenchmark_01_DummyInvoke.testInvocationDummyMethod:新tack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 52,0%         RUNNABLE
+ 48,0%         TIMED_WAITING
+
+....[Thread state: RUNNABLE]........................................................................
+ 25,8%  49,5% <stack is empty, everything is filtered?>
+ 18,6%  35,8% org.sample.jmh_generated.JMHBenchmark_01_DummyInvoke_testInvocationDummyMethod_jmhTest.testInvocationDummyMethod_thrpt_jmhStub
+  5,4%  10,3% org.sample.JMHBenchmark_01_DummyInvoke.testInvocationDummyMethod
+  0,5%   1,0% java.lang.Object.getClass
+  0,3%   0,5% jdk.internal.vm.compiler.collections.EconomicMapImpl.get
+  0,3%   0,5% org.graalvm.compiler.graph.NodeClass$3.iterator
+  0,3%   0,5% java.util.ArrayDeque.peekFirst
+  0,3%   0,5% org.graalvm.compiler.lir.framemap.FrameMap.returnAddressSize
+  0,3%   0,5% java.lang.ClassValue.get
+  0,3%   0,5% java.util.RegularEnumSet.contains
+  0,3%   0,5% <other>
+
+....[Thread state: TIMED_WAITING]...................................................................
+ 24,0%  50,0% java.lang.Object.wait
+ 24,0%  50,0% java.lang.Thread.sleep
+
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: C:\Program Files\BellSoft\LibericaJDK-11\bin\java.exe
+# VM options: -XX:-Inline -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_02_InvokeWithReturn.baseline
+
+# Run progress: 6,90% complete, ETA 00:02:17
+# Fork: 1 of 1
+# Warmup Iteration   1: 266236310,167 ops/s
+Iteration   1: 434284689,433 ops/s
+                 新tack: <delayed till summary>
+
+
+
+Result "org.sample.JMHBenchmark_02_InvokeWithReturn.baseline":
+  434284689,433 ops/s
+
+Secondary result "org.sample.JMHBenchmark_02_InvokeWithReturn.baseline:新tack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 50,1%         RUNNABLE
+ 49,9%         TIMED_WAITING
+
+....[Thread state: RUNNABLE]........................................................................
+ 24,9%  49,7% org.sample.jmh_generated.JMHBenchmark_02_InvokeWithReturn_baseline_jmhTest.baseline_thrpt_jmhStub
+ 24,4%  48,7% <stack is empty, everything is filtered?>
+  0,3%   0,5% org.graalvm.compiler.phases.BasePhase.apply
+  0,3%   0,5% org.graalvm.compiler.core.common.type.StampFactory.forVoid
+  0,3%   0,5% org.graalvm.compiler.core.common.util.CompilationAlarm.trackCompilationPeriod
+
+....[Thread state: TIMED_WAITING]...................................................................
+ 24,9%  50,0% java.lang.Object.wait
+ 24,9%  50,0% java.lang.Thread.sleep
+
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: C:\Program Files\BellSoft\LibericaJDK-11\bin\java.exe
+# VM options: -XX:-Inline -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_02_InvokeWithReturn.noInvocation
+
+# Run progress: 10,34% complete, ETA 00:02:05
+# Fork: 1 of 1
+# Warmup Iteration   1: 82242658,402 ops/s
+Iteration   1: 183231160,764 ops/s
+                 新tack: <delayed till summary>
+
+
+
+Result "org.sample.JMHBenchmark_02_InvokeWithReturn.noInvocation":
+  183231160,764 ops/s
+
+Secondary result "org.sample.JMHBenchmark_02_InvokeWithReturn.noInvocation:新tack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 53,1%         RUNNABLE
+ 46,9%         TIMED_WAITING
+
+....[Thread state: RUNNABLE]........................................................................
+ 26,9%  50,7% <stack is empty, everything is filtered?>
+ 23,4%  44,1% org.sample.jmh_generated.JMHBenchmark_02_InvokeWithReturn_noInvocation_jmhTest.noInvocation_thrpt_jmhStub
+  0,2%   0,5% jdk.vm.ci.hotspot.HotSpotResolvedJavaMethodImpl.getSpeculationLog
+  0,2%   0,5% java.util.WeakHashMap.get
+  0,2%   0,5% org.graalvm.compiler.nodes.calc.LeftShiftNode.canonical
+  0,2%   0,5% org.graalvm.compiler.replacements.MethodHandlePlugin.handleInvoke
+  0,2%   0,5% org.graalvm.compiler.lir.alloc.lsra.LinearScanLifetimeAnalysisPhase.lambda$computeLocalLiveSets$1
+  0,2%   0,5% org.graalvm.compiler.lir.LIRInstructionClass.visitEachState
+  0,2%   0,5% org.graalvm.compiler.graph.NodeIdAccessor.getNodeId
+  0,2%   0,5% java.lang.String.charAt
+  0,7%   1,4% <other>
+
+....[Thread state: TIMED_WAITING]...................................................................
+ 23,4%  50,0% java.lang.Object.wait
+ 23,4%  50,0% java.lang.Thread.sleep
+
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: C:\Program Files\BellSoft\LibericaJDK-11\bin\java.exe
+# VM options: -XX:-Inline -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_02_InvokeWithReturn.testInvocationDummyMethodWithBh
+
+# Run progress: 13,79% complete, ETA 00:01:56
+# Fork: 1 of 1
+# Warmup Iteration   1: 91124874,868 ops/s
+Iteration   1: 126539556,187 ops/s
+                 新tack: <delayed till summary>
+
+
+
+Result "org.sample.JMHBenchmark_02_InvokeWithReturn.testInvocationDummyMethodWithBh":
+  126539556,187 ops/s
+
+Secondary result "org.sample.JMHBenchmark_02_InvokeWithReturn.testInvocationDummyMethodWithBh:新tack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 54,9%         RUNNABLE
+ 45,1%         TIMED_WAITING
+
+....[Thread state: RUNNABLE]........................................................................
+ 27,9%  50,9% <stack is empty, everything is filtered?>
+ 15,7%  28,6% org.sample.JMHBenchmark_02_InvokeWithReturn.testInvocationDummyMethodWithBh
+  6,9%  12,5% org.sample.jmh_generated.JMHBenchmark_02_InvokeWithReturn_testInvocationDummyMethodWithBh_jmhTest.testInvocationDummyMethodWithBh_thrpt_jmhStub
+  0,2%   0,4% org.graalvm.compiler.core.gen.NodeLIRBuilder.emitNode
+  0,2%   0,4% java.util.ArrayList.add
+  0,2%   0,4% org.graalvm.compiler.nodes.DynamicDeoptimizeNode.canonical
+  0,2%   0,4% java.lang.Class.isArray
+  0,2%   0,4% org.graalvm.compiler.phases.common.inlining.InliningUtil.updateSourcePosition
+  0,2%   0,4% org.graalvm.compiler.java.LocalLiveness.<init>
+  0,2%   0,4% org.graalvm.compiler.graph.NodeUsageIterator.<init>
+  2,7%   4,9% <other>
+
+....[Thread state: TIMED_WAITING]...................................................................
+ 22,5%  50,0% java.lang.Object.wait
+ 22,5%  50,0% java.lang.Thread.sleep
+
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: C:\Program Files\BellSoft\LibericaJDK-11\bin\java.exe
+# VM options: -XX:-Inline -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_02_InvokeWithReturn.testInvocationDummyMethodWithReturnValue
+
+# Run progress: 17,24% complete, ETA 00:01:49
+# Fork: 1 of 1
+# Warmup Iteration   1: 93933474,414 ops/s
+Iteration   1: 138457913,642 ops/s
+                 新tack: <delayed till summary>
+
+
+
+Result "org.sample.JMHBenchmark_02_InvokeWithReturn.testInvocationDummyMethodWithReturnValue":
+  138457913,642 ops/s
+
+Secondary result "org.sample.JMHBenchmark_02_InvokeWithReturn.testInvocationDummyMethodWithReturnValue:新tack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 55,0%         RUNNABLE
+ 45,0%         TIMED_WAITING
+
+....[Thread state: RUNNABLE]........................................................................
+ 28,7%  52,1% <stack is empty, everything is filtered?>
+ 16,3%  29,6% org.sample.jmh_generated.JMHBenchmark_02_InvokeWithReturn_testInvocationDummyMethodWithReturnValue_jmhTest.testInvocationDummyMethodWithReturnValue_thrpt_jmhStub
+  6,2%  11,3% org.sample.JMHBenchmark_02_InvokeWithReturn.testInvocationDummyMethodWithReturnValue
+  0,7%   1,3% jdk.internal.vm.compiler.collections.EconomicMapImpl.get
+  0,2%   0,4% org.graalvm.compiler.asm.AbstractAddress.<init>
+  0,2%   0,4% java.util.ArrayDeque.pollFirst
+  0,2%   0,4% jdk.vm.ci.hotspot.HotSpotVMConfig.config
+  0,2%   0,4% org.graalvm.compiler.hotspot.nodes.type.KlassPointerStamp.compressed
+  0,2%   0,4% org.graalvm.compiler.graph.Edges.getNodeUnsafe
+  0,2%   0,4% java.util.WeakHashMap.newTable
+  1,8%   3,3% <other>
+
+....[Thread state: TIMED_WAITING]...................................................................
+ 22,5%  50,0% java.lang.Object.wait
+ 22,5%  50,0% java.lang.Thread.sleep
+
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: C:\Program Files\BellSoft\LibericaJDK-11\bin\java.exe
+# VM options: -XX:-Inline -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_04_DummyInvokeWithValue.baseline
+
+# Run progress: 20,69% complete, ETA 00:01:42
+# Fork: 1 of 1
+# Warmup Iteration   1: 291072420,244 ops/s
+Iteration   1: 444430579,835 ops/s
+                 新tack: <delayed till summary>
+
+
+
+Result "org.sample.JMHBenchmark_04_DummyInvokeWithValue.baseline":
+  444430579,835 ops/s
+
+Secondary result "org.sample.JMHBenchmark_04_DummyInvokeWithValue.baseline:新tack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 52,0%         RUNNABLE
+ 48,0%         TIMED_WAITING
+
+....[Thread state: RUNNABLE]........................................................................
+ 26,6%  51,3% <stack is empty, everything is filtered?>
+ 24,0%  46,2% org.sample.jmh_generated.JMHBenchmark_04_DummyInvokeWithValue_baseline_jmhTest.baseline_thrpt_jmhStub
+  0,3%   0,5% java.util.AbstractList.<init>
+  0,3%   0,5% java.lang.ClassValue$ClassValueMap.probeHomeLocation
+  0,3%   0,5% jdk.internal.vm.compiler.collections.EconomicMapImpl.get
+  0,3%   0,5% org.graalvm.compiler.java.FrameStateBuilder.initializeForMethodStart
+  0,3%   0,5% java.lang.ClassValue$ClassValueMap.startEntry
+
+....[Thread state: TIMED_WAITING]...................................................................
+ 24,0%  50,0% java.lang.Object.wait
+ 24,0%  50,0% java.lang.Thread.sleep
+
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: C:\Program Files\BellSoft\LibericaJDK-11\bin\java.exe
+# VM options: -XX:-Inline -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_04_DummyInvokeWithValue.noInvocationReturnValue
+
+# Run progress: 24,14% complete, ETA 00:01:36
+# Fork: 1 of 1
+# Warmup Iteration   1: 96273287,556 ops/s
+Iteration   1: 175568697,789 ops/s
+                 新tack: <delayed till summary>
+
+
+
+Result "org.sample.JMHBenchmark_04_DummyInvokeWithValue.noInvocationReturnValue":
+  175568697,789 ops/s
+
+Secondary result "org.sample.JMHBenchmark_04_DummyInvokeWithValue.noInvocationReturnValue:新tack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 52,8%         RUNNABLE
+ 47,0%         TIMED_WAITING
+  0,3%         WAITING
+
+....[Thread state: RUNNABLE]........................................................................
+ 25,0%  47,4% <stack is empty, everything is filtered?>
+ 23,3%  44,1% org.sample.jmh_generated.JMHBenchmark_04_DummyInvokeWithValue_noInvocationReturnValue_jmhTest.noInvocationReturnValue_thrpt_jmhStub
+  0,3%   0,5% org.graalvm.compiler.graph.Graph$NodeEventListener.event
+  0,3%   0,5% org.graalvm.compiler.lir.EdgeMoveOptimizer.run
+  0,3%   0,5% org.graalvm.compiler.core.common.type.IntegerStamp.isStrictlyNegative
+  0,3%   0,5% java.lang.Boolean.equals
+  0,3%   0,5% org.graalvm.compiler.phases.BasePhase.apply
+  0,3%   0,5% java.lang.Class.copyMethods
+  0,3%   0,5% org.graalvm.compiler.java.BytecodeParser.buildRootMethod
+  0,3%   0,5% java.util.WeakHashMap.put
+  2,5%   4,7% <other>
+
+....[Thread state: TIMED_WAITING]...................................................................
+ 23,5%  50,0% java.lang.Object.wait
+ 23,5%  50,0% java.lang.Thread.sleep
+
+....[Thread state: WAITING].........................................................................
+  0,3% 100,0% jdk.internal.misc.Unsafe.park
+
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: C:\Program Files\BellSoft\LibericaJDK-11\bin\java.exe
+# VM options: -XX:-Inline -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_04_DummyInvokeWithValue.noInvocationReturnVolatileValue
+
+# Run progress: 27,59% complete, ETA 00:01:31
+# Fork: 1 of 1
+# Warmup Iteration   1: 93081129,652 ops/s
+Iteration   1: 188616750,755 ops/s
+                 新tack: <delayed till summary>
+
+
+
+Result "org.sample.JMHBenchmark_04_DummyInvokeWithValue.noInvocationReturnVolatileValue":
+  188616750,755 ops/s
+
+Secondary result "org.sample.JMHBenchmark_04_DummyInvokeWithValue.noInvocationReturnVolatileValue:新tack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 52,3%         RUNNABLE
+ 47,7%         TIMED_WAITING
+
+....[Thread state: RUNNABLE]........................................................................
+ 26,7%  51,0% <stack is empty, everything is filtered?>
+ 24,0%  45,8% org.sample.jmh_generated.JMHBenchmark_04_DummyInvokeWithValue_noInvocationReturnVolatileValue_jmhTest.noInvocationReturnVolatileValue_thrpt_jmhStub
+  0,3%   0,5% org.graalvm.compiler.core.common.cfg.AbstractControlFlowGraph.commonDominatorTyped
+  0,3%   0,5% java.lang.Object.wait
+  0,3%   0,5% java.util.AbstractList$SubList.listIterator
+  0,3%   0,5% java.lang.ClassValue$ClassValueMap.finishEntry
+  0,3%   0,5% jdk.internal.vm.compiler.collections.EconomicMapImpl.setValue
+  0,3%   0,5% org.graalvm.compiler.lir.alloc.lsra.IntervalWalker.walkTo
+
+....[Thread state: TIMED_WAITING]...................................................................
+ 24,0%  50,3% java.lang.Thread.sleep
+ 23,7%  49,7% java.lang.Object.wait
+
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: C:\Program Files\BellSoft\LibericaJDK-11\bin\java.exe
+# VM options: -XX:-Inline -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethod
+
+# Run progress: 31,03% complete, ETA 00:01:26
+# Fork: 1 of 1
+# Warmup Iteration   1: 127795779,374 ops/s
+Iteration   1: 256624764,841 ops/s
+                 新tack: <delayed till summary>
+
+
+
+Result "org.sample.JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethod":
+  256624764,841 ops/s
+
+Secondary result "org.sample.JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethod:新tack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 50,0%         RUNNABLE
+ 50,0%         TIMED_WAITING
+
+....[Thread state: RUNNABLE]........................................................................
+ 23,2%  46,4% <stack is empty, everything is filtered?>
+ 14,1%  28,1% org.sample.jmh_generated.JMHBenchmark_04_DummyInvokeWithValue_testInvocationDummyMethod_jmhTest.testInvocationDummyMethod_thrpt_jmhStub
+ 10,9%  21,9% org.sample.JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethod
+  0,3%   0,5% jdk.vm.ci.hotspot.CompilerToVM.installCode
+  0,3%   0,5% java.lang.ClassValue$ClassValueMap.removeStaleEntries
+  0,3%   0,5% jdk.internal.vm.compiler.collections.EconomicMapImpl.get
+  0,3%   0,5% org.graalvm.compiler.replacements.SnippetTemplate.inlineSnippet
+  0,3%   0,5% org.graalvm.compiler.lir.phases.LIRPhase.<init>
+  0,3%   0,5% org.graalvm.compiler.nodes.calc.PointerEqualsNode.findSynonym
+  0,3%   0,5% org.graalvm.compiler.nodes.ConstantNode.forConstant
+
+....[Thread state: TIMED_WAITING]...................................................................
+ 25,0%  50,0% java.lang.Object.wait
+ 25,0%  50,0% java.lang.Thread.sleep
+
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: C:\Program Files\BellSoft\LibericaJDK-11\bin\java.exe
+# VM options: -XX:-Inline -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethodWithReturnValue
+
+# Run progress: 34,48% complete, ETA 00:01:21
+# Fork: 1 of 1
+# Warmup Iteration   1: 66052917,646 ops/s
+Iteration   1: 140095687,982 ops/s
+                 新tack: <delayed till summary>
+
+
+
+Result "org.sample.JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethodWithReturnValue":
+  140095687,982 ops/s
+
+Secondary result "org.sample.JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethodWithReturnValue:新tack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 50,0%         RUNNABLE
+ 50,0%         TIMED_WAITING
+
+....[Thread state: RUNNABLE]........................................................................
+ 23,9%  47,9% <stack is empty, everything is filtered?>
+ 18,7%  37,4% org.sample.jmh_generated.JMHBenchmark_04_DummyInvokeWithValue_testInvocationDummyMethodWithReturnValue_jmhTest.testInvocationDummyMethodWithReturnValue_thrpt_jmhStub
+  6,3%  12,6% org.sample.JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethodWithReturnValue
+  0,3%   0,5% java.lang.Class.isPrimitive
+  0,3%   0,5% jdk.vm.ci.hotspot.HotSpotJVMCIRuntime.runtime
+  0,3%   0,5% org.graalvm.compiler.phases.common.DeoptimizationGroupingPhase.run
+  0,3%   0,5% org.graalvm.compiler.core.common.cfg.Loop.<init>
+
+....[Thread state: TIMED_WAITING]...................................................................
+ 25,0%  50,0% java.lang.Object.wait
+ 25,0%  50,0% java.lang.Thread.sleep
+
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: C:\Program Files\BellSoft\LibericaJDK-11\bin\java.exe
+# VM options: -XX:-Inline -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethodWithReturnVolatileValue
+
+# Run progress: 37,93% complete, ETA 00:01:16
+# Fork: 1 of 1
+# Warmup Iteration   1: 72131987,144 ops/s
+Iteration   1: 145541675,955 ops/s
+                 新tack: <delayed till summary>
+
+
+
+Result "org.sample.JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethodWithReturnVolatileValue":
+  145541675,955 ops/s
+
+Secondary result "org.sample.JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethodWithReturnVolatileValue:新tack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 50,1%         RUNNABLE
+ 49,9%         TIMED_WAITING
+
+....[Thread state: RUNNABLE]........................................................................
+ 23,9%  47,7% <stack is empty, everything is filtered?>
+ 19,5%  39,0% org.sample.jmh_generated.JMHBenchmark_04_DummyInvokeWithValue_testInvocationDummyMethodWithReturnVolatileValue_jmhTest.testInvocationDummyMethodWithReturnVolatileValue_thrpt_jmhStub
+  5,4%  10,8% org.sample.JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethodWithReturnVolatileValue
+  0,3%   0,5% org.graalvm.compiler.lir.RedundantMoveElimination$Optimization.getStateIdx
+  0,3%   0,5% org.graalvm.compiler.lir.LIRInsertionBuffer.<init>
+  0,3%   0,5% org.graalvm.compiler.graph.Graph$4.iterator
+  0,3%   0,5% jdk.vm.ci.hotspot.HotSpotJVMCIRuntime.runtime
+  0,3%   0,5% org.graalvm.compiler.graph.Graph.getIterableNodeNext
+
+....[Thread state: TIMED_WAITING]...................................................................
+ 24,9%  50,0% java.lang.Object.wait
+ 24,9%  50,0% java.lang.Thread.sleep
+
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: C:\Program Files\BellSoft\LibericaJDK-11\bin\java.exe
+# VM options: -XX:-Inline -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_05_DummyInvokeState.baseline
+
+# Run progress: 41,38% complete, ETA 00:01:12
+# Fork: 1 of 1
+# Warmup Iteration   1: 254670947,892 ops/s
+Iteration   1: 418614995,506 ops/s
+                 新tack: <delayed till summary>
+
+
+
+Result "org.sample.JMHBenchmark_05_DummyInvokeState.baseline":
+  418614995,506 ops/s
+
+Secondary result "org.sample.JMHBenchmark_05_DummyInvokeState.baseline:新tack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 52,6%         RUNNABLE
+ 47,4%         TIMED_WAITING
+
+....[Thread state: RUNNABLE]........................................................................
+ 26,2%  49,8% <stack is empty, everything is filtered?>
+ 23,7%  45,0% org.sample.jmh_generated.JMHBenchmark_05_DummyInvokeState_baseline_jmhTest.baseline_thrpt_jmhStub
+  0,2%   0,5% org.graalvm.compiler.graph.NodeIdAccessor.getNodeId
+  0,2%   0,5% java.lang.Object.getClass
+  0,2%   0,5% org.graalvm.compiler.lir.LIRInstruction.forEachOutput
+  0,2%   0,5% java.lang.StringLatin1.replace
+  0,2%   0,5% org.graalvm.compiler.graph.NodeClass$RawEdgesIterator.<init>
+  0,2%   0,5% jdk.internal.misc.Unsafe.compareAndSetLong
+  0,2%   0,5% org.graalvm.compiler.lir.alloc.lsra.Interval$RegisterBindingLists.get
+  0,2%   0,5% jdk.vm.ci.meta.JavaField.getJavaKind
+  0,7%   1,4% <other>
+
+....[Thread state: TIMED_WAITING]...................................................................
+ 23,7%  50,0% java.lang.Object.wait
+ 23,7%  50,0% java.lang.Thread.sleep
+
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: C:\Program Files\BellSoft\LibericaJDK-11\bin\java.exe
+# VM options: -XX:-Inline -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_05_DummyInvokeState.noInvocationReturnValueBS
+
+# Run progress: 44,83% complete, ETA 00:01:07
+# Fork: 1 of 1
+# Warmup Iteration   1: 87347480,442 ops/s
+Iteration   1: 155298919,591 ops/s
+                 新tack: <delayed till summary>
+
+
+
+Result "org.sample.JMHBenchmark_05_DummyInvokeState.noInvocationReturnValueBS":
+  155298919,591 ops/s
+
+Secondary result "org.sample.JMHBenchmark_05_DummyInvokeState.noInvocationReturnValueBS:新tack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 52,2%         RUNNABLE
+ 47,8%         TIMED_WAITING
+
+....[Thread state: RUNNABLE]........................................................................
+ 26,5%  50,7% <stack is empty, everything is filtered?>
+ 23,9%  45,8% org.sample.jmh_generated.JMHBenchmark_05_DummyInvokeState_noInvocationReturnValueBS_jmhTest.noInvocationReturnValueBS_thrpt_jmhStub
+  0,3%   0,5% org.graalvm.compiler.phases.common.ConditionalEliminationPhase$MoveGuardsUpwards.enter
+  0,3%   0,5% jdk.vm.ci.hotspot.HotSpotJVMCIRuntime.runtime
+  0,3%   0,5% java.util.ArrayDeque.removeFirst
+  0,3%   0,5% java.lang.ref.ReferenceQueue.<init>
+  0,3%   0,5% java.util.WeakHashMap.expungeStaleEntries
+  0,3%   0,5% jdk.vm.ci.hotspot.HotSpotResolvedJavaMethodImpl.getSpeculationLog
+  0,3%   0,5% java.lang.ref.WeakReference.<init>
+
+....[Thread state: TIMED_WAITING]...................................................................
+ 23,9%  50,0% java.lang.Object.wait
+ 23,9%  50,0% java.lang.Thread.sleep
+
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: C:\Program Files\BellSoft\LibericaJDK-11\bin\java.exe
+# VM options: -XX:-Inline -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_05_DummyInvokeState.noInvocationlineReturnValueTS
+
+# Run progress: 48,28% complete, ETA 00:01:03
+# Fork: 1 of 1
+# Warmup Iteration   1: 53603600,195 ops/s
+Iteration   1: 155683989,299 ops/s
+                 新tack: <delayed till summary>
+
+
+
+Result "org.sample.JMHBenchmark_05_DummyInvokeState.noInvocationlineReturnValueTS":
+  155683989,299 ops/s
+
+Secondary result "org.sample.JMHBenchmark_05_DummyInvokeState.noInvocationlineReturnValueTS:新tack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 55,2%         RUNNABLE
+ 44,8%         TIMED_WAITING
+
+....[Thread state: RUNNABLE]........................................................................
+ 28,1%  50,9% <stack is empty, everything is filtered?>
+ 22,4%  40,5% org.sample.jmh_generated.JMHBenchmark_05_DummyInvokeState_noInvocationlineReturnValueTS_jmhTest.noInvocationlineReturnValueTS_thrpt_jmhStub
+  0,5%   0,9% jdk.vm.ci.hotspot.CompilerToVM.installCode
+  0,2%   0,5% org.graalvm.compiler.core.common.cfg.BlockMap.get
+  0,2%   0,5% org.graalvm.compiler.nodes.calc.LeftShiftNode.canonical
+  0,2%   0,5% org.graalvm.compiler.virtual.phases.ea.GraphEffectList.clear
+  0,2%   0,5% org.graalvm.compiler.hotspot.amd64.AMD64HotSpotNodeLIRBuilder.emitPrologue
+  0,2%   0,5% org.graalvm.compiler.word.WordOperationPlugin.processWordOperation
+  0,2%   0,5% org.graalvm.compiler.phases.common.ConditionalEliminationPhase$Instance$$Lambda$96/0x0000000026ca9c40.<init>
+  0,2%   0,5% jdk.vm.ci.hotspot.HotSpotJVMCIRuntime.runtime
+  2,5%   4,5% <other>
+
+....[Thread state: TIMED_WAITING]...................................................................
+ 22,4%  50,0% java.lang.Object.wait
+ 22,4%  50,0% java.lang.Thread.sleep
+
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: C:\Program Files\BellSoft\LibericaJDK-11\bin\java.exe
+# VM options: -XX:-Inline -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_05_DummyInvokeState.testInvocation
+
+# Run progress: 51,72% complete, ETA 00:00:59
+# Fork: 1 of 1
+# Warmup Iteration   1: 110880208,839 ops/s
+Iteration   1: 251650899,435 ops/s
+                 新tack: <delayed till summary>
+
+
+
+Result "org.sample.JMHBenchmark_05_DummyInvokeState.testInvocation":
+  251650899,435 ops/s
+
+Secondary result "org.sample.JMHBenchmark_05_DummyInvokeState.testInvocation:新tack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 51,7%         RUNNABLE
+ 48,3%         TIMED_WAITING
+
+....[Thread state: RUNNABLE]........................................................................
+ 26,6%  51,4% <stack is empty, everything is filtered?>
+ 16,4%  31,7% org.sample.jmh_generated.JMHBenchmark_05_DummyInvokeState_testInvocation_jmhTest.testInvocation_thrpt_jmhStub
+  7,7%  14,9% org.sample.JMHBenchmark_05_DummyInvokeState.testInvocation
+  0,2%   0,5% org.graalvm.compiler.hotspot.HotSpotCompilationIdentifier.buildID
+  0,2%   0,5% org.graalvm.compiler.graph.Edges.putNodeUnsafe
+  0,2%   0,5% org.graalvm.compiler.debug.CounterKeyImpl.add
+  0,2%   0,5% org.graalvm.compiler.nodes.IfNode.simplify
+
+....[Thread state: TIMED_WAITING]...................................................................
+ 24,1%  50,0% java.lang.Object.wait
+ 24,1%  50,0% java.lang.Thread.sleep
+
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: C:\Program Files\BellSoft\LibericaJDK-11\bin\java.exe
+# VM options: -XX:-Inline -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_05_DummyInvokeState.testInvocationReturnValueBS
+
+# Run progress: 55,17% complete, ETA 00:00:54
+# Fork: 1 of 1
+# Warmup Iteration   1: 53982546,227 ops/s
+Iteration   1: 97274943,097 ops/s
+                 新tack: <delayed till summary>
+
+
+
+Result "org.sample.JMHBenchmark_05_DummyInvokeState.testInvocationReturnValueBS":
+  97274943,097 ops/s
+
+Secondary result "org.sample.JMHBenchmark_05_DummyInvokeState.testInvocationReturnValueBS:新tack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 53,1%         RUNNABLE
+ 46,9%         TIMED_WAITING
+
+....[Thread state: RUNNABLE]........................................................................
+ 21,6%  40,7% <stack is empty, everything is filtered?>
+ 16,7%  31,4% org.sample.jmh_generated.JMHBenchmark_05_DummyInvokeState_testInvocationReturnValueBS_jmhTest.testInvocationReturnValueBS_thrpt_jmhStub
+  6,8%  12,7% org.sample.JMHBenchmark_05_DummyInvokeState.testInvocationReturnValueBS
+  0,5%   1,0% jdk.vm.ci.hotspot.CompilerToVM.installCode
+  0,5%   1,0% java.lang.String.length
+  0,3%   0,5% org.graalvm.compiler.graph.iterators.FilteredNodeIterable.and
+  0,3%   0,5% org.graalvm.compiler.graph.Edges.getNodeUnsafe
+  0,3%   0,5% org.graalvm.compiler.lir.alloc.lsra.Interval$RegisterBindingLists.set
+  0,3%   0,5% org.graalvm.compiler.lir.alloc.lsra.LinearScanWalker.splitForSpilling
+  0,3%   0,5% jdk.internal.vm.compiler.word.LocationIdentity.isMutable
+  5,7%  10,8% <other>
+
+....[Thread state: TIMED_WAITING]...................................................................
+ 23,4%  50,0% java.lang.Object.wait
+ 23,4%  50,0% java.lang.Thread.sleep
+
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: C:\Program Files\BellSoft\LibericaJDK-11\bin\java.exe
+# VM options: -XX:-Inline -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_05_DummyInvokeState.testInvocationReturnValueTS
+
+# Run progress: 58,62% complete, ETA 00:00:50
+# Fork: 1 of 1
+# Warmup Iteration   1: 68251315,409 ops/s
+Iteration   1: 117416162,990 ops/s
+                 新tack: <delayed till summary>
+
+
+
+Result "org.sample.JMHBenchmark_05_DummyInvokeState.testInvocationReturnValueTS":
+  117416162,990 ops/s
+
+Secondary result "org.sample.JMHBenchmark_05_DummyInvokeState.testInvocationReturnValueTS:新tack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 51,9%         RUNNABLE
+ 48,1%         TIMED_WAITING
+
+....[Thread state: RUNNABLE]........................................................................
+ 26,2%  50,5% <stack is empty, everything is filtered?>
+ 16,3%  31,4% org.sample.jmh_generated.JMHBenchmark_05_DummyInvokeState_testInvocationReturnValueTS_jmhTest.testInvocationReturnValueTS_thrpt_jmhStub
+  7,7%  14,9% org.sample.JMHBenchmark_05_DummyInvokeState.testInvocationReturnValueTS
+  0,3%   0,5% java.lang.Object.getClass
+  0,3%   0,5% org.graalvm.compiler.hotspot.meta.DefaultHotSpotLoweringProvider.lower
+  0,3%   0,5% org.graalvm.compiler.core.common.LIRKind.value
+  0,3%   0,5% org.graalvm.compiler.graph.Node$EdgeVisitor.<init>
+  0,3%   0,5% org.graalvm.compiler.core.match.MatchContext.namedNode
+  0,3%   0,5% java.lang.String.replace
+
+....[Thread state: TIMED_WAITING]...................................................................
+ 24,0%  50,0% java.lang.Object.wait
+ 24,0%  50,0% java.lang.Thread.sleep
+
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: C:\Program Files\BellSoft\LibericaJDK-11\bin\java.exe
+# VM options: -XX:-Inline -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_06_SumCalcInvoke.SumCalcInvoke
+
+# Run progress: 62,07% complete, ETA 00:00:46
+# Fork: 1 of 1
+# Warmup Iteration   1: 409524,985 ops/s
+Iteration   1: 751528,317 ops/s
+                 新tack: <delayed till summary>
+
+
+
+Result "org.sample.JMHBenchmark_06_SumCalcInvoke.SumCalcInvoke":
+  751528,317 ops/s
+
+Secondary result "org.sample.JMHBenchmark_06_SumCalcInvoke.SumCalcInvoke:新tack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 52,1%         RUNNABLE
+ 47,9%         TIMED_WAITING
+
+....[Thread state: RUNNABLE]........................................................................
+ 25,5%  49,0% <stack is empty, everything is filtered?>
+ 23,4%  44,9% org.sample.JMHBenchmark_06_SumCalcInvoke.SumCalcInvoke
+  0,5%   1,0% org.sample.jmh_generated.JMHBenchmark_06_SumCalcInvoke_SumCalcInvoke_jmhTest.SumCalcInvoke_thrpt_jmhStub
+  0,3%   0,5% org.graalvm.compiler.debug.CounterKeyImpl.add
+  0,3%   0,5% org.graalvm.compiler.nodes.AbstractBeginNode$BlockNodeIterator.next
+  0,3%   0,5% java.util.ArrayList.get
+  0,3%   0,5% java.util.WeakHashMap.<init>
+  0,3%   0,5% org.graalvm.compiler.nodes.ValuePhiNode.inferStamp
+  0,3%   0,5% org.graalvm.compiler.nodes.cfg.ControlFlowGraph.getStartBlock
+  0,3%   0,5% org.graalvm.compiler.core.common.LIRKind.combine
+  0,8%   1,5% <other>
+
+....[Thread state: TIMED_WAITING]...................................................................
+ 23,9%  50,0% java.lang.Object.wait
+ 23,9%  50,0% java.lang.Thread.sleep
+
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: C:\Program Files\BellSoft\LibericaJDK-11\bin\java.exe
+# VM options: -XX:-Inline -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_06_SumCalcInvoke.baseline
+
+# Run progress: 65,52% complete, ETA 00:00:42
+# Fork: 1 of 1
+# Warmup Iteration   1: 182696347,991 ops/s
+Iteration   1: 398539816,738 ops/s
+                 新tack: <delayed till summary>
+
+
+
+Result "org.sample.JMHBenchmark_06_SumCalcInvoke.baseline":
+  398539816,738 ops/s
+
+Secondary result "org.sample.JMHBenchmark_06_SumCalcInvoke.baseline:新tack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 52,0%         RUNNABLE
+ 48,0%         TIMED_WAITING
+
+....[Thread state: RUNNABLE]........................................................................
+ 26,5%  51,1% <stack is empty, everything is filtered?>
+ 24,0%  46,2% org.sample.jmh_generated.JMHBenchmark_06_SumCalcInvoke_baseline_jmhTest.baseline_thrpt_jmhStub
+  0,3%   0,5% java.lang.Thread.currentThread
+  0,3%   0,5% java.lang.AbstractStringBuilder.ensureCapacityInternal
+  0,3%   0,5% org.graalvm.compiler.nodes.calc.CompareNode$CompareOp.canonicalizeSymmetricConstant
+  0,3%   0,5% org.graalvm.compiler.nodes.StructuredGraph.getParameter
+  0,3%   0,5% jdk.vm.ci.hotspot.HotSpotConstantPool.<init>
+
+....[Thread state: TIMED_WAITING]...................................................................
+ 24,0%  50,0% java.lang.Object.wait
+ 24,0%  50,0% java.lang.Thread.sleep
+
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: C:\Program Files\BellSoft\LibericaJDK-11\bin\java.exe
+# VM options: -XX:-Inline -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_06_SumCalcInvoke.noInvocationSumCalc
+
+# Run progress: 68,97% complete, ETA 00:00:37
+# Fork: 1 of 1
+# Warmup Iteration   1: 451335,153 ops/s
+Iteration   1: 869297,871 ops/s
+                 新tack: <delayed till summary>
+
+
+
+Result "org.sample.JMHBenchmark_06_SumCalcInvoke.noInvocationSumCalc":
+  869297,871 ops/s
+
+Secondary result "org.sample.JMHBenchmark_06_SumCalcInvoke.noInvocationSumCalc:新tack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 51,9%         RUNNABLE
+ 48,1%         TIMED_WAITING
+
+....[Thread state: RUNNABLE]........................................................................
+ 25,7%  49,5% <stack is empty, everything is filtered?>
+ 23,5%  45,3% org.sample.JMHBenchmark_06_SumCalcInvoke.noInvocationSumCalc
+  0,5%   1,0% org.sample.jmh_generated.JMHBenchmark_06_SumCalcInvoke_noInvocationSumCalc_jmhTest.noInvocationSumCalc_thrpt_jmhStub
+  0,3%   0,5% org.graalvm.compiler.phases.schedule.SchedulePhase$Instance.processNodes
+  0,3%   0,5% org.graalvm.compiler.core.common.cfg.BlockMap.get
+  0,3%   0,5% org.graalvm.compiler.lir.alloc.lsra.LinearScanResolveDataFlowPhase.resolveDataFlow0
+  0,3%   0,5% org.graalvm.compiler.lir.framemap.FrameMap.returnAddressSize
+  0,3%   0,5% org.graalvm.compiler.hotspot.amd64.AMD64HotSpotLIRGenerator.emitSaveRbp
+  0,3%   0,5% jdk.vm.ci.hotspot.CompilerToVM.getResolvedJavaType
+  0,3%   0,5% org.graalvm.compiler.lir.LIRIntrospection.visitEach
+  0,3%   0,5% <other>
+
+....[Thread state: TIMED_WAITING]...................................................................
+ 24,1%  50,0% java.lang.Object.wait
+ 24,1%  50,0% java.lang.Thread.sleep
+
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: C:\Program Files\BellSoft\LibericaJDK-11\bin\java.exe
+# VM options: -XX:-Inline -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_08_NumberOfSumCalc.baseline
+
+# Run progress: 72,41% complete, ETA 00:00:33
+# Fork: 1 of 1
+# Warmup Iteration   1: 161587346,419 ops/s
+Iteration   1: 374523740,393 ops/s
+                 新tack: <delayed till summary>
+
+
+
+Result "org.sample.JMHBenchmark_08_NumberOfSumCalc.baseline":
+  374523740,393 ops/s
+
+Secondary result "org.sample.JMHBenchmark_08_NumberOfSumCalc.baseline:新tack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 51,7%         RUNNABLE
+ 48,3%         TIMED_WAITING
+
+....[Thread state: RUNNABLE]........................................................................
+ 24,2%  46,7% org.sample.jmh_generated.JMHBenchmark_08_NumberOfSumCalc_baseline_jmhTest.baseline_thrpt_jmhStub
+ 23,4%  45,2% <stack is empty, everything is filtered?>
+  0,3%   0,5% org.graalvm.compiler.graph.iterators.PredicatedProxyNodeIterator.forward
+  0,3%   0,5% java.lang.Boolean.equals
+  0,3%   0,5% java.lang.Class.getDeclaredConstructor
+  0,3%   0,5% jdk.vm.ci.meta.PrimitiveConstant.equals
+  0,3%   0,5% jdk.internal.misc.Unsafe.allocateInstance
+  0,3%   0,5% org.graalvm.compiler.hotspot.HotSpotGraalCompilerFactory.adjustCompilationLevelInternal
+  0,3%   0,5% jdk.vm.ci.hotspot.HotSpotJVMCIRuntime.runtime
+  0,3%   0,5% org.graalvm.compiler.lir.LIRFrameState.visitEachState
+  2,1%   4,0% <other>
+
+....[Thread state: TIMED_WAITING]...................................................................
+ 24,2%  50,0% java.lang.Object.wait
+ 24,2%  50,0% java.lang.Thread.sleep
+
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: C:\Program Files\BellSoft\LibericaJDK-11\bin\java.exe
+# VM options: -XX:-Inline -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_08_NumberOfSumCalc.longSumCalcInvoke
+
+# Run progress: 75,86% complete, ETA 00:00:29
+# Fork: 1 of 1
+# Warmup Iteration   1: 134128,816 ops/s
+Iteration   1: 275571,084 ops/s
+                 新tack: <delayed till summary>
+
+
+
+Result "org.sample.JMHBenchmark_08_NumberOfSumCalc.longSumCalcInvoke":
+  275571,084 ops/s
+
+Secondary result "org.sample.JMHBenchmark_08_NumberOfSumCalc.longSumCalcInvoke:新tack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 50,0%         RUNNABLE
+ 50,0%         TIMED_WAITING
+
+....[Thread state: RUNNABLE]........................................................................
+ 24,7%  49,4% org.sample.JMHBenchmark_08_NumberOfSumCalc.longSumCalcInvoke
+ 23,1%  46,1% <stack is empty, everything is filtered?>
+  0,3%   0,6% org.sample.jmh_generated.JMHBenchmark_08_NumberOfSumCalc_longSumCalcInvoke_jmhTest.longSumCalcInvoke_thrpt_jmhStub
+  0,3%   0,6% java.lang.AbstractStringBuilder.ensureCapacityInternal
+  0,3%   0,6% java.util.AbstractList.<init>
+  0,3%   0,6% org.graalvm.compiler.java.BytecodeParser.checkPositiveIntConstantPushed
+  0,3%   0,6% org.graalvm.compiler.lir.LIRInstructionClass.visitEachAlive
+  0,3%   0,6% java.util.BitSet.andNot
+  0,3%   0,6% java.lang.ThreadLocal.get
+  0,3%   0,6% java.util.WeakHashMap.newTable
+
+....[Thread state: TIMED_WAITING]...................................................................
+ 25,0%  50,0% java.lang.Object.wait
+ 25,0%  50,0% java.lang.Thread.sleep
+
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: C:\Program Files\BellSoft\LibericaJDK-11\bin\java.exe
+# VM options: -XX:-Inline -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_08_NumberOfSumCalc.noInvocationNumberSumCalc
+
+# Run progress: 79,31% complete, ETA 00:00:25
+# Fork: 1 of 1
+# Warmup Iteration   1: 135813,084 ops/s
+Iteration   1: 293841,710 ops/s
+                 新tack: <delayed till summary>
+
+
+
+Result "org.sample.JMHBenchmark_08_NumberOfSumCalc.noInvocationNumberSumCalc":
+  293841,710 ops/s
+
+Secondary result "org.sample.JMHBenchmark_08_NumberOfSumCalc.noInvocationNumberSumCalc:新tack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 53,6%         RUNNABLE
+ 46,4%         TIMED_WAITING
+
+....[Thread state: RUNNABLE]........................................................................
+ 27,7%  51,7% <stack is empty, everything is filtered?>
+ 22,1%  41,3% org.sample.JMHBenchmark_08_NumberOfSumCalc.noInvocationNumberSumCalc
+  1,1%   2,0% org.sample.jmh_generated.JMHBenchmark_08_NumberOfSumCalc_noInvocationNumberSumCalc_jmhTest.noInvocationNumberSumCalc_thrpt_jmhStub
+  0,3%   0,5% org.graalvm.compiler.nodes.calc.SubNode.canonical
+  0,3%   0,5% jdk.vm.ci.hotspot.HotSpotResolvedJavaFieldImpl.getModifiers
+  0,3%   0,5% org.graalvm.compiler.nodes.cfg.ControlFlowGraph.computeDominators
+  0,3%   0,5% jdk.vm.ci.hotspot.HotSpotJVMCIMetaAccessContext.clean
+  0,3%   0,5% org.graalvm.compiler.graph.Position.get
+  0,3%   0,5% org.graalvm.compiler.nodes.StructuredGraph.hasUnsafeAccess
+  0,3%   0,5% org.graalvm.compiler.lir.LIRIntrospection.visitEach
+  0,8%   1,5% <other>
+
+....[Thread state: TIMED_WAITING]...................................................................
+ 23,2%  50,0% java.lang.Object.wait
+ 23,2%  50,0% java.lang.Thread.sleep
+
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: C:\Program Files\BellSoft\LibericaJDK-11\bin\java.exe
+# VM options: -XX:-Inline -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_08_NumberOfSumCalc.numberSumCalcInvoke
+
+# Run progress: 82,76% complete, ETA 00:00:21
+# Fork: 1 of 1
+# Warmup Iteration   1: 115380,194 ops/s
+Iteration   1: 228904,200 ops/s
+                 新tack: <delayed till summary>
+
+
+
+Result "org.sample.JMHBenchmark_08_NumberOfSumCalc.numberSumCalcInvoke":
+  228904,200 ops/s
+
+Secondary result "org.sample.JMHBenchmark_08_NumberOfSumCalc.numberSumCalcInvoke:新tack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 53,2%         RUNNABLE
+ 46,8%         TIMED_WAITING
+
+....[Thread state: RUNNABLE]........................................................................
+ 27,7%  52,2% <stack is empty, everything is filtered?>
+ 23,4%  44,0% org.sample.JMHBenchmark_08_NumberOfSumCalc.numberSumCalcInvoke
+  0,5%   1,0% jdk.vm.ci.hotspot.CompilerToVM.installCode
+  0,3%   0,5% org.graalvm.compiler.graph.NodeBitMap.isMarked
+  0,3%   0,5% java.lang.StringLatin1.replace
+  0,3%   0,5% org.graalvm.compiler.hotspot.HotSpotCompilationIdentifier.isOsrCompilation
+  0,3%   0,5% org.graalvm.compiler.hotspot.amd64.AMD64HotSpotEpilogueBlockEndOp.leaveFrameAndRestoreRbp
+  0,3%   0,5% java.util.WeakHashMap.expungeStaleEntries
+  0,3%   0,5% org.graalvm.compiler.nodes.extended.ForeignCallNode.operands
+
+....[Thread state: TIMED_WAITING]...................................................................
+ 23,4%  50,0% java.lang.Object.wait
+ 23,4%  50,0% java.lang.Thread.sleep
+
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: C:\Program Files\BellSoft\LibericaJDK-11\bin\java.exe
+# VM options: -XX:-Inline -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_08_NumberOfSumCalc.numberSumCalcInvokeNested
+
+# Run progress: 86,21% complete, ETA 00:00:16
+# Fork: 1 of 1
+# Warmup Iteration   1: 93319,659 ops/s
+Iteration   1: 211932,687 ops/s
+                 新tack: <delayed till summary>
+
+
+
+Result "org.sample.JMHBenchmark_08_NumberOfSumCalc.numberSumCalcInvokeNested":
+  211932,687 ops/s
+
+Secondary result "org.sample.JMHBenchmark_08_NumberOfSumCalc.numberSumCalcInvokeNested:新tack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 54,2%         RUNNABLE
+ 45,8%         TIMED_WAITING
+
+....[Thread state: RUNNABLE]........................................................................
+ 28,2%  52,1% <stack is empty, everything is filtered?>
+ 19,1%  35,3% org.sample.JMHBenchmark_08_NumberOfSumCalc._sumNestedMethod_4
+  1,3%   2,3% org.sample.JMHBenchmark_08_NumberOfSumCalc._sumNestedMethod_3
+  1,0%   1,9% org.sample.JMHBenchmark_08_NumberOfSumCalc._sumNestedMethod_2
+  0,8%   1,4% org.sample.JMHBenchmark_08_NumberOfSumCalc._sumNestedMethod_1
+  0,5%   0,9% org.graalvm.compiler.graph.Node.clone
+  0,5%   0,9% org.sample.JMHBenchmark_08_NumberOfSumCalc.numberSumCalcInvokeNested
+  0,3%   0,5% jdk.vm.ci.meta.ValueKind.<init>
+  0,3%   0,5% java.util.WeakHashMap.newTable
+  0,3%   0,5% java.lang.System.currentTimeMillis
+  2,0%   3,7% <other>
+
+....[Thread state: TIMED_WAITING]...................................................................
+ 22,9%  50,0% java.lang.Object.wait
+ 22,9%  50,0% java.lang.Thread.sleep
+
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: C:\Program Files\BellSoft\LibericaJDK-11\bin\java.exe
+# VM options: -XX:-Inline -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_10_longSumCalc.baseline
+
+# Run progress: 89,66% complete, ETA 00:00:12
+# Fork: 1 of 1
+# Warmup Iteration   1: 167486391,523 ops/s
+Iteration   1: 411344240,117 ops/s
+                 新tack: <delayed till summary>
+
+
+
+Result "org.sample.JMHBenchmark_10_longSumCalc.baseline":
+  411344240,117 ops/s
+
+Secondary result "org.sample.JMHBenchmark_10_longSumCalc.baseline:新tack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 52,3%         RUNNABLE
+ 47,7%         TIMED_WAITING
+
+....[Thread state: RUNNABLE]........................................................................
+ 25,3%  48,4% <stack is empty, everything is filtered?>
+ 24,0%  45,8% org.sample.jmh_generated.JMHBenchmark_10_longSumCalc_baseline_jmhTest.baseline_thrpt_jmhStub
+  0,3%   0,5% jdk.vm.ci.hotspot.HotSpotJVMCIRuntime.runtime
+  0,3%   0,5% org.graalvm.compiler.debug.CounterKeyImpl.increment
+  0,3%   0,5% org.graalvm.compiler.lir.alloc.lsra.LinearScanWalker.activateCurrent
+  0,3%   0,5% org.graalvm.compiler.nodes.util.GraphUtil.normalizeLoops
+  0,3%   0,5% org.graalvm.compiler.lir.alloc.lsra.LinearScan.isProcessed
+  0,3%   0,5% java.lang.Class.isArray
+  0,3%   0,5% org.graalvm.compiler.graph.iterators.NodeIterable.filter
+  0,3%   0,5% org.graalvm.compiler.options.OptionKey.getValue
+  0,8%   1,6% <other>
+
+....[Thread state: TIMED_WAITING]...................................................................
+ 24,0%  50,3% java.lang.Thread.sleep
+ 23,7%  49,7% java.lang.Object.wait
+
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: C:\Program Files\BellSoft\LibericaJDK-11\bin\java.exe
+# VM options: -XX:-Inline -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_10_longSumCalc.longSumCalc
+
+# Run progress: 93,10% complete, ETA 00:00:08
+# Fork: 1 of 1
+# Warmup Iteration   1: 68385,243 ops/s
+Iteration   1: 100790,352 ops/s
+                 新tack: <delayed till summary>
+
+
+
+Result "org.sample.JMHBenchmark_10_longSumCalc.longSumCalc":
+  100790,352 ops/s
+
+Secondary result "org.sample.JMHBenchmark_10_longSumCalc.longSumCalc:新tack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 51,6%         RUNNABLE
+ 48,4%         TIMED_WAITING
+
+....[Thread state: RUNNABLE]........................................................................
+ 25,5%  49,5% <stack is empty, everything is filtered?>
+ 19,7%  38,3% org.sample.JMHBenchmark_10_longSumCalc._longSumCalcMethod
+  4,2%   8,2% org.sample.JMHBenchmark_10_longSumCalc.longSumCalc
+  0,3%   0,5% org.graalvm.compiler.phases.schedule.SchedulePhase$Instance.processStack
+  0,3%   0,5% org.graalvm.compiler.phases.common.CanonicalizerPhase$Instance.tryCanonicalize
+  0,3%   0,5% org.graalvm.compiler.graph.NodeIdAccessor.getNodeId
+  0,3%   0,5% org.graalvm.compiler.lir.LIRInstruction.isValueMoveOp
+  0,3%   0,5% org.graalvm.compiler.core.common.cfg.AbstractBlockBase.getPredecessorCount
+  0,3%   0,5% org.graalvm.compiler.lir.LIRInstruction.addStackSlotsToTemporaries
+  0,3%   0,5% org.graalvm.compiler.phases.graph.ReentrantBlockIterator.processLoop
+  0,3%   0,5% <other>
+
+....[Thread state: TIMED_WAITING]...................................................................
+ 24,2%  50,0% java.lang.Object.wait
+ 24,2%  50,0% java.lang.Thread.sleep
+
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: C:\Program Files\BellSoft\LibericaJDK-11\bin\java.exe
+# VM options: -XX:-Inline -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_10_longSumCalc.noInvocationlongSumCalc
+
+# Run progress: 96,55% complete, ETA 00:00:04
+# Fork: 1 of 1
+# Warmup Iteration   1: 68376,344 ops/s
+Iteration   1: 92044,382 ops/s
+                 新tack: <delayed till summary>
+
+
+
+Result "org.sample.JMHBenchmark_10_longSumCalc.noInvocationlongSumCalc":
+  92044,382 ops/s
+
+Secondary result "org.sample.JMHBenchmark_10_longSumCalc.noInvocationlongSumCalc:新tack":
+Stack profiler:
+
+....[Thread state distributions]....................................................................
+ 52,4%         RUNNABLE
+ 47,6%         TIMED_WAITING
+
+....[Thread state: RUNNABLE]........................................................................
+ 23,5%  44,9% org.sample.JMHBenchmark_10_longSumCalc.noInvocationlongSumCalc
+ 23,3%  44,4% <stack is empty, everything is filtered?>
+  0,3%   0,5% java.security.AccessController.doPrivileged
+  0,3%   0,5% java.util.ArrayDeque.size
+  0,3%   0,5% org.graalvm.compiler.graph.TypedGraphNodeIterator.findNext
+  0,3%   0,5% org.graalvm.compiler.nodes.AbstractBeginNode$BlockNodeIterator.next
+  0,3%   0,5% org.graalvm.compiler.graph.iterators.PredicatedProxyNodeIterator.forward
+  0,3%   0,5% org.graalvm.compiler.lir.alloc.lsra.LinearScan.getLastLirInstructionId
+  0,3%   0,5% jdk.vm.ci.hotspot.CompilerToVM.installCode
+  0,3%   0,5% org.graalvm.compiler.loop.LoopFragment$3.<init>
+  3,5%   6,8% <other>
+
+....[Thread state: TIMED_WAITING]...................................................................
+ 23,8%  50,0% java.lang.Object.wait
+ 23,8%  50,0% java.lang.Thread.sleep
+
+
+
+# Run complete. Total time: 00:02:01
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                                                                                      Mode  Cnt          Score   Error  Units
+JMHBenchmark_01_DummyInvoke.baseline                                                          thrpt       424663782,335          ops/s
+JMHBenchmark_01_DummyInvoke.baseline:新tack                                                   thrpt                 NaN            ---
+JMHBenchmark_01_DummyInvoke.testInvocationDummyMethod                                         thrpt       239066912,457          ops/s
+JMHBenchmark_01_DummyInvoke.testInvocationDummyMethod:新tack                                  thrpt                 NaN            ---
+JMHBenchmark_02_InvokeWithReturn.baseline                                                     thrpt       434284689,433          ops/s
+JMHBenchmark_02_InvokeWithReturn.baseline:新tack                                              thrpt                 NaN            ---
+JMHBenchmark_02_InvokeWithReturn.noInvocation                                                 thrpt       183231160,764          ops/s
+JMHBenchmark_02_InvokeWithReturn.noInvocation:新tack                                          thrpt                 NaN            ---
+JMHBenchmark_02_InvokeWithReturn.testInvocationDummyMethodWithBh                              thrpt       126539556,187          ops/s
+JMHBenchmark_02_InvokeWithReturn.testInvocationDummyMethodWithBh:新tack                       thrpt                 NaN            ---
+JMHBenchmark_02_InvokeWithReturn.testInvocationDummyMethodWithReturnValue                     thrpt       138457913,642          ops/s
+JMHBenchmark_02_InvokeWithReturn.testInvocationDummyMethodWithReturnValue:新tack              thrpt                 NaN            ---
+JMHBenchmark_04_DummyInvokeWithValue.baseline                                                 thrpt       444430579,835          ops/s
+JMHBenchmark_04_DummyInvokeWithValue.baseline:新tack                                          thrpt                 NaN            ---
+JMHBenchmark_04_DummyInvokeWithValue.noInvocationReturnValue                                  thrpt       175568697,789          ops/s
+JMHBenchmark_04_DummyInvokeWithValue.noInvocationReturnValue:新tack                           thrpt                 NaN            ---
+JMHBenchmark_04_DummyInvokeWithValue.noInvocationReturnVolatileValue                          thrpt       188616750,755          ops/s
+JMHBenchmark_04_DummyInvokeWithValue.noInvocationReturnVolatileValue:新tack                   thrpt                 NaN            ---
+JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethod                                thrpt       256624764,841          ops/s
+JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethod:新tack                         thrpt                 NaN            ---
+JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethodWithReturnValue                 thrpt       140095687,982          ops/s
+JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethodWithReturnValue:新tack          thrpt                 NaN            ---
+JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethodWithReturnVolatileValue         thrpt       145541675,955          ops/s
+JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethodWithReturnVolatileValue:新tack  thrpt                 NaN            ---
+JMHBenchmark_05_DummyInvokeState.baseline                                                     thrpt       418614995,506          ops/s
+JMHBenchmark_05_DummyInvokeState.baseline:新tack                                              thrpt                 NaN            ---
+JMHBenchmark_05_DummyInvokeState.noInvocationReturnValueBS                                    thrpt       155298919,591          ops/s
+JMHBenchmark_05_DummyInvokeState.noInvocationReturnValueBS:新tack                             thrpt                 NaN            ---
+JMHBenchmark_05_DummyInvokeState.noInvocationlineReturnValueTS                                thrpt       155683989,299          ops/s
+JMHBenchmark_05_DummyInvokeState.noInvocationlineReturnValueTS:新tack                         thrpt                 NaN            ---
+JMHBenchmark_05_DummyInvokeState.testInvocation                                               thrpt       251650899,435          ops/s
+JMHBenchmark_05_DummyInvokeState.testInvocation:新tack                                        thrpt                 NaN            ---
+JMHBenchmark_05_DummyInvokeState.testInvocationReturnValueBS                                  thrpt        97274943,097          ops/s
+JMHBenchmark_05_DummyInvokeState.testInvocationReturnValueBS:新tack                           thrpt                 NaN            ---
+JMHBenchmark_05_DummyInvokeState.testInvocationReturnValueTS                                  thrpt       117416162,990          ops/s
+JMHBenchmark_05_DummyInvokeState.testInvocationReturnValueTS:新tack                           thrpt                 NaN            ---
+JMHBenchmark_06_SumCalcInvoke.SumCalcInvoke                                                   thrpt          751528,317          ops/s
+JMHBenchmark_06_SumCalcInvoke.SumCalcInvoke:新tack                                            thrpt                 NaN            ---
+JMHBenchmark_06_SumCalcInvoke.baseline                                                        thrpt       398539816,738          ops/s
+JMHBenchmark_06_SumCalcInvoke.baseline:新tack                                                 thrpt                 NaN            ---
+JMHBenchmark_06_SumCalcInvoke.noInvocationSumCalc                                             thrpt          869297,871          ops/s
+JMHBenchmark_06_SumCalcInvoke.noInvocationSumCalc:新tack                                      thrpt                 NaN            ---
+JMHBenchmark_08_NumberOfSumCalc.baseline                                                      thrpt       374523740,393          ops/s
+JMHBenchmark_08_NumberOfSumCalc.baseline:新tack                                               thrpt                 NaN            ---
+JMHBenchmark_08_NumberOfSumCalc.longSumCalcInvoke                                             thrpt          275571,084          ops/s
+JMHBenchmark_08_NumberOfSumCalc.longSumCalcInvoke:新tack                                      thrpt                 NaN            ---
+JMHBenchmark_08_NumberOfSumCalc.noInvocationNumberSumCalc                                     thrpt          293841,710          ops/s
+JMHBenchmark_08_NumberOfSumCalc.noInvocationNumberSumCalc:新tack                              thrpt                 NaN            ---
+JMHBenchmark_08_NumberOfSumCalc.numberSumCalcInvoke                                           thrpt          228904,200          ops/s
+JMHBenchmark_08_NumberOfSumCalc.numberSumCalcInvoke:新tack                                    thrpt                 NaN            ---
+JMHBenchmark_08_NumberOfSumCalc.numberSumCalcInvokeNested                                     thrpt          211932,687          ops/s
+JMHBenchmark_08_NumberOfSumCalc.numberSumCalcInvokeNested:新tack                              thrpt                 NaN            ---
+JMHBenchmark_10_longSumCalc.baseline                                                          thrpt       411344240,117          ops/s
+JMHBenchmark_10_longSumCalc.baseline:新tack                                                   thrpt                 NaN            ---
+JMHBenchmark_10_longSumCalc.longSumCalc                                                       thrpt          100790,352          ops/s
+JMHBenchmark_10_longSumCalc.longSumCalc:新tack                                                thrpt                 NaN            ---
+JMHBenchmark_10_longSumCalc.noInvocationlongSumCalc                                           thrpt           92044,382          ops/s
+JMHBenchmark_10_longSumCalc.noInvocationlongSumCalc:新tack                                    thrpt                 NaN            ---
+
+Benchmark result is saved to results/win-graal-Inline-stack.txt

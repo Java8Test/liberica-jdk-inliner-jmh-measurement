@@ -1,0 +1,968 @@
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: C:\Program Files\BellSoft\LibericaJDK-11\bin\java.exe
+# VM options: -XX:-Inline
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_01_DummyInvoke.baseline
+
+# Run progress: 0,00% complete, ETA 00:00:58
+# Fork: 1 of 1
+# Warmup Iteration   1: 190569441,185 ops/s
+Iteration   1: 101747413,935 ops/s
+                 ·compiler.time.profiled: 6,000 ms
+                 ·compiler.time.total:    502,000 ms
+
+
+
+Result "org.sample.JMHBenchmark_01_DummyInvoke.baseline":
+  101747413,935 ops/s
+
+Secondary result "org.sample.JMHBenchmark_01_DummyInvoke.baseline:·compiler.time.profiled":
+  6,000 ms
+
+Secondary result "org.sample.JMHBenchmark_01_DummyInvoke.baseline:·compiler.time.total":
+  502,000 ms
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: C:\Program Files\BellSoft\LibericaJDK-11\bin\java.exe
+# VM options: -XX:-Inline
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_01_DummyInvoke.testInvocationDummyMethod
+
+# Run progress: 3,45% complete, ETA 00:02:33
+# Fork: 1 of 1
+# Warmup Iteration   1: 135907336,601 ops/s
+Iteration   1: 139665826,899 ops/s
+                 ·compiler.time.profiled: 6,000 ms
+                 ·compiler.time.total:    600,000 ms
+
+
+
+Result "org.sample.JMHBenchmark_01_DummyInvoke.testInvocationDummyMethod":
+  139665826,899 ops/s
+
+Secondary result "org.sample.JMHBenchmark_01_DummyInvoke.testInvocationDummyMethod:·compiler.time.profiled":
+  6,000 ms
+
+Secondary result "org.sample.JMHBenchmark_01_DummyInvoke.testInvocationDummyMethod:·compiler.time.total":
+  600,000 ms
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: C:\Program Files\BellSoft\LibericaJDK-11\bin\java.exe
+# VM options: -XX:-Inline
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_02_InvokeWithReturn.baseline
+
+# Run progress: 6,90% complete, ETA 00:02:34
+# Fork: 1 of 1
+# Warmup Iteration   1: 155047410,329 ops/s
+Iteration   1: 276797208,645 ops/s
+                 ·compiler.time.profiled: 1,000 ms
+                 ·compiler.time.total:    565,000 ms
+
+
+
+Result "org.sample.JMHBenchmark_02_InvokeWithReturn.baseline":
+  276797208,645 ops/s
+
+Secondary result "org.sample.JMHBenchmark_02_InvokeWithReturn.baseline:·compiler.time.profiled":
+  1,000 ms
+
+Secondary result "org.sample.JMHBenchmark_02_InvokeWithReturn.baseline:·compiler.time.total":
+  565,000 ms
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: C:\Program Files\BellSoft\LibericaJDK-11\bin\java.exe
+# VM options: -XX:-Inline
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_02_InvokeWithReturn.noInvocation
+
+# Run progress: 10,34% complete, ETA 00:02:21
+# Fork: 1 of 1
+# Warmup Iteration   1: 62041729,414 ops/s
+Iteration   1: 55015601,894 ops/s
+                 ·compiler.time.profiled: 20,000 ms
+                 ·compiler.time.total:    429,000 ms
+
+
+
+Result "org.sample.JMHBenchmark_02_InvokeWithReturn.noInvocation":
+  55015601,894 ops/s
+
+Secondary result "org.sample.JMHBenchmark_02_InvokeWithReturn.noInvocation:·compiler.time.profiled":
+  20,000 ms
+
+Secondary result "org.sample.JMHBenchmark_02_InvokeWithReturn.noInvocation:·compiler.time.total":
+  429,000 ms
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: C:\Program Files\BellSoft\LibericaJDK-11\bin\java.exe
+# VM options: -XX:-Inline
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_02_InvokeWithReturn.testInvocationDummyMethodWithBh
+
+# Run progress: 13,79% complete, ETA 00:02:12
+# Fork: 1 of 1
+# Warmup Iteration   1: 89958904,844 ops/s
+Iteration   1: 69617798,831 ops/s
+                 ·compiler.time.profiled: 11,000 ms
+                 ·compiler.time.total:    512,000 ms
+
+
+
+Result "org.sample.JMHBenchmark_02_InvokeWithReturn.testInvocationDummyMethodWithBh":
+  69617798,831 ops/s
+
+Secondary result "org.sample.JMHBenchmark_02_InvokeWithReturn.testInvocationDummyMethodWithBh:·compiler.time.profiled":
+  11,000 ms
+
+Secondary result "org.sample.JMHBenchmark_02_InvokeWithReturn.testInvocationDummyMethodWithBh:·compiler.time.total":
+  512,000 ms
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: C:\Program Files\BellSoft\LibericaJDK-11\bin\java.exe
+# VM options: -XX:-Inline
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_02_InvokeWithReturn.testInvocationDummyMethodWithReturnValue
+
+# Run progress: 17,24% complete, ETA 00:02:07
+# Fork: 1 of 1
+# Warmup Iteration   1: 62746188,249 ops/s
+Iteration   1: 86300572,344 ops/s
+                 ·compiler.time.profiled: 10,000 ms
+                 ·compiler.time.total:    706,000 ms
+
+
+
+Result "org.sample.JMHBenchmark_02_InvokeWithReturn.testInvocationDummyMethodWithReturnValue":
+  86300572,344 ops/s
+
+Secondary result "org.sample.JMHBenchmark_02_InvokeWithReturn.testInvocationDummyMethodWithReturnValue:·compiler.time.profiled":
+  10,000 ms
+
+Secondary result "org.sample.JMHBenchmark_02_InvokeWithReturn.testInvocationDummyMethodWithReturnValue:·compiler.time.total":
+  706,000 ms
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: C:\Program Files\BellSoft\LibericaJDK-11\bin\java.exe
+# VM options: -XX:-Inline
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_04_DummyInvokeWithValue.baseline
+
+# Run progress: 20,69% complete, ETA 00:02:04
+# Fork: 1 of 1
+# Warmup Iteration   1: 209488143,923 ops/s
+Iteration   1: 162017217,237 ops/s
+                 ·compiler.time.profiled: 13,000 ms
+                 ·compiler.time.total:    434,000 ms
+
+
+
+Result "org.sample.JMHBenchmark_04_DummyInvokeWithValue.baseline":
+  162017217,237 ops/s
+
+Secondary result "org.sample.JMHBenchmark_04_DummyInvokeWithValue.baseline:·compiler.time.profiled":
+  13,000 ms
+
+Secondary result "org.sample.JMHBenchmark_04_DummyInvokeWithValue.baseline:·compiler.time.total":
+  434,000 ms
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: C:\Program Files\BellSoft\LibericaJDK-11\bin\java.exe
+# VM options: -XX:-Inline
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_04_DummyInvokeWithValue.noInvocationReturnValue
+
+# Run progress: 24,14% complete, ETA 00:01:56
+# Fork: 1 of 1
+# Warmup Iteration   1: 180763434,766 ops/s
+Iteration   1: 165926195,915 ops/s
+                 ·compiler.time.profiled: 11,000 ms
+                 ·compiler.time.total:    473,000 ms
+
+
+
+Result "org.sample.JMHBenchmark_04_DummyInvokeWithValue.noInvocationReturnValue":
+  165926195,915 ops/s
+
+Secondary result "org.sample.JMHBenchmark_04_DummyInvokeWithValue.noInvocationReturnValue:·compiler.time.profiled":
+  11,000 ms
+
+Secondary result "org.sample.JMHBenchmark_04_DummyInvokeWithValue.noInvocationReturnValue:·compiler.time.total":
+  473,000 ms
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: C:\Program Files\BellSoft\LibericaJDK-11\bin\java.exe
+# VM options: -XX:-Inline
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_04_DummyInvokeWithValue.noInvocationReturnVolatileValue
+
+# Run progress: 27,59% complete, ETA 00:01:50
+# Fork: 1 of 1
+# Warmup Iteration   1: 110636823,725 ops/s
+Iteration   1: 167305140,077 ops/s
+                 ·compiler.time.profiled: 15,000 ms
+                 ·compiler.time.total:    757,000 ms
+
+
+
+Result "org.sample.JMHBenchmark_04_DummyInvokeWithValue.noInvocationReturnVolatileValue":
+  167305140,077 ops/s
+
+Secondary result "org.sample.JMHBenchmark_04_DummyInvokeWithValue.noInvocationReturnVolatileValue:·compiler.time.profiled":
+  15,000 ms
+
+Secondary result "org.sample.JMHBenchmark_04_DummyInvokeWithValue.noInvocationReturnVolatileValue:·compiler.time.total":
+  757,000 ms
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: C:\Program Files\BellSoft\LibericaJDK-11\bin\java.exe
+# VM options: -XX:-Inline
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethod
+
+# Run progress: 31,03% complete, ETA 00:01:45
+# Fork: 1 of 1
+# Warmup Iteration   1: 140404358,859 ops/s
+Iteration   1: 78160228,366 ops/s
+                 ·compiler.time.profiled: 15,000 ms
+                 ·compiler.time.total:    460,000 ms
+
+
+
+Result "org.sample.JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethod":
+  78160228,366 ops/s
+
+Secondary result "org.sample.JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethod:·compiler.time.profiled":
+  15,000 ms
+
+Secondary result "org.sample.JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethod:·compiler.time.total":
+  460,000 ms
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: C:\Program Files\BellSoft\LibericaJDK-11\bin\java.exe
+# VM options: -XX:-Inline
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethodWithReturnValue
+
+# Run progress: 34,48% complete, ETA 00:01:39
+# Fork: 1 of 1
+# Warmup Iteration   1: 119972355,872 ops/s
+Iteration   1: 102971964,832 ops/s
+                 ·compiler.time.profiled: 13,000 ms
+                 ·compiler.time.total:    509,000 ms
+
+
+
+Result "org.sample.JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethodWithReturnValue":
+  102971964,832 ops/s
+
+Secondary result "org.sample.JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethodWithReturnValue:·compiler.time.profiled":
+  13,000 ms
+
+Secondary result "org.sample.JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethodWithReturnValue:·compiler.time.total":
+  509,000 ms
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: C:\Program Files\BellSoft\LibericaJDK-11\bin\java.exe
+# VM options: -XX:-Inline
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethodWithReturnVolatileValue
+
+# Run progress: 37,93% complete, ETA 00:01:33
+# Fork: 1 of 1
+# Warmup Iteration   1: 53383523,324 ops/s
+Iteration   1: 117197563,152 ops/s
+                 ·compiler.time.profiled: 4,000 ms
+                 ·compiler.time.total:    452,000 ms
+
+
+
+Result "org.sample.JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethodWithReturnVolatileValue":
+  117197563,152 ops/s
+
+Secondary result "org.sample.JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethodWithReturnVolatileValue:·compiler.time.profiled":
+  4,000 ms
+
+Secondary result "org.sample.JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethodWithReturnVolatileValue:·compiler.time.total":
+  452,000 ms
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: C:\Program Files\BellSoft\LibericaJDK-11\bin\java.exe
+# VM options: -XX:-Inline
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_05_DummyInvokeState.baseline
+
+# Run progress: 41,38% complete, ETA 00:01:28
+# Fork: 1 of 1
+# Warmup Iteration   1: 226800886,720 ops/s
+Iteration   1: 176910023,668 ops/s
+                 ·compiler.time.profiled: 8,000 ms
+                 ·compiler.time.total:    511,000 ms
+
+
+
+Result "org.sample.JMHBenchmark_05_DummyInvokeState.baseline":
+  176910023,668 ops/s
+
+Secondary result "org.sample.JMHBenchmark_05_DummyInvokeState.baseline:·compiler.time.profiled":
+  8,000 ms
+
+Secondary result "org.sample.JMHBenchmark_05_DummyInvokeState.baseline:·compiler.time.total":
+  511,000 ms
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: C:\Program Files\BellSoft\LibericaJDK-11\bin\java.exe
+# VM options: -XX:-Inline
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_05_DummyInvokeState.noInvocationReturnValueBS
+
+# Run progress: 44,83% complete, ETA 00:01:22
+# Fork: 1 of 1
+# Warmup Iteration   1: 106274404,416 ops/s
+Iteration   1: 108095748,653 ops/s
+                 ·compiler.time.profiled: 9,000 ms
+                 ·compiler.time.total:    584,000 ms
+
+
+
+Result "org.sample.JMHBenchmark_05_DummyInvokeState.noInvocationReturnValueBS":
+  108095748,653 ops/s
+
+Secondary result "org.sample.JMHBenchmark_05_DummyInvokeState.noInvocationReturnValueBS:·compiler.time.profiled":
+  9,000 ms
+
+Secondary result "org.sample.JMHBenchmark_05_DummyInvokeState.noInvocationReturnValueBS:·compiler.time.total":
+  584,000 ms
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: C:\Program Files\BellSoft\LibericaJDK-11\bin\java.exe
+# VM options: -XX:-Inline
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_05_DummyInvokeState.noInvocationlineReturnValueTS
+
+# Run progress: 48,28% complete, ETA 00:01:17
+# Fork: 1 of 1
+# Warmup Iteration   1: 43087247,131 ops/s
+Iteration   1: 83181151,524 ops/s
+                 ·compiler.time.profiled: 39,000 ms
+                 ·compiler.time.total:    588,000 ms
+
+
+
+Result "org.sample.JMHBenchmark_05_DummyInvokeState.noInvocationlineReturnValueTS":
+  83181151,524 ops/s
+
+Secondary result "org.sample.JMHBenchmark_05_DummyInvokeState.noInvocationlineReturnValueTS:·compiler.time.profiled":
+  39,000 ms
+
+Secondary result "org.sample.JMHBenchmark_05_DummyInvokeState.noInvocationlineReturnValueTS:·compiler.time.total":
+  588,000 ms
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: C:\Program Files\BellSoft\LibericaJDK-11\bin\java.exe
+# VM options: -XX:-Inline
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_05_DummyInvokeState.testInvocation
+
+# Run progress: 51,72% complete, ETA 00:01:11
+# Fork: 1 of 1
+# Warmup Iteration   1: 158495488,275 ops/s
+Iteration   1: 96407015,010 ops/s
+                 ·compiler.time.profiled: 1,000 ms
+                 ·compiler.time.total:    421,000 ms
+
+
+
+Result "org.sample.JMHBenchmark_05_DummyInvokeState.testInvocation":
+  96407015,010 ops/s
+
+Secondary result "org.sample.JMHBenchmark_05_DummyInvokeState.testInvocation:·compiler.time.profiled":
+  1,000 ms
+
+Secondary result "org.sample.JMHBenchmark_05_DummyInvokeState.testInvocation:·compiler.time.total":
+  421,000 ms
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: C:\Program Files\BellSoft\LibericaJDK-11\bin\java.exe
+# VM options: -XX:-Inline
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_05_DummyInvokeState.testInvocationReturnValueBS
+
+# Run progress: 55,17% complete, ETA 00:01:06
+# Fork: 1 of 1
+# Warmup Iteration   1: 80912122,582 ops/s
+Iteration   1: 81728147,325 ops/s
+                 ·compiler.time.profiled: 10,000 ms
+                 ·compiler.time.total:    776,000 ms
+
+
+
+Result "org.sample.JMHBenchmark_05_DummyInvokeState.testInvocationReturnValueBS":
+  81728147,325 ops/s
+
+Secondary result "org.sample.JMHBenchmark_05_DummyInvokeState.testInvocationReturnValueBS:·compiler.time.profiled":
+  10,000 ms
+
+Secondary result "org.sample.JMHBenchmark_05_DummyInvokeState.testInvocationReturnValueBS:·compiler.time.total":
+  776,000 ms
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: C:\Program Files\BellSoft\LibericaJDK-11\bin\java.exe
+# VM options: -XX:-Inline
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_05_DummyInvokeState.testInvocationReturnValueTS
+
+# Run progress: 58,62% complete, ETA 00:01:01
+# Fork: 1 of 1
+# Warmup Iteration   1: 56305757,485 ops/s
+Iteration   1: 60228249,418 ops/s
+                 ·compiler.time.profiled: 20,000 ms
+                 ·compiler.time.total:    472,000 ms
+
+
+
+Result "org.sample.JMHBenchmark_05_DummyInvokeState.testInvocationReturnValueTS":
+  60228249,418 ops/s
+
+Secondary result "org.sample.JMHBenchmark_05_DummyInvokeState.testInvocationReturnValueTS:·compiler.time.profiled":
+  20,000 ms
+
+Secondary result "org.sample.JMHBenchmark_05_DummyInvokeState.testInvocationReturnValueTS:·compiler.time.total":
+  472,000 ms
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: C:\Program Files\BellSoft\LibericaJDK-11\bin\java.exe
+# VM options: -XX:-Inline
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_06_SumCalcInvoke.SumCalcInvoke
+
+# Run progress: 62,07% complete, ETA 00:00:56
+# Fork: 1 of 1
+# Warmup Iteration   1: 1561186,158 ops/s
+Iteration   1: 1744710,178 ops/s
+                 ·compiler.time.profiled: 18,000 ms
+                 ·compiler.time.total:    485,000 ms
+
+
+
+Result "org.sample.JMHBenchmark_06_SumCalcInvoke.SumCalcInvoke":
+  1744710,178 ops/s
+
+Secondary result "org.sample.JMHBenchmark_06_SumCalcInvoke.SumCalcInvoke:·compiler.time.profiled":
+  18,000 ms
+
+Secondary result "org.sample.JMHBenchmark_06_SumCalcInvoke.SumCalcInvoke:·compiler.time.total":
+  485,000 ms
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: C:\Program Files\BellSoft\LibericaJDK-11\bin\java.exe
+# VM options: -XX:-Inline
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_06_SumCalcInvoke.baseline
+
+# Run progress: 65,52% complete, ETA 00:00:51
+# Fork: 1 of 1
+# Warmup Iteration   1: 224745875,087 ops/s
+Iteration   1: 231079703,907 ops/s
+                 ·compiler.time.profiled: 8,000 ms
+                 ·compiler.time.total:    649,000 ms
+
+
+
+Result "org.sample.JMHBenchmark_06_SumCalcInvoke.baseline":
+  231079703,907 ops/s
+
+Secondary result "org.sample.JMHBenchmark_06_SumCalcInvoke.baseline:·compiler.time.profiled":
+  8,000 ms
+
+Secondary result "org.sample.JMHBenchmark_06_SumCalcInvoke.baseline:·compiler.time.total":
+  649,000 ms
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: C:\Program Files\BellSoft\LibericaJDK-11\bin\java.exe
+# VM options: -XX:-Inline
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_06_SumCalcInvoke.noInvocationSumCalc
+
+# Run progress: 68,97% complete, ETA 00:00:46
+# Fork: 1 of 1
+# Warmup Iteration   1: 3064730,155 ops/s
+Iteration   1: 1848066,609 ops/s
+                 ·compiler.time.profiled: 20,000 ms
+                 ·compiler.time.total:    451,000 ms
+
+
+
+Result "org.sample.JMHBenchmark_06_SumCalcInvoke.noInvocationSumCalc":
+  1848066,609 ops/s
+
+Secondary result "org.sample.JMHBenchmark_06_SumCalcInvoke.noInvocationSumCalc:·compiler.time.profiled":
+  20,000 ms
+
+Secondary result "org.sample.JMHBenchmark_06_SumCalcInvoke.noInvocationSumCalc:·compiler.time.total":
+  451,000 ms
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: C:\Program Files\BellSoft\LibericaJDK-11\bin\java.exe
+# VM options: -XX:-Inline
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_08_NumberOfSumCalc.baseline
+
+# Run progress: 72,41% complete, ETA 00:00:40
+# Fork: 1 of 1
+# Warmup Iteration   1: 250260632,895 ops/s
+Iteration   1: 254367548,703 ops/s
+                 ·compiler.time.profiled: 5,000 ms
+                 ·compiler.time.total:    475,000 ms
+
+
+
+Result "org.sample.JMHBenchmark_08_NumberOfSumCalc.baseline":
+  254367548,703 ops/s
+
+Secondary result "org.sample.JMHBenchmark_08_NumberOfSumCalc.baseline:·compiler.time.profiled":
+  5,000 ms
+
+Secondary result "org.sample.JMHBenchmark_08_NumberOfSumCalc.baseline:·compiler.time.total":
+  475,000 ms
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: C:\Program Files\BellSoft\LibericaJDK-11\bin\java.exe
+# VM options: -XX:-Inline
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_08_NumberOfSumCalc.longSumCalcInvoke
+
+# Run progress: 75,86% complete, ETA 00:00:35
+# Fork: 1 of 1
+# Warmup Iteration   1: 242937,988 ops/s
+Iteration   1: 378935,677 ops/s
+                 ·compiler.time.profiled: 11,000 ms
+                 ·compiler.time.total:    588,000 ms
+
+
+
+Result "org.sample.JMHBenchmark_08_NumberOfSumCalc.longSumCalcInvoke":
+  378935,677 ops/s
+
+Secondary result "org.sample.JMHBenchmark_08_NumberOfSumCalc.longSumCalcInvoke:·compiler.time.profiled":
+  11,000 ms
+
+Secondary result "org.sample.JMHBenchmark_08_NumberOfSumCalc.longSumCalcInvoke:·compiler.time.total":
+  588,000 ms
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: C:\Program Files\BellSoft\LibericaJDK-11\bin\java.exe
+# VM options: -XX:-Inline
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_08_NumberOfSumCalc.noInvocationNumberSumCalc
+
+# Run progress: 79,31% complete, ETA 00:00:30
+# Fork: 1 of 1
+# Warmup Iteration   1: 378203,953 ops/s
+Iteration   1: 305642,087 ops/s
+                 ·compiler.time.profiled: 29,000 ms
+                 ·compiler.time.total:    496,000 ms
+
+
+
+Result "org.sample.JMHBenchmark_08_NumberOfSumCalc.noInvocationNumberSumCalc":
+  305642,087 ops/s
+
+Secondary result "org.sample.JMHBenchmark_08_NumberOfSumCalc.noInvocationNumberSumCalc:·compiler.time.profiled":
+  29,000 ms
+
+Secondary result "org.sample.JMHBenchmark_08_NumberOfSumCalc.noInvocationNumberSumCalc:·compiler.time.total":
+  496,000 ms
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: C:\Program Files\BellSoft\LibericaJDK-11\bin\java.exe
+# VM options: -XX:-Inline
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_08_NumberOfSumCalc.numberSumCalcInvoke
+
+# Run progress: 82,76% complete, ETA 00:00:25
+# Fork: 1 of 1
+# Warmup Iteration   1: 284171,920 ops/s
+Iteration   1: 275040,711 ops/s
+                 ·compiler.time.profiled: 9,000 ms
+                 ·compiler.time.total:    542,000 ms
+
+
+
+Result "org.sample.JMHBenchmark_08_NumberOfSumCalc.numberSumCalcInvoke":
+  275040,711 ops/s
+
+Secondary result "org.sample.JMHBenchmark_08_NumberOfSumCalc.numberSumCalcInvoke:·compiler.time.profiled":
+  9,000 ms
+
+Secondary result "org.sample.JMHBenchmark_08_NumberOfSumCalc.numberSumCalcInvoke:·compiler.time.total":
+  542,000 ms
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: C:\Program Files\BellSoft\LibericaJDK-11\bin\java.exe
+# VM options: -XX:-Inline
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_08_NumberOfSumCalc.numberSumCalcInvokeNested
+
+# Run progress: 86,21% complete, ETA 00:00:20
+# Fork: 1 of 1
+# Warmup Iteration   1: 184801,709 ops/s
+Iteration   1: 198708,553 ops/s
+                 ·compiler.time.profiled: 18,000 ms
+                 ·compiler.time.total:    504,000 ms
+
+
+
+Result "org.sample.JMHBenchmark_08_NumberOfSumCalc.numberSumCalcInvokeNested":
+  198708,553 ops/s
+
+Secondary result "org.sample.JMHBenchmark_08_NumberOfSumCalc.numberSumCalcInvokeNested:·compiler.time.profiled":
+  18,000 ms
+
+Secondary result "org.sample.JMHBenchmark_08_NumberOfSumCalc.numberSumCalcInvokeNested:·compiler.time.total":
+  504,000 ms
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: C:\Program Files\BellSoft\LibericaJDK-11\bin\java.exe
+# VM options: -XX:-Inline
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_10_longSumCalc.baseline
+
+# Run progress: 89,66% complete, ETA 00:00:15
+# Fork: 1 of 1
+# Warmup Iteration   1: 225768607,158 ops/s
+Iteration   1: 252986614,632 ops/s
+                 ·compiler.time.profiled: 1,000 ms
+                 ·compiler.time.total:    449,000 ms
+
+
+
+Result "org.sample.JMHBenchmark_10_longSumCalc.baseline":
+  252986614,632 ops/s
+
+Secondary result "org.sample.JMHBenchmark_10_longSumCalc.baseline:·compiler.time.profiled":
+  1,000 ms
+
+Secondary result "org.sample.JMHBenchmark_10_longSumCalc.baseline:·compiler.time.total":
+  449,000 ms
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: C:\Program Files\BellSoft\LibericaJDK-11\bin\java.exe
+# VM options: -XX:-Inline
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_10_longSumCalc.longSumCalc
+
+# Run progress: 93,10% complete, ETA 00:00:10
+# Fork: 1 of 1
+# Warmup Iteration   1: 70285,551 ops/s
+Iteration   1: 70739,356 ops/s
+                 ·compiler.time.profiled: 13,000 ms
+                 ·compiler.time.total:    614,000 ms
+
+
+
+Result "org.sample.JMHBenchmark_10_longSumCalc.longSumCalc":
+  70739,356 ops/s
+
+Secondary result "org.sample.JMHBenchmark_10_longSumCalc.longSumCalc:·compiler.time.profiled":
+  13,000 ms
+
+Secondary result "org.sample.JMHBenchmark_10_longSumCalc.longSumCalc:·compiler.time.total":
+  614,000 ms
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: C:\Program Files\BellSoft\LibericaJDK-11\bin\java.exe
+# VM options: -XX:-Inline
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_10_longSumCalc.noInvocationlongSumCalc
+
+# Run progress: 96,55% complete, ETA 00:00:05
+# Fork: 1 of 1
+# Warmup Iteration   1: 49515,529 ops/s
+Iteration   1: 47000,118 ops/s
+                 ·compiler.time.profiled: 4,000 ms
+                 ·compiler.time.total:    442,000 ms
+
+
+
+Result "org.sample.JMHBenchmark_10_longSumCalc.noInvocationlongSumCalc":
+  47000,118 ops/s
+
+Secondary result "org.sample.JMHBenchmark_10_longSumCalc.noInvocationlongSumCalc:·compiler.time.profiled":
+  4,000 ms
+
+Secondary result "org.sample.JMHBenchmark_10_longSumCalc.noInvocationlongSumCalc:·compiler.time.total":
+  442,000 ms
+
+
+# Run complete. Total time: 00:02:25
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                                                                                                       Mode  Cnt          Score   Error  Units
+JMHBenchmark_01_DummyInvoke.baseline                                                                           thrpt       101747413,935          ops/s
+JMHBenchmark_01_DummyInvoke.baseline:·compiler.time.profiled                                                   thrpt               6,000             ms
+JMHBenchmark_01_DummyInvoke.baseline:·compiler.time.total                                                      thrpt             502,000             ms
+JMHBenchmark_01_DummyInvoke.testInvocationDummyMethod                                                          thrpt       139665826,899          ops/s
+JMHBenchmark_01_DummyInvoke.testInvocationDummyMethod:·compiler.time.profiled                                  thrpt               6,000             ms
+JMHBenchmark_01_DummyInvoke.testInvocationDummyMethod:·compiler.time.total                                     thrpt             600,000             ms
+JMHBenchmark_02_InvokeWithReturn.baseline                                                                      thrpt       276797208,645          ops/s
+JMHBenchmark_02_InvokeWithReturn.baseline:·compiler.time.profiled                                              thrpt               1,000             ms
+JMHBenchmark_02_InvokeWithReturn.baseline:·compiler.time.total                                                 thrpt             565,000             ms
+JMHBenchmark_02_InvokeWithReturn.noInvocation                                                                  thrpt        55015601,894          ops/s
+JMHBenchmark_02_InvokeWithReturn.noInvocation:·compiler.time.profiled                                          thrpt              20,000             ms
+JMHBenchmark_02_InvokeWithReturn.noInvocation:·compiler.time.total                                             thrpt             429,000             ms
+JMHBenchmark_02_InvokeWithReturn.testInvocationDummyMethodWithBh                                               thrpt        69617798,831          ops/s
+JMHBenchmark_02_InvokeWithReturn.testInvocationDummyMethodWithBh:·compiler.time.profiled                       thrpt              11,000             ms
+JMHBenchmark_02_InvokeWithReturn.testInvocationDummyMethodWithBh:·compiler.time.total                          thrpt             512,000             ms
+JMHBenchmark_02_InvokeWithReturn.testInvocationDummyMethodWithReturnValue                                      thrpt        86300572,344          ops/s
+JMHBenchmark_02_InvokeWithReturn.testInvocationDummyMethodWithReturnValue:·compiler.time.profiled              thrpt              10,000             ms
+JMHBenchmark_02_InvokeWithReturn.testInvocationDummyMethodWithReturnValue:·compiler.time.total                 thrpt             706,000             ms
+JMHBenchmark_04_DummyInvokeWithValue.baseline                                                                  thrpt       162017217,237          ops/s
+JMHBenchmark_04_DummyInvokeWithValue.baseline:·compiler.time.profiled                                          thrpt              13,000             ms
+JMHBenchmark_04_DummyInvokeWithValue.baseline:·compiler.time.total                                             thrpt             434,000             ms
+JMHBenchmark_04_DummyInvokeWithValue.noInvocationReturnValue                                                   thrpt       165926195,915          ops/s
+JMHBenchmark_04_DummyInvokeWithValue.noInvocationReturnValue:·compiler.time.profiled                           thrpt              11,000             ms
+JMHBenchmark_04_DummyInvokeWithValue.noInvocationReturnValue:·compiler.time.total                              thrpt             473,000             ms
+JMHBenchmark_04_DummyInvokeWithValue.noInvocationReturnVolatileValue                                           thrpt       167305140,077          ops/s
+JMHBenchmark_04_DummyInvokeWithValue.noInvocationReturnVolatileValue:·compiler.time.profiled                   thrpt              15,000             ms
+JMHBenchmark_04_DummyInvokeWithValue.noInvocationReturnVolatileValue:·compiler.time.total                      thrpt             757,000             ms
+JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethod                                                 thrpt        78160228,366          ops/s
+JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethod:·compiler.time.profiled                         thrpt              15,000             ms
+JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethod:·compiler.time.total                            thrpt             460,000             ms
+JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethodWithReturnValue                                  thrpt       102971964,832          ops/s
+JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethodWithReturnValue:·compiler.time.profiled          thrpt              13,000             ms
+JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethodWithReturnValue:·compiler.time.total             thrpt             509,000             ms
+JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethodWithReturnVolatileValue                          thrpt       117197563,152          ops/s
+JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethodWithReturnVolatileValue:·compiler.time.profiled  thrpt               4,000             ms
+JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethodWithReturnVolatileValue:·compiler.time.total     thrpt             452,000             ms
+JMHBenchmark_05_DummyInvokeState.baseline                                                                      thrpt       176910023,668          ops/s
+JMHBenchmark_05_DummyInvokeState.baseline:·compiler.time.profiled                                              thrpt               8,000             ms
+JMHBenchmark_05_DummyInvokeState.baseline:·compiler.time.total                                                 thrpt             511,000             ms
+JMHBenchmark_05_DummyInvokeState.noInvocationReturnValueBS                                                     thrpt       108095748,653          ops/s
+JMHBenchmark_05_DummyInvokeState.noInvocationReturnValueBS:·compiler.time.profiled                             thrpt               9,000             ms
+JMHBenchmark_05_DummyInvokeState.noInvocationReturnValueBS:·compiler.time.total                                thrpt             584,000             ms
+JMHBenchmark_05_DummyInvokeState.noInvocationlineReturnValueTS                                                 thrpt        83181151,524          ops/s
+JMHBenchmark_05_DummyInvokeState.noInvocationlineReturnValueTS:·compiler.time.profiled                         thrpt              39,000             ms
+JMHBenchmark_05_DummyInvokeState.noInvocationlineReturnValueTS:·compiler.time.total                            thrpt             588,000             ms
+JMHBenchmark_05_DummyInvokeState.testInvocation                                                                thrpt        96407015,010          ops/s
+JMHBenchmark_05_DummyInvokeState.testInvocation:·compiler.time.profiled                                        thrpt               1,000             ms
+JMHBenchmark_05_DummyInvokeState.testInvocation:·compiler.time.total                                           thrpt             421,000             ms
+JMHBenchmark_05_DummyInvokeState.testInvocationReturnValueBS                                                   thrpt        81728147,325          ops/s
+JMHBenchmark_05_DummyInvokeState.testInvocationReturnValueBS:·compiler.time.profiled                           thrpt              10,000             ms
+JMHBenchmark_05_DummyInvokeState.testInvocationReturnValueBS:·compiler.time.total                              thrpt             776,000             ms
+JMHBenchmark_05_DummyInvokeState.testInvocationReturnValueTS                                                   thrpt        60228249,418          ops/s
+JMHBenchmark_05_DummyInvokeState.testInvocationReturnValueTS:·compiler.time.profiled                           thrpt              20,000             ms
+JMHBenchmark_05_DummyInvokeState.testInvocationReturnValueTS:·compiler.time.total                              thrpt             472,000             ms
+JMHBenchmark_06_SumCalcInvoke.SumCalcInvoke                                                                    thrpt         1744710,178          ops/s
+JMHBenchmark_06_SumCalcInvoke.SumCalcInvoke:·compiler.time.profiled                                            thrpt              18,000             ms
+JMHBenchmark_06_SumCalcInvoke.SumCalcInvoke:·compiler.time.total                                               thrpt             485,000             ms
+JMHBenchmark_06_SumCalcInvoke.baseline                                                                         thrpt       231079703,907          ops/s
+JMHBenchmark_06_SumCalcInvoke.baseline:·compiler.time.profiled                                                 thrpt               8,000             ms
+JMHBenchmark_06_SumCalcInvoke.baseline:·compiler.time.total                                                    thrpt             649,000             ms
+JMHBenchmark_06_SumCalcInvoke.noInvocationSumCalc                                                              thrpt         1848066,609          ops/s
+JMHBenchmark_06_SumCalcInvoke.noInvocationSumCalc:·compiler.time.profiled                                      thrpt              20,000             ms
+JMHBenchmark_06_SumCalcInvoke.noInvocationSumCalc:·compiler.time.total                                         thrpt             451,000             ms
+JMHBenchmark_08_NumberOfSumCalc.baseline                                                                       thrpt       254367548,703          ops/s
+JMHBenchmark_08_NumberOfSumCalc.baseline:·compiler.time.profiled                                               thrpt               5,000             ms
+JMHBenchmark_08_NumberOfSumCalc.baseline:·compiler.time.total                                                  thrpt             475,000             ms
+JMHBenchmark_08_NumberOfSumCalc.longSumCalcInvoke                                                              thrpt          378935,677          ops/s
+JMHBenchmark_08_NumberOfSumCalc.longSumCalcInvoke:·compiler.time.profiled                                      thrpt              11,000             ms
+JMHBenchmark_08_NumberOfSumCalc.longSumCalcInvoke:·compiler.time.total                                         thrpt             588,000             ms
+JMHBenchmark_08_NumberOfSumCalc.noInvocationNumberSumCalc                                                      thrpt          305642,087          ops/s
+JMHBenchmark_08_NumberOfSumCalc.noInvocationNumberSumCalc:·compiler.time.profiled                              thrpt              29,000             ms
+JMHBenchmark_08_NumberOfSumCalc.noInvocationNumberSumCalc:·compiler.time.total                                 thrpt             496,000             ms
+JMHBenchmark_08_NumberOfSumCalc.numberSumCalcInvoke                                                            thrpt          275040,711          ops/s
+JMHBenchmark_08_NumberOfSumCalc.numberSumCalcInvoke:·compiler.time.profiled                                    thrpt               9,000             ms
+JMHBenchmark_08_NumberOfSumCalc.numberSumCalcInvoke:·compiler.time.total                                       thrpt             542,000             ms
+JMHBenchmark_08_NumberOfSumCalc.numberSumCalcInvokeNested                                                      thrpt          198708,553          ops/s
+JMHBenchmark_08_NumberOfSumCalc.numberSumCalcInvokeNested:·compiler.time.profiled                              thrpt              18,000             ms
+JMHBenchmark_08_NumberOfSumCalc.numberSumCalcInvokeNested:·compiler.time.total                                 thrpt             504,000             ms
+JMHBenchmark_10_longSumCalc.baseline                                                                           thrpt       252986614,632          ops/s
+JMHBenchmark_10_longSumCalc.baseline:·compiler.time.profiled                                                   thrpt               1,000             ms
+JMHBenchmark_10_longSumCalc.baseline:·compiler.time.total                                                      thrpt             449,000             ms
+JMHBenchmark_10_longSumCalc.longSumCalc                                                                        thrpt           70739,356          ops/s
+JMHBenchmark_10_longSumCalc.longSumCalc:·compiler.time.profiled                                                thrpt              13,000             ms
+JMHBenchmark_10_longSumCalc.longSumCalc:·compiler.time.total                                                   thrpt             614,000             ms
+JMHBenchmark_10_longSumCalc.noInvocationlongSumCalc                                                            thrpt           47000,118          ops/s
+JMHBenchmark_10_longSumCalc.noInvocationlongSumCalc:·compiler.time.profiled                                    thrpt               4,000             ms
+JMHBenchmark_10_longSumCalc.noInvocationlongSumCalc:·compiler.time.total                                       thrpt             442,000             ms
+
+Benchmark result is saved to results/win-server-Inline-comp.txt
