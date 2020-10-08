@@ -1,0 +1,1026 @@
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: /usr/lib/jvm/bellsoft-java11-amd64/bin/java
+# VM options: -XX:-Inline -XX:+UnlockExperimentalVMOptions -XX:AOTLibrary=target/benchmarks.so
+# Warmup: 3 iterations, 2 s each
+# Measurement: 2 iterations, 2 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_01_DummyInvoke.baseline
+
+# Run progress: 0.00% complete, ETA 00:09:40
+# Fork: 1 of 2
+# Warmup Iteration   1: 376472465.255 ops/s
+# Warmup Iteration   2: 412193122.618 ops/s
+# Warmup Iteration   3: 423686156.615 ops/s
+Iteration   1: 430942443.072 ops/s
+Iteration   2: 432657134.234 ops/s
+
+# Run progress: 1.72% complete, ETA 00:13:09
+# Fork: 2 of 2
+# Warmup Iteration   1: 415768538.059 ops/s
+# Warmup Iteration   2: 413372668.326 ops/s
+# Warmup Iteration   3: 416251557.816 ops/s
+Iteration   1: 428807467.166 ops/s
+Iteration   2: 428268259.225 ops/s
+
+
+Result "org.sample.JMHBenchmark_01_DummyInvoke.baseline":
+  430168825.924 ±(99.9%) 13060900.801 ops/s [Average]
+  (min, avg, max) = (428268259.225, 430168825.924, 432657134.234), stdev = 2021188.857
+  CI (99.9%): [417107925.123, 443229726.726] (assumes normal distribution)
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: /usr/lib/jvm/bellsoft-java11-amd64/bin/java
+# VM options: -XX:-Inline -XX:+UnlockExperimentalVMOptions -XX:AOTLibrary=target/benchmarks.so
+# Warmup: 3 iterations, 2 s each
+# Measurement: 2 iterations, 2 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_01_DummyInvoke.testInvocationDummyMethod
+
+# Run progress: 3.45% complete, ETA 00:12:49
+# Fork: 1 of 2
+# Warmup Iteration   1: 187697887.100 ops/s
+# Warmup Iteration   2: 189456206.438 ops/s
+# Warmup Iteration   3: 231155504.793 ops/s
+Iteration   1: 231976134.865 ops/s
+Iteration   2: 229962994.249 ops/s
+
+# Run progress: 5.17% complete, ETA 00:12:34
+# Fork: 2 of 2
+# Warmup Iteration   1: 185395139.557 ops/s
+# Warmup Iteration   2: 192355153.532 ops/s
+# Warmup Iteration   3: 231772299.840 ops/s
+Iteration   1: 229053306.025 ops/s
+Iteration   2: 230535596.647 ops/s
+
+
+Result "org.sample.JMHBenchmark_01_DummyInvoke.testInvocationDummyMethod":
+  230382007.947 ±(99.9%) 7919432.120 ops/s [Average]
+  (min, avg, max) = (229053306.025, 230382007.947, 231976134.865), stdev = 1225540.887
+  CI (99.9%): [222462575.827, 238301440.067] (assumes normal distribution)
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: /usr/lib/jvm/bellsoft-java11-amd64/bin/java
+# VM options: -XX:-Inline -XX:+UnlockExperimentalVMOptions -XX:AOTLibrary=target/benchmarks.so
+# Warmup: 3 iterations, 2 s each
+# Measurement: 2 iterations, 2 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_02_InvokeWithReturn.baseline
+
+# Run progress: 6.90% complete, ETA 00:12:20
+# Fork: 1 of 2
+# Warmup Iteration   1: 416127635.692 ops/s
+# Warmup Iteration   2: 407124886.194 ops/s
+# Warmup Iteration   3: 432672767.791 ops/s
+Iteration   1: 428421928.188 ops/s
+Iteration   2: 433378670.704 ops/s
+
+# Run progress: 8.62% complete, ETA 00:12:05
+# Fork: 2 of 2
+# Warmup Iteration   1: 414888658.520 ops/s
+# Warmup Iteration   2: 409008728.648 ops/s
+# Warmup Iteration   3: 429906959.417 ops/s
+Iteration   1: 430355196.164 ops/s
+Iteration   2: 433559060.507 ops/s
+
+
+Result "org.sample.JMHBenchmark_02_InvokeWithReturn.baseline":
+  431428713.891 ±(99.9%) 16061611.607 ops/s [Average]
+  (min, avg, max) = (428421928.188, 431428713.891, 433559060.507), stdev = 2485552.175
+  CI (99.9%): [415367102.284, 447490325.498] (assumes normal distribution)
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: /usr/lib/jvm/bellsoft-java11-amd64/bin/java
+# VM options: -XX:-Inline -XX:+UnlockExperimentalVMOptions -XX:AOTLibrary=target/benchmarks.so
+# Warmup: 3 iterations, 2 s each
+# Measurement: 2 iterations, 2 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_02_InvokeWithReturn.noInvocation
+
+# Run progress: 10.34% complete, ETA 00:11:51
+# Fork: 1 of 2
+# Warmup Iteration   1: 105359708.104 ops/s
+# Warmup Iteration   2: 104887582.975 ops/s
+# Warmup Iteration   3: 119396235.384 ops/s
+Iteration   1: 119602198.094 ops/s
+Iteration   2: 119949837.794 ops/s
+
+# Run progress: 12.07% complete, ETA 00:11:37
+# Fork: 2 of 2
+# Warmup Iteration   1: 105442339.958 ops/s
+# Warmup Iteration   2: 104011398.674 ops/s
+# Warmup Iteration   3: 120059725.539 ops/s
+Iteration   1: 119864352.119 ops/s
+Iteration   2: 118723573.108 ops/s
+
+
+Result "org.sample.JMHBenchmark_02_InvokeWithReturn.noInvocation":
+  119534990.279 ±(99.9%) 3623888.370 ops/s [Average]
+  (min, avg, max) = (118723573.108, 119534990.279, 119949837.794), stdev = 560800.737
+  CI (99.9%): [115911101.908, 123158878.649] (assumes normal distribution)
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: /usr/lib/jvm/bellsoft-java11-amd64/bin/java
+# VM options: -XX:-Inline -XX:+UnlockExperimentalVMOptions -XX:AOTLibrary=target/benchmarks.so
+# Warmup: 3 iterations, 2 s each
+# Measurement: 2 iterations, 2 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_02_InvokeWithReturn.testInvocationDummyMethodWithBh
+
+# Run progress: 13.79% complete, ETA 00:11:22
+# Fork: 1 of 2
+# Warmup Iteration   1: 91722357.525 ops/s
+# Warmup Iteration   2: 92043413.241 ops/s
+# Warmup Iteration   3: 105402846.100 ops/s
+Iteration   1: 102842055.241 ops/s
+Iteration   2: 104162324.420 ops/s
+
+# Run progress: 15.52% complete, ETA 00:11:08
+# Fork: 2 of 2
+# Warmup Iteration   1: 85462026.247 ops/s
+# Warmup Iteration   2: 92162181.183 ops/s
+# Warmup Iteration   3: 105113966.465 ops/s
+Iteration   1: 105152764.403 ops/s
+Iteration   2: 104341407.016 ops/s
+
+
+Result "org.sample.JMHBenchmark_02_InvokeWithReturn.testInvocationDummyMethodWithBh":
+  104124637.770 ±(99.9%) 6187414.113 ops/s [Average]
+  (min, avg, max) = (102842055.241, 104124637.770, 105152764.403), stdev = 957509.183
+  CI (99.9%): [97937223.657, 110312051.882] (assumes normal distribution)
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: /usr/lib/jvm/bellsoft-java11-amd64/bin/java
+# VM options: -XX:-Inline -XX:+UnlockExperimentalVMOptions -XX:AOTLibrary=target/benchmarks.so
+# Warmup: 3 iterations, 2 s each
+# Measurement: 2 iterations, 2 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_02_InvokeWithReturn.testInvocationDummyMethodWithReturnValue
+
+# Run progress: 17.24% complete, ETA 00:10:54
+# Fork: 1 of 2
+# Warmup Iteration   1: 93223061.344 ops/s
+# Warmup Iteration   2: 92628496.173 ops/s
+# Warmup Iteration   3: 104721924.531 ops/s
+Iteration   1: 105231109.593 ops/s
+Iteration   2: 103866964.391 ops/s
+
+# Run progress: 18.97% complete, ETA 00:10:41
+# Fork: 2 of 2
+# Warmup Iteration   1: 93956428.915 ops/s
+# Warmup Iteration   2: 92673340.329 ops/s
+# Warmup Iteration   3: 104458128.586 ops/s
+Iteration   1: 104306834.403 ops/s
+Iteration   2: 105328163.041 ops/s
+
+
+Result "org.sample.JMHBenchmark_02_InvokeWithReturn.testInvocationDummyMethodWithReturnValue":
+  104683267.857 ±(99.9%) 4605837.543 ops/s [Average]
+  (min, avg, max) = (103866964.391, 104683267.857, 105328163.041), stdev = 712758.458
+  CI (99.9%): [100077430.314, 109289105.400] (assumes normal distribution)
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: /usr/lib/jvm/bellsoft-java11-amd64/bin/java
+# VM options: -XX:-Inline -XX:+UnlockExperimentalVMOptions -XX:AOTLibrary=target/benchmarks.so
+# Warmup: 3 iterations, 2 s each
+# Measurement: 2 iterations, 2 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_04_DummyInvokeWithValue.baseline
+
+# Run progress: 20.69% complete, ETA 00:10:27
+# Fork: 1 of 2
+# Warmup Iteration   1: 413287996.520 ops/s
+# Warmup Iteration   2: 413783060.150 ops/s
+# Warmup Iteration   3: 433498535.641 ops/s
+Iteration   1: 434080375.737 ops/s
+Iteration   2: 428851209.645 ops/s
+
+# Run progress: 22.41% complete, ETA 00:10:13
+# Fork: 2 of 2
+# Warmup Iteration   1: 415197863.210 ops/s
+# Warmup Iteration   2: 413447752.045 ops/s
+# Warmup Iteration   3: 434129206.261 ops/s
+Iteration   1: 434476937.484 ops/s
+Iteration   2: 429554683.402 ops/s
+
+
+Result "org.sample.JMHBenchmark_04_DummyInvokeWithValue.baseline":
+  431740801.567 ±(99.9%) 19056077.140 ops/s [Average]
+  (min, avg, max) = (428851209.645, 431740801.567, 434476937.484), stdev = 2948949.031
+  CI (99.9%): [412684724.427, 450796878.706] (assumes normal distribution)
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: /usr/lib/jvm/bellsoft-java11-amd64/bin/java
+# VM options: -XX:-Inline -XX:+UnlockExperimentalVMOptions -XX:AOTLibrary=target/benchmarks.so
+# Warmup: 3 iterations, 2 s each
+# Measurement: 2 iterations, 2 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_04_DummyInvokeWithValue.noInvocationReturnValue
+
+# Run progress: 24.14% complete, ETA 00:09:59
+# Fork: 1 of 2
+# Warmup Iteration   1: 204680856.309 ops/s
+# Warmup Iteration   2: 213789045.713 ops/s
+# Warmup Iteration   3: 230900868.944 ops/s
+Iteration   1: 220840150.510 ops/s
+Iteration   2: 231255085.046 ops/s
+
+# Run progress: 25.86% complete, ETA 00:09:46
+# Fork: 2 of 2
+# Warmup Iteration   1: 204344451.341 ops/s
+# Warmup Iteration   2: 216567717.795 ops/s
+# Warmup Iteration   3: 231584059.996 ops/s
+Iteration   1: 231645705.533 ops/s
+Iteration   2: 230352393.515 ops/s
+
+
+Result "org.sample.JMHBenchmark_04_DummyInvokeWithValue.noInvocationReturnValue":
+  228523333.651 ±(99.9%) 33283622.754 ops/s [Average]
+  (min, avg, max) = (220840150.510, 228523333.651, 231645705.533), stdev = 5150677.464
+  CI (99.9%): [195239710.897, 261806956.405] (assumes normal distribution)
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: /usr/lib/jvm/bellsoft-java11-amd64/bin/java
+# VM options: -XX:-Inline -XX:+UnlockExperimentalVMOptions -XX:AOTLibrary=target/benchmarks.so
+# Warmup: 3 iterations, 2 s each
+# Measurement: 2 iterations, 2 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_04_DummyInvokeWithValue.noInvocationReturnVolatileValue
+
+# Run progress: 27.59% complete, ETA 00:09:32
+# Fork: 1 of 2
+# Warmup Iteration   1: 203911314.228 ops/s
+# Warmup Iteration   2: 216361077.836 ops/s
+# Warmup Iteration   3: 231994109.265 ops/s
+Iteration   1: 231908142.656 ops/s
+Iteration   2: 230032277.823 ops/s
+
+# Run progress: 29.31% complete, ETA 00:09:18
+# Fork: 2 of 2
+# Warmup Iteration   1: 202369349.844 ops/s
+# Warmup Iteration   2: 216210648.673 ops/s
+# Warmup Iteration   3: 230585658.639 ops/s
+Iteration   1: 231396272.042 ops/s
+Iteration   2: 231553184.996 ops/s
+
+
+Result "org.sample.JMHBenchmark_04_DummyInvokeWithValue.noInvocationReturnVolatileValue":
+  231222469.379 ±(99.9%) 5310748.837 ops/s [Average]
+  (min, avg, max) = (230032277.823, 231222469.379, 231908142.656), stdev = 821844.261
+  CI (99.9%): [225911720.543, 236533218.216] (assumes normal distribution)
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: /usr/lib/jvm/bellsoft-java11-amd64/bin/java
+# VM options: -XX:-Inline -XX:+UnlockExperimentalVMOptions -XX:AOTLibrary=target/benchmarks.so
+# Warmup: 3 iterations, 2 s each
+# Measurement: 2 iterations, 2 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethod
+
+# Run progress: 31.03% complete, ETA 00:09:04
+# Fork: 1 of 2
+# Warmup Iteration   1: 192491809.980 ops/s
+# Warmup Iteration   2: 191913419.484 ops/s
+# Warmup Iteration   3: 230123646.368 ops/s
+Iteration   1: 228412383.067 ops/s
+Iteration   2: 229420300.678 ops/s
+
+# Run progress: 32.76% complete, ETA 00:08:51
+# Fork: 2 of 2
+# Warmup Iteration   1: 193051694.764 ops/s
+# Warmup Iteration   2: 192343516.517 ops/s
+# Warmup Iteration   3: 231967991.702 ops/s
+Iteration   1: 231666719.724 ops/s
+Iteration   2: 231526163.983 ops/s
+
+
+Result "org.sample.JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethod":
+  230256391.863 ±(99.9%) 10353149.429 ops/s [Average]
+  (min, avg, max) = (228412383.067, 230256391.863, 231666719.724), stdev = 1602161.334
+  CI (99.9%): [219903242.434, 240609541.292] (assumes normal distribution)
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: /usr/lib/jvm/bellsoft-java11-amd64/bin/java
+# VM options: -XX:-Inline -XX:+UnlockExperimentalVMOptions -XX:AOTLibrary=target/benchmarks.so
+# Warmup: 3 iterations, 2 s each
+# Measurement: 2 iterations, 2 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethodWithReturnValue
+
+# Run progress: 34.48% complete, ETA 00:08:37
+# Fork: 1 of 2
+# Warmup Iteration   1: 132622267.336 ops/s
+# Warmup Iteration   2: 131765416.652 ops/s
+# Warmup Iteration   3: 158260798.905 ops/s
+Iteration   1: 157343502.865 ops/s
+Iteration   2: 156044941.980 ops/s
+
+# Run progress: 36.21% complete, ETA 00:08:23
+# Fork: 2 of 2
+# Warmup Iteration   1: 133821999.239 ops/s
+# Warmup Iteration   2: 133400189.441 ops/s
+# Warmup Iteration   3: 158093617.838 ops/s
+Iteration   1: 157810473.106 ops/s
+Iteration   2: 158089012.072 ops/s
+
+
+Result "org.sample.JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethodWithReturnValue":
+  157321982.506 ±(99.9%) 5849502.108 ops/s [Average]
+  (min, avg, max) = (156044941.980, 157321982.506, 158089012.072), stdev = 905216.926
+  CI (99.9%): [151472480.398, 163171484.613] (assumes normal distribution)
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: /usr/lib/jvm/bellsoft-java11-amd64/bin/java
+# VM options: -XX:-Inline -XX:+UnlockExperimentalVMOptions -XX:AOTLibrary=target/benchmarks.so
+# Warmup: 3 iterations, 2 s each
+# Measurement: 2 iterations, 2 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethodWithReturnVolatileValue
+
+# Run progress: 37.93% complete, ETA 00:08:10
+# Fork: 1 of 2
+# Warmup Iteration   1: 131032666.077 ops/s
+# Warmup Iteration   2: 131562879.526 ops/s
+# Warmup Iteration   3: 157744335.065 ops/s
+Iteration   1: 156000707.042 ops/s
+Iteration   2: 156534011.416 ops/s
+
+# Run progress: 39.66% complete, ETA 00:07:56
+# Fork: 2 of 2
+# Warmup Iteration   1: 133415502.649 ops/s
+# Warmup Iteration   2: 132830053.505 ops/s
+# Warmup Iteration   3: 157852978.993 ops/s
+Iteration   1: 156121249.578 ops/s
+Iteration   2: 156206575.046 ops/s
+
+
+Result "org.sample.JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethodWithReturnVolatileValue":
+  156215635.770 ±(99.9%) 1476147.418 ops/s [Average]
+  (min, avg, max) = (156000707.042, 156215635.770, 156534011.416), stdev = 228435.447
+  CI (99.9%): [154739488.352, 157691783.189] (assumes normal distribution)
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: /usr/lib/jvm/bellsoft-java11-amd64/bin/java
+# VM options: -XX:-Inline -XX:+UnlockExperimentalVMOptions -XX:AOTLibrary=target/benchmarks.so
+# Warmup: 3 iterations, 2 s each
+# Measurement: 2 iterations, 2 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_05_DummyInvokeState.baseline
+
+# Run progress: 41.38% complete, ETA 00:07:42
+# Fork: 1 of 2
+# Warmup Iteration   1: 414958832.174 ops/s
+# Warmup Iteration   2: 408646618.598 ops/s
+# Warmup Iteration   3: 433874264.695 ops/s
+Iteration   1: 433605914.100 ops/s
+Iteration   2: 434380980.319 ops/s
+
+# Run progress: 43.10% complete, ETA 00:07:29
+# Fork: 2 of 2
+# Warmup Iteration   1: 415443853.398 ops/s
+# Warmup Iteration   2: 413903333.312 ops/s
+# Warmup Iteration   3: 434775301.032 ops/s
+Iteration   1: 429044094.735 ops/s
+Iteration   2: 434005703.583 ops/s
+
+
+Result "org.sample.JMHBenchmark_05_DummyInvokeState.baseline":
+  432759173.184 ±(99.9%) 16134658.882 ops/s [Average]
+  (min, avg, max) = (429044094.735, 432759173.184, 434380980.319), stdev = 2496856.322
+  CI (99.9%): [416624514.302, 448893832.067] (assumes normal distribution)
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: /usr/lib/jvm/bellsoft-java11-amd64/bin/java
+# VM options: -XX:-Inline -XX:+UnlockExperimentalVMOptions -XX:AOTLibrary=target/benchmarks.so
+# Warmup: 3 iterations, 2 s each
+# Measurement: 2 iterations, 2 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_05_DummyInvokeState.noInvocationReturnValueBS
+
+# Run progress: 44.83% complete, ETA 00:07:15
+# Fork: 1 of 2
+# Warmup Iteration   1: 100594034.823 ops/s
+# Warmup Iteration   2: 102072584.408 ops/s
+# Warmup Iteration   3: 118272730.027 ops/s
+Iteration   1: 117072768.310 ops/s
+Iteration   2: 119706175.351 ops/s
+
+# Run progress: 46.55% complete, ETA 00:07:01
+# Fork: 2 of 2
+# Warmup Iteration   1: 102314574.449 ops/s
+# Warmup Iteration   2: 101262324.820 ops/s
+# Warmup Iteration   3: 118643949.182 ops/s
+Iteration   1: 118147978.287 ops/s
+Iteration   2: 119771646.635 ops/s
+
+
+Result "org.sample.JMHBenchmark_05_DummyInvokeState.noInvocationReturnValueBS":
+  118674642.146 ±(99.9%) 8434364.287 ops/s [Average]
+  (min, avg, max) = (117072768.310, 118674642.146, 119771646.635), stdev = 1305227.210
+  CI (99.9%): [110240277.859, 127109006.432] (assumes normal distribution)
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: /usr/lib/jvm/bellsoft-java11-amd64/bin/java
+# VM options: -XX:-Inline -XX:+UnlockExperimentalVMOptions -XX:AOTLibrary=target/benchmarks.so
+# Warmup: 3 iterations, 2 s each
+# Measurement: 2 iterations, 2 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_05_DummyInvokeState.noInvocationlineReturnValueTS
+
+# Run progress: 48.28% complete, ETA 00:06:48
+# Fork: 1 of 2
+# Warmup Iteration   1: 101118602.148 ops/s
+# Warmup Iteration   2: 101461100.991 ops/s
+# Warmup Iteration   3: 119993430.536 ops/s
+Iteration   1: 119704452.003 ops/s
+Iteration   2: 118894641.037 ops/s
+
+# Run progress: 50.00% complete, ETA 00:06:34
+# Fork: 2 of 2
+# Warmup Iteration   1: 102359409.677 ops/s
+# Warmup Iteration   2: 101229908.144 ops/s
+# Warmup Iteration   3: 119506413.861 ops/s
+Iteration   1: 118895241.020 ops/s
+Iteration   2: 119633626.021 ops/s
+
+
+Result "org.sample.JMHBenchmark_05_DummyInvokeState.noInvocationlineReturnValueTS":
+  119281990.020 ±(99.9%) 2894067.230 ops/s [Average]
+  (min, avg, max) = (118894641.037, 119281990.020, 119704452.003), stdev = 447860.107
+  CI (99.9%): [116387922.790, 122176057.251] (assumes normal distribution)
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: /usr/lib/jvm/bellsoft-java11-amd64/bin/java
+# VM options: -XX:-Inline -XX:+UnlockExperimentalVMOptions -XX:AOTLibrary=target/benchmarks.so
+# Warmup: 3 iterations, 2 s each
+# Measurement: 2 iterations, 2 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_05_DummyInvokeState.testInvocation
+
+# Run progress: 51.72% complete, ETA 00:06:20
+# Fork: 1 of 2
+# Warmup Iteration   1: 191487840.871 ops/s
+# Warmup Iteration   2: 192453808.691 ops/s
+# Warmup Iteration   3: 231496686.656 ops/s
+Iteration   1: 230342553.158 ops/s
+Iteration   2: 230800390.728 ops/s
+
+# Run progress: 53.45% complete, ETA 00:06:07
+# Fork: 2 of 2
+# Warmup Iteration   1: 193460577.893 ops/s
+# Warmup Iteration   2: 191564825.223 ops/s
+# Warmup Iteration   3: 231616377.059 ops/s
+Iteration   1: 229535424.237 ops/s
+Iteration   2: 231303303.131 ops/s
+
+
+Result "org.sample.JMHBenchmark_05_DummyInvokeState.testInvocation":
+  230495417.814 ±(99.9%) 4851002.419 ops/s [Average]
+  (min, avg, max) = (229535424.237, 230495417.814, 231303303.131), stdev = 750697.994
+  CI (99.9%): [225644415.395, 235346420.232] (assumes normal distribution)
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: /usr/lib/jvm/bellsoft-java11-amd64/bin/java
+# VM options: -XX:-Inline -XX:+UnlockExperimentalVMOptions -XX:AOTLibrary=target/benchmarks.so
+# Warmup: 3 iterations, 2 s each
+# Measurement: 2 iterations, 2 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_05_DummyInvokeState.testInvocationReturnValueBS
+
+# Run progress: 55.17% complete, ETA 00:05:53
+# Fork: 1 of 2
+# Warmup Iteration   1: 90769381.062 ops/s
+# Warmup Iteration   2: 90678060.898 ops/s
+# Warmup Iteration   3: 104323060.768 ops/s
+Iteration   1: 103419494.106 ops/s
+Iteration   2: 105170866.427 ops/s
+
+# Run progress: 56.90% complete, ETA 00:05:40
+# Fork: 2 of 2
+# Warmup Iteration   1: 91327101.815 ops/s
+# Warmup Iteration   2: 90764162.141 ops/s
+# Warmup Iteration   3: 104417783.144 ops/s
+Iteration   1: 105344894.865 ops/s
+Iteration   2: 104780379.053 ops/s
+
+
+Result "org.sample.JMHBenchmark_05_DummyInvokeState.testInvocationReturnValueBS":
+  104678908.613 ±(99.9%) 5635878.887 ops/s [Average]
+  (min, avg, max) = (103419494.106, 104678908.613, 105344894.865), stdev = 872158.496
+  CI (99.9%): [99043029.726, 110314787.500] (assumes normal distribution)
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: /usr/lib/jvm/bellsoft-java11-amd64/bin/java
+# VM options: -XX:-Inline -XX:+UnlockExperimentalVMOptions -XX:AOTLibrary=target/benchmarks.so
+# Warmup: 3 iterations, 2 s each
+# Measurement: 2 iterations, 2 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_05_DummyInvokeState.testInvocationReturnValueTS
+
+# Run progress: 58.62% complete, ETA 00:05:26
+# Fork: 1 of 2
+# Warmup Iteration   1: 90650519.120 ops/s
+# Warmup Iteration   2: 90918552.860 ops/s
+# Warmup Iteration   3: 104561305.811 ops/s
+Iteration   1: 105300808.242 ops/s
+Iteration   2: 105015298.728 ops/s
+
+# Run progress: 60.34% complete, ETA 00:05:12
+# Fork: 2 of 2
+# Warmup Iteration   1: 91159647.233 ops/s
+# Warmup Iteration   2: 91134336.526 ops/s
+# Warmup Iteration   3: 104500307.177 ops/s
+Iteration   1: 105309018.696 ops/s
+Iteration   2: 105232092.588 ops/s
+
+
+Result "org.sample.JMHBenchmark_05_DummyInvokeState.testInvocationReturnValueTS":
+  105214304.564 ±(99.9%) 885814.292 ops/s [Average]
+  (min, avg, max) = (105015298.728, 105214304.564, 105309018.696), stdev = 137080.742
+  CI (99.9%): [104328490.271, 106100118.856] (assumes normal distribution)
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: /usr/lib/jvm/bellsoft-java11-amd64/bin/java
+# VM options: -XX:-Inline -XX:+UnlockExperimentalVMOptions -XX:AOTLibrary=target/benchmarks.so
+# Warmup: 3 iterations, 2 s each
+# Measurement: 2 iterations, 2 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_06_SumCalcInvoke.SumCalcInvoke
+
+# Run progress: 62.07% complete, ETA 00:04:59
+# Fork: 1 of 2
+# Warmup Iteration   1: 3219493.664 ops/s
+# Warmup Iteration   2: 3281086.625 ops/s
+# Warmup Iteration   3: 3291876.832 ops/s
+Iteration   1: 3290335.311 ops/s
+Iteration   2: 3286208.134 ops/s
+
+# Run progress: 63.79% complete, ETA 00:04:45
+# Fork: 2 of 2
+# Warmup Iteration   1: 3264484.209 ops/s
+# Warmup Iteration   2: 3267382.221 ops/s
+# Warmup Iteration   3: 3291416.744 ops/s
+Iteration   1: 3290734.648 ops/s
+Iteration   2: 3284183.768 ops/s
+
+
+Result "org.sample.JMHBenchmark_06_SumCalcInvoke.SumCalcInvoke":
+  3287865.465 ±(99.9%) 20649.398 ops/s [Average]
+  (min, avg, max) = (3284183.768, 3287865.465, 3290734.648), stdev = 3195.517
+  CI (99.9%): [3267216.067, 3308514.864] (assumes normal distribution)
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: /usr/lib/jvm/bellsoft-java11-amd64/bin/java
+# VM options: -XX:-Inline -XX:+UnlockExperimentalVMOptions -XX:AOTLibrary=target/benchmarks.so
+# Warmup: 3 iterations, 2 s each
+# Measurement: 2 iterations, 2 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_06_SumCalcInvoke.baseline
+
+# Run progress: 65.52% complete, ETA 00:04:32
+# Fork: 1 of 2
+# Warmup Iteration   1: 409881696.851 ops/s
+# Warmup Iteration   2: 406187877.773 ops/s
+# Warmup Iteration   3: 435064238.292 ops/s
+Iteration   1: 433354811.674 ops/s
+Iteration   2: 430318326.187 ops/s
+
+# Run progress: 67.24% complete, ETA 00:04:18
+# Fork: 2 of 2
+# Warmup Iteration   1: 416488476.612 ops/s
+# Warmup Iteration   2: 413060269.124 ops/s
+# Warmup Iteration   3: 434024617.867 ops/s
+Iteration   1: 433178722.267 ops/s
+Iteration   2: 434281944.333 ops/s
+
+
+Result "org.sample.JMHBenchmark_06_SumCalcInvoke.baseline":
+  432783451.115 ±(99.9%) 11070587.239 ops/s [Average]
+  (min, avg, max) = (430318326.187, 432783451.115, 434281944.333), stdev = 1713185.630
+  CI (99.9%): [421712863.876, 443854038.354] (assumes normal distribution)
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: /usr/lib/jvm/bellsoft-java11-amd64/bin/java
+# VM options: -XX:-Inline -XX:+UnlockExperimentalVMOptions -XX:AOTLibrary=target/benchmarks.so
+# Warmup: 3 iterations, 2 s each
+# Measurement: 2 iterations, 2 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_06_SumCalcInvoke.noInvocationSumCalc
+
+# Run progress: 68.97% complete, ETA 00:04:04
+# Fork: 1 of 2
+# Warmup Iteration   1: 7355667.549 ops/s
+# Warmup Iteration   2: 7332856.283 ops/s
+# Warmup Iteration   3: 7447302.449 ops/s
+Iteration   1: 7394916.622 ops/s
+Iteration   2: 7437998.036 ops/s
+
+# Run progress: 70.69% complete, ETA 00:03:51
+# Fork: 2 of 2
+# Warmup Iteration   1: 7382032.196 ops/s
+# Warmup Iteration   2: 7341877.162 ops/s
+# Warmup Iteration   3: 7467908.345 ops/s
+Iteration   1: 7407346.372 ops/s
+Iteration   2: 7457144.441 ops/s
+
+
+Result "org.sample.JMHBenchmark_06_SumCalcInvoke.noInvocationSumCalc":
+  7424351.368 ±(99.9%) 183426.096 ops/s [Average]
+  (min, avg, max) = (7394916.622, 7424351.368, 7457144.441), stdev = 28385.391
+  CI (99.9%): [7240925.272, 7607777.463] (assumes normal distribution)
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: /usr/lib/jvm/bellsoft-java11-amd64/bin/java
+# VM options: -XX:-Inline -XX:+UnlockExperimentalVMOptions -XX:AOTLibrary=target/benchmarks.so
+# Warmup: 3 iterations, 2 s each
+# Measurement: 2 iterations, 2 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_08_NumberOfSumCalc.baseline
+
+# Run progress: 72.41% complete, ETA 00:03:37
+# Fork: 1 of 2
+# Warmup Iteration   1: 415207243.550 ops/s
+# Warmup Iteration   2: 412823505.209 ops/s
+# Warmup Iteration   3: 434301252.776 ops/s
+Iteration   1: 427156890.019 ops/s
+Iteration   2: 432328399.666 ops/s
+
+# Run progress: 74.14% complete, ETA 00:03:23
+# Fork: 2 of 2
+# Warmup Iteration   1: 412390960.593 ops/s
+# Warmup Iteration   2: 404905014.007 ops/s
+# Warmup Iteration   3: 434301390.636 ops/s
+Iteration   1: 433688213.366 ops/s
+Iteration   2: 432964000.460 ops/s
+
+
+Result "org.sample.JMHBenchmark_08_NumberOfSumCalc.baseline":
+  431534375.878 ±(99.9%) 19196821.320 ops/s [Average]
+  (min, avg, max) = (427156890.019, 431534375.878, 433688213.366), stdev = 2970729.349
+  CI (99.9%): [412337554.558, 450731197.197] (assumes normal distribution)
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: /usr/lib/jvm/bellsoft-java11-amd64/bin/java
+# VM options: -XX:-Inline -XX:+UnlockExperimentalVMOptions -XX:AOTLibrary=target/benchmarks.so
+# Warmup: 3 iterations, 2 s each
+# Measurement: 2 iterations, 2 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_08_NumberOfSumCalc.longSumCalcInvoke
+
+# Run progress: 75.86% complete, ETA 00:03:10
+# Fork: 1 of 2
+# Warmup Iteration   1: 1801997.508 ops/s
+# Warmup Iteration   2: 1796585.414 ops/s
+# Warmup Iteration   3: 1795968.282 ops/s
+Iteration   1: 1813775.333 ops/s
+Iteration   2: 1769813.447 ops/s
+
+# Run progress: 77.59% complete, ETA 00:02:56
+# Fork: 2 of 2
+# Warmup Iteration   1: 1791704.477 ops/s
+# Warmup Iteration   2: 1801514.418 ops/s
+# Warmup Iteration   3: 1809655.070 ops/s
+Iteration   1: 1812260.858 ops/s
+Iteration   2: 1801589.540 ops/s
+
+
+Result "org.sample.JMHBenchmark_08_NumberOfSumCalc.longSumCalcInvoke":
+  1799359.795 ±(99.9%) 132021.018 ops/s [Average]
+  (min, avg, max) = (1769813.447, 1799359.795, 1813775.333), stdev = 20430.399
+  CI (99.9%): [1667338.776, 1931380.813] (assumes normal distribution)
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: /usr/lib/jvm/bellsoft-java11-amd64/bin/java
+# VM options: -XX:-Inline -XX:+UnlockExperimentalVMOptions -XX:AOTLibrary=target/benchmarks.so
+# Warmup: 3 iterations, 2 s each
+# Measurement: 2 iterations, 2 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_08_NumberOfSumCalc.noInvocationNumberSumCalc
+
+# Run progress: 79.31% complete, ETA 00:02:43
+# Fork: 1 of 2
+# Warmup Iteration   1: 2436538.147 ops/s
+# Warmup Iteration   2: 2438084.115 ops/s
+# Warmup Iteration   3: 2474830.975 ops/s
+Iteration   1: 2465135.196 ops/s
+Iteration   2: 2471077.567 ops/s
+
+# Run progress: 81.03% complete, ETA 00:02:29
+# Fork: 2 of 2
+# Warmup Iteration   1: 2410993.113 ops/s
+# Warmup Iteration   2: 2435816.088 ops/s
+# Warmup Iteration   3: 2460670.771 ops/s
+Iteration   1: 2455372.360 ops/s
+Iteration   2: 2451441.665 ops/s
+
+
+Result "org.sample.JMHBenchmark_08_NumberOfSumCalc.noInvocationNumberSumCalc":
+  2460756.697 ±(99.9%) 57972.426 ops/s [Average]
+  (min, avg, max) = (2451441.665, 2460756.697, 2471077.567), stdev = 8971.297
+  CI (99.9%): [2402784.271, 2518729.124] (assumes normal distribution)
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: /usr/lib/jvm/bellsoft-java11-amd64/bin/java
+# VM options: -XX:-Inline -XX:+UnlockExperimentalVMOptions -XX:AOTLibrary=target/benchmarks.so
+# Warmup: 3 iterations, 2 s each
+# Measurement: 2 iterations, 2 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_08_NumberOfSumCalc.numberSumCalcInvoke
+
+# Run progress: 82.76% complete, ETA 00:02:15
+# Fork: 1 of 2
+# Warmup Iteration   1: 841124.185 ops/s
+# Warmup Iteration   2: 835481.959 ops/s
+# Warmup Iteration   3: 839754.219 ops/s
+Iteration   1: 844282.256 ops/s
+Iteration   2: 843923.971 ops/s
+
+# Run progress: 84.48% complete, ETA 00:02:02
+# Fork: 2 of 2
+# Warmup Iteration   1: 839595.211 ops/s
+# Warmup Iteration   2: 829050.514 ops/s
+# Warmup Iteration   3: 843027.015 ops/s
+Iteration   1: 841696.394 ops/s
+Iteration   2: 843416.232 ops/s
+
+
+Result "org.sample.JMHBenchmark_08_NumberOfSumCalc.numberSumCalcInvoke":
+  843329.713 ±(99.9%) 7401.445 ops/s [Average]
+  (min, avg, max) = (841696.394, 843329.713, 844282.256), stdev = 1145.382
+  CI (99.9%): [835928.268, 850731.158] (assumes normal distribution)
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: /usr/lib/jvm/bellsoft-java11-amd64/bin/java
+# VM options: -XX:-Inline -XX:+UnlockExperimentalVMOptions -XX:AOTLibrary=target/benchmarks.so
+# Warmup: 3 iterations, 2 s each
+# Measurement: 2 iterations, 2 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_08_NumberOfSumCalc.numberSumCalcInvokeNested
+
+# Run progress: 86.21% complete, ETA 00:01:48
+# Fork: 1 of 2
+# Warmup Iteration   1: 871890.344 ops/s
+# Warmup Iteration   2: 886732.256 ops/s
+# Warmup Iteration   3: 889657.894 ops/s
+Iteration   1: 885657.776 ops/s
+Iteration   2: 886728.660 ops/s
+
+# Run progress: 87.93% complete, ETA 00:01:35
+# Fork: 2 of 2
+# Warmup Iteration   1: 869263.807 ops/s
+# Warmup Iteration   2: 887792.129 ops/s
+# Warmup Iteration   3: 886879.315 ops/s
+Iteration   1: 877728.553 ops/s
+Iteration   2: 879949.117 ops/s
+
+
+Result "org.sample.JMHBenchmark_08_NumberOfSumCalc.numberSumCalcInvokeNested":
+  882516.027 ±(99.9%) 28198.222 ops/s [Average]
+  (min, avg, max) = (877728.553, 882516.027, 886728.660), stdev = 4363.706
+  CI (99.9%): [854317.805, 910714.249] (assumes normal distribution)
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: /usr/lib/jvm/bellsoft-java11-amd64/bin/java
+# VM options: -XX:-Inline -XX:+UnlockExperimentalVMOptions -XX:AOTLibrary=target/benchmarks.so
+# Warmup: 3 iterations, 2 s each
+# Measurement: 2 iterations, 2 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_10_longSumCalc.baseline
+
+# Run progress: 89.66% complete, ETA 00:01:21
+# Fork: 1 of 2
+# Warmup Iteration   1: 412202736.330 ops/s
+# Warmup Iteration   2: 410015183.060 ops/s
+# Warmup Iteration   3: 434729215.626 ops/s
+Iteration   1: 428275796.442 ops/s
+Iteration   2: 431572519.316 ops/s
+
+# Run progress: 91.38% complete, ETA 00:01:07
+# Fork: 2 of 2
+# Warmup Iteration   1: 415178866.852 ops/s
+# Warmup Iteration   2: 401157102.962 ops/s
+# Warmup Iteration   3: 433994833.237 ops/s
+Iteration   1: 431313245.962 ops/s
+Iteration   2: 433909123.017 ops/s
+
+
+Result "org.sample.JMHBenchmark_10_longSumCalc.baseline":
+  431267671.184 ±(99.9%) 14934323.120 ops/s [Average]
+  (min, avg, max) = (428275796.442, 431267671.184, 433909123.017), stdev = 2311103.034
+  CI (99.9%): [416333348.064, 446201994.305] (assumes normal distribution)
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: /usr/lib/jvm/bellsoft-java11-amd64/bin/java
+# VM options: -XX:-Inline -XX:+UnlockExperimentalVMOptions -XX:AOTLibrary=target/benchmarks.so
+# Warmup: 3 iterations, 2 s each
+# Measurement: 2 iterations, 2 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_10_longSumCalc.longSumCalc
+
+# Run progress: 93.10% complete, ETA 00:00:54
+# Fork: 1 of 2
+# Warmup Iteration   1: 122098.989 ops/s
+# Warmup Iteration   2: 123079.687 ops/s
+# Warmup Iteration   3: 123731.264 ops/s
+Iteration   1: 123453.862 ops/s
+Iteration   2: 122656.659 ops/s
+
+# Run progress: 94.83% complete, ETA 00:00:40
+# Fork: 2 of 2
+# Warmup Iteration   1: 122601.107 ops/s
+# Warmup Iteration   2: 123102.349 ops/s
+# Warmup Iteration   3: 123049.099 ops/s
+Iteration   1: 123919.059 ops/s
+Iteration   2: 123863.531 ops/s
+
+
+Result "org.sample.JMHBenchmark_10_longSumCalc.longSumCalc":
+  123473.278 ±(99.9%) 3764.742 ops/s [Average]
+  (min, avg, max) = (122656.659, 123473.278, 123919.059), stdev = 582.598
+  CI (99.9%): [119708.536, 127238.020] (assumes normal distribution)
+
+
+# JMH version: 1.25.2
+# VM version: JDK 11.0.8, OpenJDK 64-Bit Server VM, 11.0.8+10-LTS
+# VM invoker: /usr/lib/jvm/bellsoft-java11-amd64/bin/java
+# VM options: -XX:-Inline -XX:+UnlockExperimentalVMOptions -XX:AOTLibrary=target/benchmarks.so
+# Warmup: 3 iterations, 2 s each
+# Measurement: 2 iterations, 2 s each
+# Timeout: 1 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.sample.JMHBenchmark_10_longSumCalc.noInvocationlongSumCalc
+
+# Run progress: 96.55% complete, ETA 00:00:27
+# Fork: 1 of 2
+# Warmup Iteration   1: 115011.711 ops/s
+# Warmup Iteration   2: 114645.272 ops/s
+# Warmup Iteration   3: 114617.517 ops/s
+Iteration   1: 114928.444 ops/s
+Iteration   2: 114521.235 ops/s
+
+# Run progress: 98.28% complete, ETA 00:00:13
+# Fork: 2 of 2
+# Warmup Iteration   1: 114620.223 ops/s
+# Warmup Iteration   2: 114485.990 ops/s
+# Warmup Iteration   3: 115222.350 ops/s
+Iteration   1: 114905.062 ops/s
+Iteration   2: 114797.779 ops/s
+
+
+Result "org.sample.JMHBenchmark_10_longSumCalc.noInvocationlongSumCalc":
+  114788.130 ±(99.9%) 1207.125 ops/s [Average]
+  (min, avg, max) = (114521.235, 114788.130, 114928.444), stdev = 186.804
+  CI (99.9%): [113581.005, 115995.255] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:13:08
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                                                                               Mode  Cnt          Score          Error  Units
+JMHBenchmark_01_DummyInvoke.baseline                                                   thrpt    4  430168825.924 ± 13060900.801  ops/s
+JMHBenchmark_01_DummyInvoke.testInvocationDummyMethod                                  thrpt    4  230382007.947 ±  7919432.120  ops/s
+JMHBenchmark_02_InvokeWithReturn.baseline                                              thrpt    4  431428713.891 ± 16061611.607  ops/s
+JMHBenchmark_02_InvokeWithReturn.noInvocation                                          thrpt    4  119534990.279 ±  3623888.370  ops/s
+JMHBenchmark_02_InvokeWithReturn.testInvocationDummyMethodWithBh                       thrpt    4  104124637.770 ±  6187414.113  ops/s
+JMHBenchmark_02_InvokeWithReturn.testInvocationDummyMethodWithReturnValue              thrpt    4  104683267.857 ±  4605837.543  ops/s
+JMHBenchmark_04_DummyInvokeWithValue.baseline                                          thrpt    4  431740801.567 ± 19056077.140  ops/s
+JMHBenchmark_04_DummyInvokeWithValue.noInvocationReturnValue                           thrpt    4  228523333.651 ± 33283622.754  ops/s
+JMHBenchmark_04_DummyInvokeWithValue.noInvocationReturnVolatileValue                   thrpt    4  231222469.379 ±  5310748.837  ops/s
+JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethod                         thrpt    4  230256391.863 ± 10353149.429  ops/s
+JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethodWithReturnValue          thrpt    4  157321982.506 ±  5849502.108  ops/s
+JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethodWithReturnVolatileValue  thrpt    4  156215635.770 ±  1476147.418  ops/s
+JMHBenchmark_05_DummyInvokeState.baseline                                              thrpt    4  432759173.184 ± 16134658.882  ops/s
+JMHBenchmark_05_DummyInvokeState.noInvocationReturnValueBS                             thrpt    4  118674642.146 ±  8434364.287  ops/s
+JMHBenchmark_05_DummyInvokeState.noInvocationlineReturnValueTS                         thrpt    4  119281990.020 ±  2894067.230  ops/s
+JMHBenchmark_05_DummyInvokeState.testInvocation                                        thrpt    4  230495417.814 ±  4851002.419  ops/s
+JMHBenchmark_05_DummyInvokeState.testInvocationReturnValueBS                           thrpt    4  104678908.613 ±  5635878.887  ops/s
+JMHBenchmark_05_DummyInvokeState.testInvocationReturnValueTS                           thrpt    4  105214304.564 ±   885814.292  ops/s
+JMHBenchmark_06_SumCalcInvoke.SumCalcInvoke                                            thrpt    4    3287865.465 ±    20649.398  ops/s
+JMHBenchmark_06_SumCalcInvoke.baseline                                                 thrpt    4  432783451.115 ± 11070587.239  ops/s
+JMHBenchmark_06_SumCalcInvoke.noInvocationSumCalc                                      thrpt    4    7424351.368 ±   183426.096  ops/s
+JMHBenchmark_08_NumberOfSumCalc.baseline                                               thrpt    4  431534375.878 ± 19196821.320  ops/s
+JMHBenchmark_08_NumberOfSumCalc.longSumCalcInvoke                                      thrpt    4    1799359.795 ±   132021.018  ops/s
+JMHBenchmark_08_NumberOfSumCalc.noInvocationNumberSumCalc                              thrpt    4    2460756.697 ±    57972.426  ops/s
+JMHBenchmark_08_NumberOfSumCalc.numberSumCalcInvoke                                    thrpt    4     843329.713 ±     7401.445  ops/s
+JMHBenchmark_08_NumberOfSumCalc.numberSumCalcInvokeNested                              thrpt    4     882516.027 ±    28198.222  ops/s
+JMHBenchmark_10_longSumCalc.baseline                                                   thrpt    4  431267671.184 ± 14934323.120  ops/s
+JMHBenchmark_10_longSumCalc.longSumCalc                                                thrpt    4     123473.278 ±     3764.742  ops/s
+JMHBenchmark_10_longSumCalc.noInvocationlongSumCalc                                    thrpt    4     114788.130 ±     1207.125  ops/s
+
+Benchmark result is saved to results/linux-aot-Inline.txt

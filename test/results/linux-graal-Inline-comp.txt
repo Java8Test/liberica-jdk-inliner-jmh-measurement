@@ -1,0 +1,88 @@
+Benchmark                                                                                                       Mode  Cnt          Score          Error  Units
+JMHBenchmark_01_DummyInvoke.baseline                                                                           thrpt    4  382260537.089 ± 16194896.634  ops/s
+JMHBenchmark_01_DummyInvoke.baseline:·compiler.time.profiled                                                   thrpt    4          1.000                    ms
+JMHBenchmark_01_DummyInvoke.baseline:·compiler.time.total                                                      thrpt    4       7587.000                    ms
+JMHBenchmark_01_DummyInvoke.testInvocationDummyMethod                                                          thrpt    4  190701383.527 ±  6219110.953  ops/s
+JMHBenchmark_01_DummyInvoke.testInvocationDummyMethod:·compiler.time.profiled                                  thrpt    4          4.000                    ms
+JMHBenchmark_01_DummyInvoke.testInvocationDummyMethod:·compiler.time.total                                     thrpt    4       4647.000                    ms
+JMHBenchmark_02_InvokeWithReturn.baseline                                                                      thrpt    4  383889553.519 ± 16159387.664  ops/s
+JMHBenchmark_02_InvokeWithReturn.baseline:·compiler.time.profiled                                              thrpt    4          2.000                    ms
+JMHBenchmark_02_InvokeWithReturn.baseline:·compiler.time.total                                                 thrpt    4       4822.000                    ms
+JMHBenchmark_02_InvokeWithReturn.noInvocation                                                                  thrpt    4  114738892.819 ±  8883208.018  ops/s
+JMHBenchmark_02_InvokeWithReturn.noInvocation:·compiler.time.profiled                                          thrpt    4          1.000                    ms
+JMHBenchmark_02_InvokeWithReturn.noInvocation:·compiler.time.total                                             thrpt    4       4667.000                    ms
+JMHBenchmark_02_InvokeWithReturn.testInvocationDummyMethodWithBh                                               thrpt    4   93604286.458 ±  1516127.934  ops/s
+JMHBenchmark_02_InvokeWithReturn.testInvocationDummyMethodWithBh:·compiler.time.profiled                       thrpt    4          1.000                    ms
+JMHBenchmark_02_InvokeWithReturn.testInvocationDummyMethodWithBh:·compiler.time.total                          thrpt    4       4788.000                    ms
+JMHBenchmark_02_InvokeWithReturn.testInvocationDummyMethodWithReturnValue                                      thrpt    4   96048109.930 ±  1367763.794  ops/s
+JMHBenchmark_02_InvokeWithReturn.testInvocationDummyMethodWithReturnValue:·compiler.time.profiled              thrpt    4            ≈ 0                    ms
+JMHBenchmark_02_InvokeWithReturn.testInvocationDummyMethodWithReturnValue:·compiler.time.total                 thrpt    4       4676.000                    ms
+JMHBenchmark_04_DummyInvokeWithValue.baseline                                                                  thrpt    4  380318459.259 ± 19467808.255  ops/s
+JMHBenchmark_04_DummyInvokeWithValue.baseline:·compiler.time.profiled                                          thrpt    4          3.000                    ms
+JMHBenchmark_04_DummyInvokeWithValue.baseline:·compiler.time.total                                             thrpt    4       4754.000                    ms
+JMHBenchmark_04_DummyInvokeWithValue.noInvocationReturnValue                                                   thrpt    4  114989751.052 ±  4295074.728  ops/s
+JMHBenchmark_04_DummyInvokeWithValue.noInvocationReturnValue:·compiler.time.profiled                           thrpt    4          1.000                    ms
+JMHBenchmark_04_DummyInvokeWithValue.noInvocationReturnValue:·compiler.time.total                              thrpt    4       4674.000                    ms
+JMHBenchmark_04_DummyInvokeWithValue.noInvocationReturnVolatileValue                                           thrpt    4  114435886.022 ±  8294996.692  ops/s
+JMHBenchmark_04_DummyInvokeWithValue.noInvocationReturnVolatileValue:·compiler.time.profiled                   thrpt    4          3.000                    ms
+JMHBenchmark_04_DummyInvokeWithValue.noInvocationReturnVolatileValue:·compiler.time.total                      thrpt    4       4699.000                    ms
+JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethod                                                 thrpt    4  190733273.983 ± 11613114.620  ops/s
+JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethod:·compiler.time.profiled                         thrpt    4          4.000                    ms
+JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethod:·compiler.time.total                            thrpt    4       4700.000                    ms
+JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethodWithReturnValue                                  thrpt    4   95978152.565 ±  3679230.645  ops/s
+JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethodWithReturnValue:·compiler.time.profiled          thrpt    4          1.000                    ms
+JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethodWithReturnValue:·compiler.time.total             thrpt    4       4934.000                    ms
+JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethodWithReturnVolatileValue                          thrpt    4   96013938.486 ±  3248462.308  ops/s
+JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethodWithReturnVolatileValue:·compiler.time.profiled  thrpt    4          1.000                    ms
+JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethodWithReturnVolatileValue:·compiler.time.total     thrpt    4       4718.000                    ms
+JMHBenchmark_05_DummyInvokeState.baseline                                                                      thrpt    4  382853475.554 ± 14738805.172  ops/s
+JMHBenchmark_05_DummyInvokeState.baseline:·compiler.time.profiled                                              thrpt    4          1.000                    ms
+JMHBenchmark_05_DummyInvokeState.baseline:·compiler.time.total                                                 thrpt    4       4690.000                    ms
+JMHBenchmark_05_DummyInvokeState.noInvocationReturnValueBS                                                     thrpt    4  114722034.344 ±  8101130.564  ops/s
+JMHBenchmark_05_DummyInvokeState.noInvocationReturnValueBS:·compiler.time.profiled                             thrpt    4         10.000                    ms
+JMHBenchmark_05_DummyInvokeState.noInvocationReturnValueBS:·compiler.time.total                                thrpt    4       4616.000                    ms
+JMHBenchmark_05_DummyInvokeState.noInvocationlineReturnValueTS                                                 thrpt    4  115105481.676 ±  6299862.990  ops/s
+JMHBenchmark_05_DummyInvokeState.noInvocationlineReturnValueTS:·compiler.time.profiled                         thrpt    4         12.000                    ms
+JMHBenchmark_05_DummyInvokeState.noInvocationlineReturnValueTS:·compiler.time.total                            thrpt    4       4685.000                    ms
+JMHBenchmark_05_DummyInvokeState.testInvocation                                                                thrpt    4  191941655.465 ±  5360745.742  ops/s
+JMHBenchmark_05_DummyInvokeState.testInvocation:·compiler.time.profiled                                        thrpt    4          1.000                    ms
+JMHBenchmark_05_DummyInvokeState.testInvocation:·compiler.time.total                                           thrpt    4       4624.000                    ms
+JMHBenchmark_05_DummyInvokeState.testInvocationReturnValueBS                                                   thrpt    4   95933590.046 ±  2687293.412  ops/s
+JMHBenchmark_05_DummyInvokeState.testInvocationReturnValueBS:·compiler.time.profiled                           thrpt    4          2.000                    ms
+JMHBenchmark_05_DummyInvokeState.testInvocationReturnValueBS:·compiler.time.total                              thrpt    4       4587.000                    ms
+JMHBenchmark_05_DummyInvokeState.testInvocationReturnValueTS                                                   thrpt    4   96097751.094 ±  2259128.741  ops/s
+JMHBenchmark_05_DummyInvokeState.testInvocationReturnValueTS:·compiler.time.profiled                           thrpt    4          2.000                    ms
+JMHBenchmark_05_DummyInvokeState.testInvocationReturnValueTS:·compiler.time.total                              thrpt    4       4645.000                    ms
+JMHBenchmark_06_SumCalcInvoke.SumCalcInvoke                                                                    thrpt    4    2219985.734 ±    21835.504  ops/s
+JMHBenchmark_06_SumCalcInvoke.SumCalcInvoke:·compiler.time.profiled                                            thrpt    4          1.000                    ms
+JMHBenchmark_06_SumCalcInvoke.SumCalcInvoke:·compiler.time.total                                               thrpt    4       4663.000                    ms
+JMHBenchmark_06_SumCalcInvoke.baseline                                                                         thrpt    4  382079948.454 ± 25142665.332  ops/s
+JMHBenchmark_06_SumCalcInvoke.baseline:·compiler.time.profiled                                                 thrpt    4          1.000                    ms
+JMHBenchmark_06_SumCalcInvoke.baseline:·compiler.time.total                                                    thrpt    4       4690.000                    ms
+JMHBenchmark_06_SumCalcInvoke.noInvocationSumCalc                                                              thrpt    4    2225277.488 ±   145021.594  ops/s
+JMHBenchmark_06_SumCalcInvoke.noInvocationSumCalc:·compiler.time.profiled                                      thrpt    4            ≈ 0                    ms
+JMHBenchmark_06_SumCalcInvoke.noInvocationSumCalc:·compiler.time.total                                         thrpt    4       4967.000                    ms
+JMHBenchmark_08_NumberOfSumCalc.baseline                                                                       thrpt    4  383729748.182 ± 10672831.253  ops/s
+JMHBenchmark_08_NumberOfSumCalc.baseline:·compiler.time.profiled                                               thrpt    4          1.000                    ms
+JMHBenchmark_08_NumberOfSumCalc.baseline:·compiler.time.total                                                  thrpt    4       4775.000                    ms
+JMHBenchmark_08_NumberOfSumCalc.longSumCalcInvoke                                                              thrpt    4     770913.467 ±    18629.060  ops/s
+JMHBenchmark_08_NumberOfSumCalc.longSumCalcInvoke:·compiler.time.profiled                                      thrpt    4          1.000                    ms
+JMHBenchmark_08_NumberOfSumCalc.longSumCalcInvoke:·compiler.time.total                                         thrpt    4       4621.000                    ms
+JMHBenchmark_08_NumberOfSumCalc.noInvocationNumberSumCalc                                                      thrpt    4     779187.183 ±    22888.814  ops/s
+JMHBenchmark_08_NumberOfSumCalc.noInvocationNumberSumCalc:·compiler.time.profiled                              thrpt    4          1.000                    ms
+JMHBenchmark_08_NumberOfSumCalc.noInvocationNumberSumCalc:·compiler.time.total                                 thrpt    4       4864.000                    ms
+JMHBenchmark_08_NumberOfSumCalc.numberSumCalcInvoke                                                            thrpt    4     728738.949 ±    14163.791  ops/s
+JMHBenchmark_08_NumberOfSumCalc.numberSumCalcInvoke:·compiler.time.profiled                                    thrpt    4            ≈ 0                    ms
+JMHBenchmark_08_NumberOfSumCalc.numberSumCalcInvoke:·compiler.time.total                                       thrpt    4       4741.000                    ms
+JMHBenchmark_08_NumberOfSumCalc.numberSumCalcInvokeNested                                                      thrpt    4     669935.102 ±    35957.774  ops/s
+JMHBenchmark_08_NumberOfSumCalc.numberSumCalcInvokeNested:·compiler.time.profiled                              thrpt    4            ≈ 0                    ms
+JMHBenchmark_08_NumberOfSumCalc.numberSumCalcInvokeNested:·compiler.time.total                                 thrpt    4       4728.000                    ms
+JMHBenchmark_10_longSumCalc.baseline                                                                           thrpt    4  382542717.524 ±  6633013.771  ops/s
+JMHBenchmark_10_longSumCalc.baseline:·compiler.time.profiled                                                   thrpt    4         14.000                    ms
+JMHBenchmark_10_longSumCalc.baseline:·compiler.time.total                                                      thrpt    4       4709.000                    ms
+JMHBenchmark_10_longSumCalc.longSumCalc                                                                        thrpt    4     132287.596 ±     4530.284  ops/s
+JMHBenchmark_10_longSumCalc.longSumCalc:·compiler.time.profiled                                                thrpt    4            ≈ 0                    ms
+JMHBenchmark_10_longSumCalc.longSumCalc:·compiler.time.total                                                   thrpt    4       4616.000                    ms
+JMHBenchmark_10_longSumCalc.noInvocationlongSumCalc                                                            thrpt    4     116161.213 ±     2963.497  ops/s
+JMHBenchmark_10_longSumCalc.noInvocationlongSumCalc:·compiler.time.profiled                                    thrpt    4            ≈ 0                    ms
+JMHBenchmark_10_longSumCalc.noInvocationlongSumCalc:·compiler.time.total                                       thrpt    4       4862.000                    ms

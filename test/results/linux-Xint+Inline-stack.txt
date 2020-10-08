@@ -1,0 +1,95 @@
+Benchmark                                                                                                      Mode  Cnt         Score         Error  Units
+JMHBenchmark_01_DummyInvoke.baseline                                                                          thrpt    4  16445118.126 ± 2927251.518  ops/s
+JMHBenchmark_01_DummyInvoke.baseline:·stack                                                                   thrpt                NaN                  ---
+JMHBenchmark_01_DummyInvoke.testInvocationDummyMethod                                                         thrpt    4   6414483.867 ± 1267370.092  ops/s
+JMHBenchmark_01_DummyInvoke.testInvocationDummyMethod:·stack                                                  thrpt                NaN                  ---
+JMHBenchmark_02_InvokeWithReturn.baseline                                                                     thrpt    4  16508062.791 ± 1376469.515  ops/s
+JMHBenchmark_02_InvokeWithReturn.baseline:·stack                                                              thrpt                NaN                  ---
+JMHBenchmark_02_InvokeWithReturn.noInvocation                                                                 thrpt    4   7555566.017 ± 2103676.436  ops/s
+JMHBenchmark_02_InvokeWithReturn.noInvocation:·stack                                                          thrpt                NaN                  ---
+JMHBenchmark_02_InvokeWithReturn.testInvocationDummyMethodWithBh                                              thrpt    4   4342361.937 ± 1690875.271  ops/s
+JMHBenchmark_02_InvokeWithReturn.testInvocationDummyMethodWithBh:·stack                                       thrpt                NaN                  ---
+JMHBenchmark_02_InvokeWithReturn.testInvocationDummyMethodWithReturnValue                                     thrpt    4   4901870.568 ±  935576.818  ops/s
+JMHBenchmark_02_InvokeWithReturn.testInvocationDummyMethodWithReturnValue:·stack                              thrpt                NaN                  ---
+JMHBenchmark_03_DummyInvokeWithCompileHint.baseline                                                           thrpt    4  16646920.976 ± 1669101.270  ops/s
+JMHBenchmark_03_DummyInvokeWithCompileHint.baseline:·stack                                                    thrpt                NaN                  ---
+JMHBenchmark_03_DummyInvokeWithCompileHint.noInvocationWithReturnValue                                        thrpt    4   8521916.960 ±  480571.296  ops/s
+JMHBenchmark_03_DummyInvokeWithCompileHint.noInvocationWithReturnValue:·stack                                 thrpt                NaN                  ---
+JMHBenchmark_03_DummyInvokeWithCompileHint.testInvocationDummyMethodWithHintDontInline                        thrpt    4   6412549.572 ± 1520028.949  ops/s
+JMHBenchmark_03_DummyInvokeWithCompileHint.testInvocationDummyMethodWithHintDontInline:·stack                 thrpt                NaN                  ---
+JMHBenchmark_03_DummyInvokeWithCompileHint.testInvocationDummyMethodWithHintDontInlineBh                      thrpt    4   4825434.583 ± 1112286.604  ops/s
+JMHBenchmark_03_DummyInvokeWithCompileHint.testInvocationDummyMethodWithHintDontInlineBh:·stack               thrpt                NaN                  ---
+JMHBenchmark_03_DummyInvokeWithCompileHint.testInvocationDummyMethodWithHintInline                            thrpt    4   5339700.658 ±  649350.469  ops/s
+JMHBenchmark_03_DummyInvokeWithCompileHint.testInvocationDummyMethodWithHintInline:·stack                     thrpt                NaN                  ---
+JMHBenchmark_03_DummyInvokeWithCompileHint.testInvocationDummyMethodWithHintInlineBh                          thrpt    4   4803255.709 ±  706197.449  ops/s
+JMHBenchmark_03_DummyInvokeWithCompileHint.testInvocationDummyMethodWithHintInlineBh:·stack                   thrpt                NaN                  ---
+JMHBenchmark_03_DummyInvokeWithCompileHint.testInvocationDummyMethodWithReturnValueWithHintDontInline         thrpt    4   5392376.556 ±  319207.418  ops/s
+JMHBenchmark_03_DummyInvokeWithCompileHint.testInvocationDummyMethodWithReturnValueWithHintDontInline:·stack  thrpt                NaN                  ---
+JMHBenchmark_03_DummyInvokeWithCompileHint.testInvocationDummyMethodWithReturnValueWithHintInline             thrpt    4   4978861.077 ±  415720.156  ops/s
+JMHBenchmark_03_DummyInvokeWithCompileHint.testInvocationDummyMethodWithReturnValueWithHintInline:·stack      thrpt                NaN                  ---
+JMHBenchmark_04_DummyInvokeWithValue.baseline                                                                 thrpt    4  16839696.914 ± 1491196.375  ops/s
+JMHBenchmark_04_DummyInvokeWithValue.baseline:·stack                                                          thrpt                NaN                  ---
+JMHBenchmark_04_DummyInvokeWithValue.noInvocationReturnValue                                                  thrpt    4   7767016.461 ±  786673.356  ops/s
+JMHBenchmark_04_DummyInvokeWithValue.noInvocationReturnValue:·stack                                           thrpt                NaN                  ---
+JMHBenchmark_04_DummyInvokeWithValue.noInvocationReturnVolatileValue                                          thrpt    4   7954040.876 ± 1374375.535  ops/s
+JMHBenchmark_04_DummyInvokeWithValue.noInvocationReturnVolatileValue:·stack                                   thrpt                NaN                  ---
+JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethod                                                thrpt    4   6116006.248 ±  305255.284  ops/s
+JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethod:·stack                                         thrpt                NaN                  ---
+JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethodWithReturnValue                                 thrpt    4   4380389.361 ±  983036.313  ops/s
+JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethodWithReturnValue:·stack                          thrpt                NaN                  ---
+JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethodWithReturnVolatileValue                         thrpt    4   4705360.021 ± 1490004.259  ops/s
+JMHBenchmark_04_DummyInvokeWithValue.testInvocationDummyMethodWithReturnVolatileValue:·stack                  thrpt                NaN                  ---
+JMHBenchmark_05_DummyInvokeState.baseline                                                                     thrpt    4  16546777.243 ± 2128143.178  ops/s
+JMHBenchmark_05_DummyInvokeState.baseline:·stack                                                              thrpt                NaN                  ---
+JMHBenchmark_05_DummyInvokeState.noInvocationReturnValueBS                                                    thrpt    4   7669554.487 ±  755693.168  ops/s
+JMHBenchmark_05_DummyInvokeState.noInvocationReturnValueBS:·stack                                             thrpt                NaN                  ---
+JMHBenchmark_05_DummyInvokeState.noInvocationlineReturnValueTS                                                thrpt    4   7796147.420 ±  781926.714  ops/s
+JMHBenchmark_05_DummyInvokeState.noInvocationlineReturnValueTS:·stack                                         thrpt                NaN                  ---
+JMHBenchmark_05_DummyInvokeState.testInvocation                                                               thrpt    4   6119615.176 ±  175665.900  ops/s
+JMHBenchmark_05_DummyInvokeState.testInvocation:·stack                                                        thrpt                NaN                  ---
+JMHBenchmark_05_DummyInvokeState.testInvocationReturnValueBS                                                  thrpt    4   4117899.889 ±  292097.394  ops/s
+JMHBenchmark_05_DummyInvokeState.testInvocationReturnValueBS:·stack                                           thrpt                NaN                  ---
+JMHBenchmark_05_DummyInvokeState.testInvocationReturnValueTS                                                  thrpt    4   3877311.897 ±  476001.198  ops/s
+JMHBenchmark_05_DummyInvokeState.testInvocationReturnValueTS:·stack                                           thrpt                NaN                  ---
+JMHBenchmark_06_SumCalcInvoke.SumCalcInvoke                                                                   thrpt    4     63699.554 ±    9829.659  ops/s
+JMHBenchmark_06_SumCalcInvoke.SumCalcInvoke:·stack                                                            thrpt                NaN                  ---
+JMHBenchmark_06_SumCalcInvoke.baseline                                                                        thrpt    4  16597607.521 ± 1636146.637  ops/s
+JMHBenchmark_06_SumCalcInvoke.baseline:·stack                                                                 thrpt                NaN                  ---
+JMHBenchmark_06_SumCalcInvoke.noInvocationSumCalc                                                             thrpt    4    254245.828 ±   16346.328  ops/s
+JMHBenchmark_06_SumCalcInvoke.noInvocationSumCalc:·stack                                                      thrpt                NaN                  ---
+JMHBenchmark_07_SumCalcWithCompileHint.SumCalcWithDontInline                                                  thrpt    4     89043.882 ±  152134.820  ops/s
+JMHBenchmark_07_SumCalcWithCompileHint.SumCalcWithDontInline:·stack                                           thrpt                NaN                  ---
+JMHBenchmark_07_SumCalcWithCompileHint.SumCalcWithInline                                                      thrpt    4     63513.046 ±    4025.792  ops/s
+JMHBenchmark_07_SumCalcWithCompileHint.SumCalcWithInline:·stack                                               thrpt                NaN                  ---
+JMHBenchmark_07_SumCalcWithCompileHint.baseline                                                               thrpt    4  14500797.390 ± 4108774.713  ops/s
+JMHBenchmark_07_SumCalcWithCompileHint.baseline:·stack                                                        thrpt                NaN                  ---
+JMHBenchmark_07_SumCalcWithCompileHint.noInvocationSumCalc                                                    thrpt    4    258652.551 ±   20434.029  ops/s
+JMHBenchmark_07_SumCalcWithCompileHint.noInvocationSumCalc:·stack                                             thrpt                NaN                  ---
+JMHBenchmark_08_NumberOfSumCalc.baseline                                                                      thrpt    4  15285872.343 ± 1369533.528  ops/s
+JMHBenchmark_08_NumberOfSumCalc.baseline:·stack                                                               thrpt                NaN                  ---
+JMHBenchmark_08_NumberOfSumCalc.longSumCalcInvoke                                                             thrpt    4     44220.545 ±    8479.199  ops/s
+JMHBenchmark_08_NumberOfSumCalc.longSumCalcInvoke:·stack                                                      thrpt                NaN                  ---
+JMHBenchmark_08_NumberOfSumCalc.noInvocationNumberSumCalc                                                     thrpt    4     53222.457 ±    1988.315  ops/s
+JMHBenchmark_08_NumberOfSumCalc.noInvocationNumberSumCalc:·stack                                              thrpt                NaN                  ---
+JMHBenchmark_08_NumberOfSumCalc.numberSumCalcInvoke                                                           thrpt    4     16933.246 ±    3535.085  ops/s
+JMHBenchmark_08_NumberOfSumCalc.numberSumCalcInvoke:·stack                                                    thrpt                NaN                  ---
+JMHBenchmark_08_NumberOfSumCalc.numberSumCalcInvokeNested                                                     thrpt    4     16724.343 ±    3194.407  ops/s
+JMHBenchmark_08_NumberOfSumCalc.numberSumCalcInvokeNested:·stack                                              thrpt                NaN                  ---
+JMHBenchmark_09_NumberOfSumCalcWithCompileHint.SumCalcWithDontInline                                          thrpt    4     19855.134 ±    1534.594  ops/s
+JMHBenchmark_09_NumberOfSumCalcWithCompileHint.SumCalcWithDontInline:·stack                                   thrpt                NaN                  ---
+JMHBenchmark_09_NumberOfSumCalcWithCompileHint.SumCalcWithInline                                              thrpt    4     20192.344 ±    4949.456  ops/s
+JMHBenchmark_09_NumberOfSumCalcWithCompileHint.SumCalcWithInline:·stack                                       thrpt                NaN                  ---
+JMHBenchmark_09_NumberOfSumCalcWithCompileHint.baseline                                                       thrpt    4  16727520.062 ± 1518637.584  ops/s
+JMHBenchmark_09_NumberOfSumCalcWithCompileHint.baseline:·stack                                                thrpt                NaN                  ---
+JMHBenchmark_10_longSumCalc.baseline                                                                          thrpt    4  16353614.943 ± 2492182.231  ops/s
+JMHBenchmark_10_longSumCalc.baseline:·stack                                                                   thrpt                NaN                  ---
+JMHBenchmark_10_longSumCalc.longSumCalc                                                                       thrpt    4      4982.598 ±     123.340  ops/s
+JMHBenchmark_10_longSumCalc.longSumCalc:·stack                                                                thrpt                NaN                  ---
+JMHBenchmark_10_longSumCalc.noInvocationlongSumCalc                                                           thrpt    4      5466.589 ±     475.758  ops/s
+JMHBenchmark_10_longSumCalc.noInvocationlongSumCalc:·stack                                                    thrpt                NaN                  ---
+JMHBenchmark_11_NumberOfSumCalcWithLongCalcWithCompileHint.baseline                                           thrpt    4  16573017.911 ± 2447776.386  ops/s
+JMHBenchmark_11_NumberOfSumCalcWithLongCalcWithCompileHint.baseline:·stack                                    thrpt                NaN                  ---
+JMHBenchmark_11_NumberOfSumCalcWithLongCalcWithCompileHint.sumCalcWithDontInline                              thrpt    4      1157.901 ±      21.691  ops/s
+JMHBenchmark_11_NumberOfSumCalcWithLongCalcWithCompileHint.sumCalcWithDontInline:·stack                       thrpt                NaN                  ---
+JMHBenchmark_11_NumberOfSumCalcWithLongCalcWithCompileHint.sumCalcWithInline                                  thrpt    4      1167.610 ±      14.342  ops/s
+JMHBenchmark_11_NumberOfSumCalcWithLongCalcWithCompileHint.sumCalcWithInline:·stack                           thrpt                NaN                  ---
